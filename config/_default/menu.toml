@@ -1,0 +1,40 @@
+# Configure main menu and social menu
+#[[main]]
+#identifier = "home"
+#name = "Home"
+#url = "/"
+#[main.params]
+#icon = "home"
+#newtab = true
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/bguthrie"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "bluesky"
+name = "Bluesky"
+url = "https://bsky.app/profile/bguthrie.bsky.social"
+
+[social.params]
+icon = "brand-bluesky"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/bguthrie/"
+
+[social.params]
+icon = "brand-linkedin"
+
+[[social]]
+identifer = "email"
+name = "Email"
+url = "mailto:btguthrie@gmail.com"
+
+[social.params]
+icon = "brand-email"
