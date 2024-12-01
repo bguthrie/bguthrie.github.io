@@ -1,9 +1,12 @@
-+++
-date = '2024-11-26T17:47:44-05:00'
-draft = false
-title = 'Thoughtworks and the invention of modern software engineering'
-image = 'muzammil-soorma-ayV1mD3HGyg-unsplash.jpg'
-+++
+---
+date: "2024-11-26T17:47:44-05:00"
+draft: false
+title: "Thoughtworks and the invention of modern software engineering"
+image: "muzammil-soorma-ayV1mD3HGyg-unsplash.jpg"
+categories:
+  - history
+  - industry
+---
 
 ## The end of an era
 

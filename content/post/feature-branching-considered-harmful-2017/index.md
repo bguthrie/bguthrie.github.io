@@ -3,6 +3,8 @@ title: "Feature Branching Considered Harmful (2017)"
 description:
 date: 2024-11-30T15:43:39-05:00
 image: "steven-lewis-dmHnXJ-5ilQ-unsplash.jpg"
+categories:
+  - sdlc
 ---
 
 > I originally wrote this [on Twitter in 2017](https://x.com/bguthrie/status/937750796334174209). I'm reposting it here, on my own site, to preserve it.

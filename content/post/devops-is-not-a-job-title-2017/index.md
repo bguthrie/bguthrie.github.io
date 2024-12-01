@@ -4,6 +4,9 @@ description:
 date: 2024-11-30T15:41:04-05:00
 image: "ian-taylor-jOqJbvo1P9g-unsplash.jpg"
 draft: false
+categories:
+  - platform
+  - sdlc
 ---
 
 > I originally wrote this [on Twitter in 2017](https://x.com/bguthrie/status/935260873316274179). I'm reposting it here, on my own site, to preserve it.

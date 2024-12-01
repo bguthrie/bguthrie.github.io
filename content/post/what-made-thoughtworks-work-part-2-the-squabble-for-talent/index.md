@@ -1,9 +1,12 @@
-+++
-date = '2024-11-26T18:43:15-05:00'
-draft = true
-title = 'What Made Thoughtworks Work, Part 2: The Squabble for Talent'
-image = 'muzammil-soorma-ayV1mD3HGyg-unsplash.jpg'
-+++
+---
+date: "2024-11-26T18:43:15-05:00"
+draft: true
+title: "What Made Thoughtworks Work, Part 2: The Squabble for Talent"
+image: "muzammil-soorma-ayV1mD3HGyg-unsplash.jpg"
+categories:
+  - history
+  - industry
+---
 
 ### The appeal
 

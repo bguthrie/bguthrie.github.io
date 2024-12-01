@@ -5,6 +5,9 @@ date: 2024-11-30T15:28:22-05:00
 image: "patrick-robert-doyle-8mswK-LU5Vs-unsplash.jpg"
 hidden: false
 draft: false
+categories:
+  - sdlc
+  - platform
 ---
 
 I’ve been a customer of platform engineering teams as a product engineer, and I’ve also run them as a leader. Consequently, I’ve done a lot of observation and thinking about good and bad patterns of management.
