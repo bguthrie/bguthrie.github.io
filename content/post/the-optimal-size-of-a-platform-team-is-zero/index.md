@@ -3,8 +3,8 @@ title: "The Optimal Size of a Platform Team Is Zero"
 description:
 date: 2024-11-30T15:28:22-05:00
 image: "patrick-robert-doyle-8mswK-LU5Vs-unsplash.jpg"
-hidden: false
-draft: false
+hidden: true
+draft: true
 categories:
   - sdlc
   - platform
