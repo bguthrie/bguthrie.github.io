@@ -119,8 +119,8 @@ Finally, while I still think that the software delivery processes espoused by fi
 
 ## Summary
 
-- Thoughtworks invented or described many of the most important early innovations in software engineering.
-- It did this not as a function of the talent they hired but instead as a function of the market they served (legacy enterprise), the product they sold (time-to-value software delivery), and the culture of the firm (flat, egalitarian, Midwest-pragmatic).
+- Thoughtworks invented or described many of the most important early innovations in software engineering, particularly around SDLC.
+- It did this less as a function of the talent they hired but instead as a function of the market they served (legacy enterprise), the product they sold (time-to-value software delivery), and the culture of the firm (flat, egalitarian, Midwest-pragmatic).
 - What they did is difficult to replicate for two reasons: the process they pioneered runs counter to the talent narrative most firms hire with, and the market for the high-end delivery-oriented consulting product they were selling has declined significantly.
 
 Next time I’ll discuss Thoughtworks’ hiring bar and culture, and how these eventually came to inform its delivery model.
