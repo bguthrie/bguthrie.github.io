@@ -18,15 +18,17 @@ This is personal for me. I worked there for six years, made many friends, and ha
 
 ## Why this matters
 
-Like many alumni of the firm, I spent the first several years of my post-consulting career trying to recreate some of that magic, because I’ve never experienced anything else like it. Thoughtworks could walk into a firm, plop down a team of people who'd mostly never worked with each other before, and absolutely _scream_ through a software backlog—without compromising on quality. In contrast, large enterprise contracting firms (TCS, Wipro, Infosys) vary wildly in both quality and velocity, and smaller agencies (e.g. Huge) deliver quickly but often struggle to build a quality product.
+Like many alumni of the firm, I spent the first several years of my post-consulting career trying to recreate some of that magic, because I’ve never experienced anything else like it. Thoughtworks could walk into a firm, plop down a team of people who'd mostly never worked with each other before, and absolutely _scream_ through a software backlog—without compromising on quality. In contrast, large enterprise contracting firms (TCS, Wipro, Infosys) vary wildly in both quality and velocity, and smaller agencies (e.g. Huge) deliver quickly but often struggle to build a quality product. In their unity of culture and vision and focus on delivering value, Thoughtworks stands almost alone in the enterprise space. Only the late Pivotal Labs and a handful of boutique firms can make a comparable claim.
 
-In their unity of culture and vision and focus on delivering value, Thoughtworks stands almost alone in the enterprise space. Only the late, great Pivotal Labs (another extraordinary firm, but one about which I have little firsthand knowledge and is now largely sidelined) and a handful of boutique players can, I think, make a comparable claim.
+The reason I spent so much time trying to recreate this culture is because I want teams as good as their teams. I don't want to hire _devops engineers_ with _continuous integration skills_; I want to hire people who understand _in their bones_ why anything like a continuous integration server was _ever necessary to begin with_. Not engineers who live downstream of the stuff, but engineers who build it.
+
+The usual reason why teams adopt practices is tools. Pull requests reified the traditional OSS practice of reviewing patches over email, and continuous integration _servers_ reify the continuous integration _practice_ of continually committing changes to a mainline. What makes Thoughtworks notable to me, starting with Martin's interest in pattern languages, is that Thoughtworks made their contributions by _process_.
 
 They didn't do it purely out of commitment to “A-player” talent, though a number of very talented folks cycled through there. But all the A-player talent in the world can’t help you if you fling them at the wrong problems, or organize them poorly, or fail to align their values and goals. What Thoughtworks had was a replicable system for software delivery that worked and that was competitively defensible and hence difficult to replicate, but for which the market has now eroded dramatically. I spend a lot of time thinking about how to build software teams, and consequently, I’ve spent a long time thinking about that system. This is my attempt to lay it out.
 
 ### Martin & Roy
 
-Thoughtworks was founded in the late 90s in Chicago by Roy Singham as a seller of bespoke solutions for accounting software. Roy was a serial entrepreneur; born a diplomat’s son to a West Indian father and midwestern American mother and raised in Jamaica, he had a global perspective but a rather more prosaic goal: to turn his IT chops into a business.
+Thoughtworks was founded in the late 90s in Chicago by Roy Singham as a seller of bespoke solutions for accounting software. Roy was a serial entrepreneur; born a diplomat’s son to a Sri Lankan father and midwestern American mother and raised in Jamaica, he had a global perspective but a rather more prosaic goal: to turn his IT chops into a business.
 
 That goal grew in ambition rather considerably after Roy met [Martin Fowler](https://martinfowler.com/). Martin was part of a group of software pioneers trying to reform how the industry approached software development and was a member of the seminal [C3 team](https://en.wikipedia.org/wiki/Chrysler_Comprehensive_Compensation_System) ([Martin's writeup](https://www.martinfowler.com/bliki/C3.html), [C2 wiki](https://wiki.c2.com/?WasChryslerComprehensiveCompensationSuccess)), and shortly after he joined Thoughtworks in 2000 he’d go on to become a signatory of the Agile Manifesto, which is the most significant single document about software process ever written. After that, Thoughtworks’ way of working and engine of growth would be defined by Agile software principles.
 
@@ -38,16 +40,19 @@ Those commitments redefined an industry. The software industry is full of the de
 
 Here is a short list of now-standard software delivery techniques that ThoughtWorkers either invented directly or pioneered in the nascent stages of their growth. I don’t want to give them sole credit; many of the books and projects listed have non-Thoughtworks coauthors or major collaborators, and it is not my intent to minimize their impact. But a number of technical and process innovations stand out for the role that current or past Thoughtworks employees played, and I claim that outside of Google and Microsoft and a handful of other tech-first West Coast firms you'd struggle to find similar impact.
 
-- Continuous integration ([Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html), [James Shore](https://www.jamesshore.com/v2/blog/2006/continuous-integration-on-a-dollar-a-day) et al; Matt Foemmel, [CruiseControl](https://wiki.c2.com/?CruiseControl), ca. 2000; [Go](https://martinfowler.com/articles/continuousIntegration.html), Jez Humble et al, 2007)
+- Continuous integration ([Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html), [James Shore](https://www.jamesshore.com/v2/blog/2006/continuous-integration-on-a-dollar-a-day) et al; Matt Foemmel, [CruiseControl](https://wiki.c2.com/?CruiseControl), ca. 2000; [CC.net](https://github.com/ccnet/CruiseControl.NET) (Rogers, Roberts et al, 2004), [Go](https://martinfowler.com/articles/continuousIntegration.html), Jez Humble et al, 2007)
+- Enterprise application patterns, including Active Record, Unit of Work, Data Mapper, MVC ([Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html), 2002)
 - Database migrations ([Pramod Sadalage](https://www.amazon.com/Refactoring-Databases-Evolutionary-Database-Design/dp/0321293533/), 2006)
 - Behavior-driven development ([Dan North](https://dannorth.net/introducing-bdd/), 2006)
 - Browser-based end-to-end testing (Huggins, Selenium, 2004; Stewart, WebDriver + Selenium 2+, 2007)
+- Formalized methods of unit testing, including the London School (most particularl [Freeman, Pryce](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627))
 - Dependency injection (Picocontainer) ([Walnes, Hammant, Tirsen, Hellesøy](http://picocontainer.com/introduction.html), 2010 _at least_)
 - Continuous delivery and deployment ([Jez Humble, Dave Farley](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912), 2011)
+- DevOps Research & Assessment metrics ([Jez Humble](https://medium.com/@jezhumble/doras-journey-an-exploration-4c6bfc41e667), 2014)
 - Microservices ([Sam Newman](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358), [James Lewis](https://martinfowler.com/articles/microservices.html), 2015)
+- Infrastructure as code ([Kief Morris](https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/), 2016)
 - Evolutionary architecture ([Ford, Kua, Parsons, Sadalage](https://www.amazon.com/Building-Evolutionary-Architectures-Support-Constant/dp/1491986360), 2017)
-- DORA metrics ([Jez Humble](https://medium.com/@jezhumble/doras-journey-an-exploration-4c6bfc41e667), 2014)
-- Data Mesh ([Zhamak Dehghani](https://martinfowler.com/articles/data-mesh-principles.html), 2020)
+- Data meshes ([Zhamak Dehghani](https://martinfowler.com/articles/data-mesh-principles.html), 2020)
 
 Some of these came from employees actively working at Thoughtworks, and some came from further contributions of Thoughtworks alumni, who’ve gone on to substantial leadership roles at most major tech firms. In particular, Jez Humble’s work with Dr Nicole Forsgren on DORA and Accelerate stands out as a contribution from a Thoughtworks alumnus seeking to expand upon and validate the consulting work he’d done with the firm prior.
 
@@ -119,6 +124,6 @@ Next time I’ll discuss Thoughtworks’ hiring bar and culture, and how these e
 
 ## Acknowledgments
 
-I'm indebted to fellow alumni Jenny Wong, Eric Schoenfeld, and (your name here) for their feedback and comments on this article.
+I'm indebted to Jenny Wong, Eric Schoenfeld, Zoe Gagnon, Saager Mhatre, Simon Brunning, Jason Yip, Steven Deobald, Ian Cartwright, Mike McCormack and Mike Roberts for their feedback on this article.
 
 > Photo of Chicago's Aon Center, where Thoughtworks was (is?) headquartered, courtesy of [muzammilo](https://unsplash.com/@muzammilo) on [Unsplash](https://unsplash.com/).
