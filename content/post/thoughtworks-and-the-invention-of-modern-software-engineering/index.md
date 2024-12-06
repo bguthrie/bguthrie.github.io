@@ -10,7 +10,7 @@ categories:
 
 ## The end of an era
 
-It's been rough couple of years for Thoughtworks. After a long-awaited IPO in 2021, their stock price declined steadily, prompting the board to replace longtime CEO Xiao Guo with Mike Sutcliff, who has now taken the firm private again. Xiao was a protégé of Thoughtworks' founder Roy Singham and a 25-year veteran of the firm, and as such was deeply immersed in its unique culture, while Sutcliff is a longtime Accenture veteran. While it’s too soon to say what further changes this will bring (though common consensus seems to eventual acquisition by a larger firm), this likely marks the end of an era and the likely turnover of the leadership team.
+It's been rough couple of years for Thoughtworks. After a long-awaited IPO in 2021, their stock price declined steadily, prompting the board to replace longtime CEO Xiao Guo with Mike Sutcliff, who has now taken the firm private again. Xiao was a protégé of Thoughtworks' founder Roy Singham and a 25-year veteran of the firm, and as such was deeply immersed in its unique culture, while Sutcliff is a longtime Accenture veteran. While it’s too soon to say what further changes this will bring (though common consensus seems to eventual acquisition by a larger firm), this marks the end of an era and the likely turnover of the leadership team.
 
 This matters for a couple of reasons. First, it marks the first real break from the leadership culture of its founder. Second, that break matters because Thoughtworks’ way of working was deeply weird, and the innovations that weirdness made possible have had an outsize impact on the software industry. My goal is to describe how it worked, and why you should care.
 
