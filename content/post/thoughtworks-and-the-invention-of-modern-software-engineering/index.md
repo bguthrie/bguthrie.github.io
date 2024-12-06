@@ -14,7 +14,7 @@ It's been rough couple of years for Thoughtworks. After a long-awaited IPO in 20
 
 This matters for a couple of reasons. First, it marks the first real break from the leadership culture of its founder. Second, that break matters because Thoughtworks’ way of working was deeply weird, and the innovations that weirdness made possible have had an outsize impact on the software industry. My goal is to describe how it worked, and why you should care.
 
-This is personal for me. I worked there for six years, made many friends, and have gone on to lead technology teams and start several firms since. I’m thoroughly convinced that, in its structure, aims, and ways of thinking about the world, it was unlike any other technology company in the industry in both culture and impact.
+This is personal for me. I worked there for six years (2007-2013), made many friends, and have gone on to lead technology teams and start several firms since. I’m thoroughly convinced that, in its structure, aims, and ways of thinking about the world, it was unlike any other technology company in the industry in both culture and impact.
 
 ## Why this matters
 
@@ -45,9 +45,12 @@ Here is a short list of now-standard software delivery techniques that ThoughtWo
 - Database migrations ([Pramod Sadalage](https://www.amazon.com/Refactoring-Databases-Evolutionary-Database-Design/dp/0321293533/), 2006)
 - Behavior-driven development ([Dan North](https://dannorth.net/introducing-bdd/), 2006)
 - Browser-based end-to-end testing (Huggins, Selenium, 2004; Stewart, WebDriver + Selenium 2+, 2007)
-- Formalized methods of unit testing, including the London School (most particularl [Freeman, Pryce](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627))
+- Formalized methods of unit testing, including the London School (most particularly [Freeman, Pryce](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627))
 - Dependency injection (Picocontainer) ([Walnes, Hammant, Tirsen, Hellesøy](http://picocontainer.com/introduction.html), 2010 _at least_)
+- REST (not invented, but popularized as an enterprise pattern by [Webber, Robinson](https://www.amazon.com/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829), 2010)
+- DSLs (I recall vividly the entire company becoming obsessed by these thanks to Ruby and [Fowler, Parsons](https://martinfowler.com/books/dsl.html), 2010)
 - Continuous delivery and deployment ([Jez Humble, Dave Farley](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912), 2011)
+- Graph databases ([Robinson, Webber](https://www.amazon.com/Graph-Databases-Ian-Robinson/dp/1449356265), 2013)
 - DevOps Research & Assessment metrics ([Jez Humble](https://medium.com/@jezhumble/doras-journey-an-exploration-4c6bfc41e667), 2014)
 - Microservices ([Sam Newman](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358), [James Lewis](https://martinfowler.com/articles/microservices.html), 2015)
 - Infrastructure as code ([Kief Morris](https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/), 2016)
