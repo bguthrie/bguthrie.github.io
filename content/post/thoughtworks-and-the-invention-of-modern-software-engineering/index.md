@@ -53,7 +53,7 @@ Here is a short list of now-standard software delivery techniques that ThoughtWo
 - Graph databases ([Robinson, Webber](https://www.amazon.com/Graph-Databases-Ian-Robinson/dp/1449356265), 2013)
 - DevOps Research & Assessment metrics ([Jez Humble](https://medium.com/@jezhumble/doras-journey-an-exploration-4c6bfc41e667), 2014)
 - Microservices ([Sam Newman](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358), [James Lewis](https://martinfowler.com/articles/microservices.html), 2015)
-- Infrastructure as code ([Kief Morris](https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/), 2016)
+- Infrastructure as code ([Kief Morris](https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/), 2016, though the term and the tooling date back to as early as 2009 per Kief.)
 - Evolutionary architecture ([Ford, Kua, Parsons, Sadalage](https://www.amazon.com/Building-Evolutionary-Architectures-Support-Constant/dp/1491986360), 2017)
 - Data meshes ([Zhamak Dehghani](https://martinfowler.com/articles/data-mesh-principles.html), 2020)
 
@@ -120,13 +120,13 @@ Finally, while I still think that the software delivery processes espoused by fi
 ## Summary
 
 - Thoughtworks invented or described many of the most important early innovations in software engineering, particularly around SDLC.
-- It did this less as a function of the talent they hired but instead as a function of the market they served (legacy enterprise), the product they sold (time-to-value software delivery), and the culture of the firm (flat, egalitarian, Midwest-pragmatic).
+- It was able to do this less because of the talent they hired and more as a function of the market they served (legacy enterprise), the product they sold (time-to-value software delivery), and the culture of the firm (flat, egalitarian, Midwest-pragmatic).
 - What they did is difficult to replicate for two reasons: the process they pioneered runs counter to the talent narrative most firms hire with, and the market for the high-end delivery-oriented consulting product they were selling has declined significantly.
 
 Next time I’ll discuss Thoughtworks’ hiring bar and culture, and how these eventually came to inform its delivery model.
 
 ## Acknowledgments
 
-I'm indebted to Jenny Wong, Eric Schoenfeld, Zoe Gagnon, Saager Mhatre, Simon Brunning, Jason Yip, Steven Deobald, Ian Cartwright, Mike McCormack and Mike Roberts for their feedback on this article.
+I'm indebted to Jenny Wong, Eric Schoenfeld, Zoe Gagnon, Saager Mhatre, Simon Brunning, Jason Yip, Steven Deobald, Ian Cartwright, Mike McCormack, Mike Roberts, and Ross Pettit for their feedback on this article.
 
 > Photo of Chicago's Aon Center, where Thoughtworks was (is?) headquartered, courtesy of [muzammilo](https://unsplash.com/@muzammilo) on [Unsplash](https://unsplash.com/).
