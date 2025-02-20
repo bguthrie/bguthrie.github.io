@@ -19,10 +19,10 @@ Here are my rules for moving fast:
 2. Fast Is Measured By What Other People See
 3. It Is Possible To Be Both Fast And Good
 4. It Is Everyone's Responsibility To Move Fast
-5. Fast Is More Important Than Efficiency Or Utilization
-6. Fast Does Not End When You Ship
-7. To Move Fast, Be Prepared To Change
-8. You Must Have Clarity, You Must Have Courage
+5. Fast Takes Guts
+6. Fast Is Different From, And More Important Than, Efficiency Or Utilization
+7. Fast Does Not End When You Ship
+8. To Move Fast, Be Prepared To Change
 
 ### It Is Possible To Move Fast, And Fast Matters
 
@@ -54,6 +54,14 @@ Everyone involved in an SDLC process—from management to product to security to
 
 Individual contributors often see themselves as victims of bad process, and forget that they have enormous agency. Craft matters. On most teams, engineers have quite a lot of latitude—how and then they'll test, which pieces to work on first, the quality of their tooling. Believing that management has a responsibility to encourage faster work does not obviate anyone else of the responsibility.
 
+### Fast Takes Guts
+
+It is difficult to reward courage if someone important makes the wrong decision and people suffer. It is likewise difficult to build clarity in an unclear world: we must all sometimes demonstrate resilience in the face of ambiguity.
+
+Nevertheless, one of the most difficult parts of moving fast is building consensus instead of deciding quickly feels safer. It can be difficult to gain the courage of one's convictions to act, especially if to act is to risk causing harm. To grow old is to understand the gap between what you believed to be true and what was.
+
+It's important to use action to build clarity, and understand that risk-taking is a necessary part of acting. Reward people who have the courage to take risks, and who retain the courage of their convictions. Act to limit the downsides of risks gone wrong. Build a culture of introspection and iteration towards success. Leaders who cannot build clarity, and who lack courage, will struggle to guide their teams with conviction.
+
 ### Fast Is More Important Than Efficiency Or Utilization
 
 Busy is not the same thing as fast. _Waiting is expensive_. An engineer that picks up a unit of work, partially completes it by opening a pull request, moves on to a different feature for two days, and then merges the feature is not moving very fast, even if they've been busy the entire time, because to an outside observer, _the feature has gone nowhere_. The engineer who opens a pull request, taps a colleague on the shoulder, twiddles their thumbs for half an hour until the review is done, and then merges it immediately has moved faster: to an outside observer, the feature is ready more quickly.
@@ -71,13 +79,5 @@ Learning (in business) is not an intrinsic good. Learning only matters if you ca
 The processes you're using today and the things that you're working on are almost definitionally not correct. Entrepreneurs sometimes like to remind themselves that their competition is Big Company X; it's some product manager and some understaffed development team at some Big Company X who may or may not be incentivized adequately and in all the right ways to respond to change quickly enough to sense and address competitive threat.
 
 Change can hurt, but change hurts less than failure. Change fast.
-
-### Build Clarity, Reward Courage
-
-It is difficult to reward courage if someone important makes the wrong decision and people suffer. It is difficult to build clarity in an unclear world: we must all sometimes demonstrate resilience in the face of ambiguity.
-
-Nevertheless, one of the most difficult parts of moving fast is that it is sometimes safer to build consensus. It can be difficult to gain the courage of one's convictions to act, especially if to act is to risk causing harm. To grow old is to understand the gap between what you believed to be true and what was.
-
-Build clarity that risk-taking is a necessary part of action is important. Reward people who have the courage to take risks, and who retain the courage of their convictions. Act to limit the downsides of risks gone wrong. Build a culture of introspection and iteration towards success. Leaders who cannot build clarity, and who lack courage, will struggle to guide their teams with conviction.
 
 > Photo by <a href="https://unsplash.com/@caraventurera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cara Fuller</a> on <a href="https://unsplash.com/photos/cheetah-running-on-brown-field-34OTzkN-nuc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
