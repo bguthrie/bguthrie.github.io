@@ -5,7 +5,6 @@ date: 2025-02-19T09:00:00-05:00
 image: "steven-lewis-dmHnXJ-5ilQ-unsplash.jpg"
 categories:
   - sdlc
-draft: true
 ---
 
 I've worked in the software industry for over twenty years. I have been a consultant, a line engineer, a director, a founder, and a CTO. I have worked at firms as small as two engineers and as large as fifty thousand. I frequently get asked how to move faster in software. This is what I tell them. It is easier to describe than it is to do.
@@ -51,7 +50,7 @@ Shipping software fast is not the same thing as shipping software at (1) a high 
 
 ### It Is Everyone's Responsibility To Move Fast
 
-Everyone involved in an SDLC process—from management to product to security to infrastructure to line engineer to tester—has a responsibility to understand how to create and nurture flow in order to get things out the door. The most powerful and profound lesson in software process is that many of the gating processes we erect to prevent errors instead do the opposite: deferring code merges does not make the code better, deferring deploys does not make the releases safer, deferring security audits does not make the system more secure, deferring unit testing does not make writing the initial code easier, and deferring delivery of features to perform more analysis does not reliably make those features more successful. You have to ship, and to learn, and to adjust.
+Everyone involved in an SDLC process—from management to product to security to infrastructure to line engineer to tester—has a responsibility to understand how to create and nurture flow in order to get things out the door. The most counterintuitive and profound lesson in software process is that many of the gating processes we erect to prevent errors instead do the opposite: deferring code merges does not make the code better, deferring deploys does not make the releases safer, deferring security audits does not make the system more secure, deferring unit testing does not make writing the initial code easier, and deferring delivery of features to perform more analysis does not reliably make those features more successful. (Broken legs heal better if you walk on them within weeks, not months)[https://www.scientificamerican.com/article/broken-legs-and-ankles-heal-better-if-you-walk-on-them-within-weeks/]. Padding reduces sensation. You have to ship, and to learn, and to adjust.
 
 Individual contributors often see themselves as victims of bad process, and forget that they have enormous agency. Craft matters. On most teams, engineers have quite a lot of latitude—how and then they'll test, which pieces to work on first, the quality of their tooling. Believing that management has a responsibility to encourage faster work does not obviate anyone else of the responsibility.
 
