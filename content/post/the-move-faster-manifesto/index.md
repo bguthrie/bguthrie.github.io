@@ -2,7 +2,7 @@
 title: "The Move Faster Manifesto"
 description:
 date: 2025-02-19T09:00:00-05:00
-image: "steven-lewis-dmHnXJ-5ilQ-unsplash.jpg"
+image: "cara-fuller-34OTzkN-nuc-unsplash.jpg"
 categories:
   - sdlc
 ---
@@ -79,3 +79,5 @@ It is difficult to reward courage if someone important makes the wrong decision 
 Nevertheless, one of the most difficult parts of moving fast is that it is sometimes safer to build consensus. It can be difficult to gain the courage of one's convictions to act, especially if to act is to risk causing harm. To grow old is to understand the gap between what you believed to be true and what was.
 
 Build clarity that risk-taking is a necessary part of action is important. Reward people who have the courage to take risks, and who retain the courage of their convictions. Act to limit the downsides of risks gone wrong. Build a culture of introspection and iteration towards success. Leaders who cannot build clarity, and who lack courage, will struggle to guide their teams with conviction.
+
+> Photo by <a href="https://unsplash.com/@caraventurera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cara Fuller</a> on <a href="https://unsplash.com/photos/cheetah-running-on-brown-field-34OTzkN-nuc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
