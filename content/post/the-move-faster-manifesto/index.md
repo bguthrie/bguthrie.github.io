@@ -7,40 +7,41 @@ categories:
   - sdlc
 ---
 
+# The Move Faster Manifesto
+
 I've worked in the software industry for over twenty years. I have been a consultant, a line engineer, a director, a founder, and a CTO. I have worked at firms as small as two engineers and as large as fifty thousand. I frequently get asked how to move faster in software. This is what I tell them. It is easier to describe than it is to do.
 
 ## Rules for moving faster
 
-I am not some kind of software process relativist. Every team has a process, some have more process than others, and that process matters. Some teams likewise ship software more quickly and at higher quality than others, and I think that all else being equal, good teams think a lot about how to move quickly.
+I am not some kind of process relativist; process matters. Some teams ship software more quickly and at higher quality than others, and that's not an accident; it's a choice.
 
 Here are my rules for moving fast:
 
 1. It Is Possible To Move Fast, And Fast Matters
 2. Fast Is Measured By What Other People See
-3. It Is Possible To Be Both Fast And Good
+3. You Can Be Both Fast And Good
 4. It Is Everyone's Responsibility To Move Fast
-5. Fast Takes Guts
-6. Fast Is Different From, And More Important Than, Efficiency Or Utilization
-7. Fast Does Not End When You Ship
-8. To Move Fast, Be Prepared To Change
+5. Moving Fast Takes Courage
+6. Busy Is Not Fast
+7. Change Fast Or Die
 
 ### It Is Possible To Move Fast, And Fast Matters
 
-The world is full of examples of things that moved quickly when everyone involved decided that they had to. The [Berlin Airlift](https://history.state.gov/milestones/1945-1952/berlin-airlift). The [construction of the Empire State Building](https://chrisgagne.com/1255/mary-poppendiecks-the-tyranny-of-the-plan/). Stripe's Patrick Collison has a [whole page of this stuff](https://patrickcollison.com/fast).
+History is full of things that moved fast when everyone involved decided that they had to. The [Berlin Airlift](https://history.state.gov/milestones/1945-1952/berlin-airlift). The [construction of the Empire State Building](https://chrisgagne.com/1255/mary-poppendiecks-the-tyranny-of-the-plan/). Stripe's Patrick Collison has a [whole page of this stuff](https://patrickcollison.com/fast).
 
-Some people argue that it is silly to optimize for moving fast, since not all features move the needle, and instead you should focus a lot on getting each individual feature right. I disagree. The mental model I use for most features is that each one represents a _bet_ on a some future payoff. They will not all pay off, nor will the ones that do pay off all do so to the same degree. But all else being equal, shipping more frequently means more turns at-bat, which means your expected total return is higher.
+Some people argue that you shouldn't optimize for speed, and focus a lot on getting each individual feature right instead. I disagree. Every feature is a _bet_ on a some future payoff. Some pay off, some don't, but all else being equal, shipping more frequently means more turns at-bat. More swings means more hits.
 
-Moving slowly is often an (implied) choice: everyone involved has decided that fast is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes they are right; part of gaining experience is experiencing the pain of others' mistakes. The hardest part of moving fast is deciding that it is necessary, and then subsequently convincing everyone that it is possible.
+Moving slowly is often a **choice**: everyone involved has decided that speed is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes that's necessary. But the hardest part of moving fast isn't execution; it's deciding that it's necessary, and then convincing people that it's possible.
 
 ### Fast Is Measured By What Other People See
 
-Lead time—the **wall-clock time** between when a feature is requested and when it is delivered in a way that adds **value**—is the right way to think about moving faster. The right measure is _not_ efficiency or typing speed or utilization or velocity or burn. It is the time between an _outside observer_ believes you have begun working on something and when it is complete enough to be **valuable**.
+Speed isn't about effort; it's about **lead time**. Lead time is the **wall-clock time** between when someone asks for something and when they get it. The right measure is _not_ efficiency or typing speed or utilization or velocity or burn. **It's about what the outside world experiences.**
 
-Lead time is a model. Like all models, it is wrong but sometimes useful. It is not hard to identify its holes; in no particular order: (1) your team may not have an outside observer who cares; (2) "value" has an amorphous definition that is hard to measure; (3) "valuable" has an amorphous definition is that is hard to measure; (4) many other things also turn out to matter; and last but not least, (5) even if you ship software fast, the business can still fail. Fast is not the same thing as successful.
+Lead time is a model. Like all models, it is wrong but sometimes useful. It is not hard to identify its holes; most notably, even if you ship software fast, the business can still fail. Fast is not the same thing as successful.
 
-Pragmatically, the other reason why lead time is useful is because one of your jobs as a working engineer or EM is to _manage eyeballs_ by creating a _perception_ that you are moving fast. Managing eyeballs matters.
+But perception matters. One of your jobs—whether you're an engineer or a manager—is managing expectations. The perception of speed builds **trust**.
 
-### It Is Possible To Be Both Fast And Good
+### You Can Be Both Fast And Good
 
 In fact, it is very difficult to be fast if you are bad. Software which is delivered quickly but is not **valuable** does not count for much, and any necessary rework counts against the lead time of the feature. You have to be both.
 
@@ -50,34 +51,36 @@ Shipping software fast is not the same thing as shipping software at (1) a high 
 
 ### It Is Everyone's Responsibility To Move Fast
 
-Everyone involved in an SDLC process—from management to product to security to infrastructure to line engineer to tester—has a responsibility to understand how to create and nurture flow in order to get things out the door. The most counterintuitive and profound lesson in software process is that many of the gating processes we erect to prevent errors instead do the opposite: deferring code merges does not make the code better, deferring deploys does not make the releases safer, deferring security audits does not make the system more secure, deferring unit testing does not make writing the initial code easier, and deferring delivery of features to perform more analysis does not reliably make those features more successful. (Broken legs heal better if you walk on them within weeks, not months)[https://www.scientificamerican.com/article/broken-legs-and-ankles-heal-better-if-you-walk-on-them-within-weeks/]. Padding reduces sensation. You have to ship, and to learn, and to adjust.
+The most profound lesson in software process is that many of the gating processes we erect to prevent errors do the opposite: deferring code merges does not make the merge easier, deferring deploys does not make the releases safer, deferring security audits does not make the system more secure, deferring unit testing does not make writing the initial code easier, and deferring delivery of features to perform more analysis does not reliably make those features more successful. (Broken legs heal better if you walk on them within weeks, not months)[https://www.scientificamerican.com/article/broken-legs-and-ankles-heal-better-if-you-walk-on-them-within-weeks/]. Padding reduces sensation. You have to ship, and to learn, and to adjust.
 
-Individual contributors often see themselves as victims of bad process, and forget that they have enormous agency. Craft matters. On most teams, engineers have quite a lot of latitude—how and then they'll test, which pieces to work on first, the quality of their tooling. Believing that management has a responsibility to encourage faster work does not obviate anyone else of the responsibility.
+Everyone involved in the process—from management to product to security to infrastructure to line engineer to tester—has a responsibility to understand how to create flow to get things out the door safely.
 
-### Fast Takes Guts
+Engineers often see themselves as victims of bad process, and forget that they have enormous agency. Craft matters. On most teams, engineers have quite a lot of latitude—how and then they'll test, which pieces to work on first, the quality of their tooling. Believing that management has a responsibility to encourage faster work does not obviate anyone else of the responsibility.
 
-It is difficult to reward courage if someone important makes the wrong decision and people suffer. It is likewise difficult to build clarity in an unclear world: we must all sometimes demonstrate resilience in the face of ambiguity.
+### Moving Fast Takes Courage
 
-Nevertheless, one of the most difficult parts of moving fast is building consensus instead of deciding quickly feels safer. It can be difficult to gain the courage of one's convictions to act, especially if to act is to risk causing harm. To grow old is to understand the gap between what you believed to be true and what was.
+Moving fast means making decisions without perfect information.
 
-It's important to use action to build clarity, and understand that risk-taking is a necessary part of acting. Reward people who have the courage to take risks, and who retain the courage of their convictions. Act to limit the downsides of risks gone wrong. Build a culture of introspection and iteration towards success. Leaders who cannot build clarity, and who lack courage, will struggle to guide their teams with conviction.
+The best teams act to create clarity, especially about who's in charge and authorized to make a call. They trust their instincts, ship, and course-correct when needed. They reward boldness, not just caution.
 
-### Fast Is More Important Than Efficiency Or Utilization
+It can be difficult to gain the courage of one's convictions to act, especially if to act is to risk causing harm. To grow old is to understand the gap between what you believed to be true and what was. If you're in a leadership role, building this is important. People won't take risks if they think they'll be punished for it. If you want a fast-moving team, you have to build a culture where trying, failing, and adjusting is normal.
 
-Busy is not the same thing as fast. _Waiting is expensive_. An engineer that picks up a unit of work, partially completes it by opening a pull request, moves on to a different feature for two days, and then merges the feature is not moving very fast, even if they've been busy the entire time, because to an outside observer, _the feature has gone nowhere_. The engineer who opens a pull request, taps a colleague on the shoulder, twiddles their thumbs for half an hour until the review is done, and then merges it immediately has moved faster: to an outside observer, the feature is ready more quickly.
+Leaders who cannot build clarity, and who lack courage, will struggle to guide their teams with conviction.
 
-Through this lens, you can see how some engineers become so obsessed with pair programming. Two people working together in tandem to give each other instaneous code review will often be able to ship much faster than the same two people working alone. The feature might seem to cost twice as much, because two people are driving it, but it ships much more quickly and without skipping any necessary peer review processes along the way.
+### Busy Is Not Fast
 
-### Fast Does Not End When You Ship
+Being overloaded isn't the same as being productive. Effort isn't outcomes. It's waiting, _which is slow and expensive_. Waiting on reviews. Waiting on decisions. Waiting on other teams.
 
-Work is only done when you learn whether or not it was worth doing. Learning whether it was worth doing only matters if you adjust your approach on the basis of what you learn. It matters how fast you learn, and it matters how fast you adjust on the basis of what you've learned. Adjusting fast on the basis of what you learned is important even if it can seem jarring. Your reaction time should be fast.
+Someone who picks up a feature, partially completes it by submitting a pull request, moves on to else for a couple of days, and _then_ ships it is not moving very fast, even if they've been busy the entire time. To an outside observer, _the feature has gone nowhere in the two days after it was supposedly done_. The engineer who opens a pull request, _taps a colleague on the shoulder immediately_, twiddles their thumbs for half an hour, and then revises and merges immediately has done the same amount of work, but _much faster_.
 
-### To Move Fast, Be Prepared To Change
+This is why practices like pair programming, continuous deployment, and cross-functional teams tend to work well: they reduce the time when work just sits idle. If you want to move fast, don't just focus on the hours worked; look at the dead space between them.
 
-Learning (in business) is not an intrinsic good. Learning only matters if you can use what you've learned to improve your product and your business. The ability to respond to change is a competitive advantage.
+### Change Fast Or Die
 
-The processes you're using today and the things that you're working on are almost definitionally not correct. Entrepreneurs sometimes like to remind themselves that their competition is Big Company X; it's some product manager and some understaffed development team at some Big Company X who may or may not be incentivized adequately and in all the right ways to respond to change quickly enough to sense and address competitive threat.
+Learning (in business) is not an intrinsic good. Learning only matters if you can use what you've learned to improve. The ability to respond to change is a competitive advantage.
 
-Change can hurt, but change hurts less than failure. Change fast.
+Work is only done when you learn whether or not it was worth doing. Learning whether it was worth doing only matters if you adjust based on what you learned. It matters how fast you learn, and it matters how fast you adjust. Adjusting fast is important even if it can seem jarring. Learn how to react quickly.
+
+Your real competition, in tech, usually isn't a giant slow-moving corporation—it's a smaller, scrappier team that's changing twice as fast as you are. Change can hurt, but change hurts less than failure. Change fast.
 
 > Photo by <a href="https://unsplash.com/@caraventurera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cara Fuller</a> on <a href="https://unsplash.com/photos/cheetah-running-on-brown-field-34OTzkN-nuc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
