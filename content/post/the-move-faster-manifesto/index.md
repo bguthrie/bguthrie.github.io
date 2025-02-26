@@ -7,8 +7,6 @@ categories:
   - sdlc
 ---
 
-# The Move Faster Manifesto
-
 I've worked in the software industry for over twenty years. I have been a consultant, a line engineer, a director, a founder, and a CTO. I have worked at firms as small as two engineers and as large as fifty thousand. I frequently get asked how to move faster in software. This is what I tell them. It is easier to describe than it is to do.
 
 ## Rules for moving faster
