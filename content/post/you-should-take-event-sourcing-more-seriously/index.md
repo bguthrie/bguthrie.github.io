@@ -18,9 +18,9 @@ I meet a lot of engineers who may be put off or intimidated by evented data arch
 
 Event sourcing is a _data_ architecture in which the canonical source of truth about business data is from _events_ that carry information about _what has happened_—facts. Some common examples of event-sourced architectures are Git repositories (each commit is an event) and accounting ledgers (each transaction is an event). You can restore the state of your Git filesystem, or read your bank account balance, by replaying every event related to that entity since the dawn of time.
 
-Event sourcing is powerful because it inverts the relationship between your database and its history. In a typical stateful database, you read and write values to a table, and under the hood the database keeps a record of all changes—the transaction log. In event sourcing, the transaction log of events is the primary source of truth, and everything else is simply a derived cache designed to solve specific problems. You can blow away the cache and recreate it on demand.
+Event sourcing inverts the relationship between your database and its history. In a typical stateful database, you read and write values to a table, and under the hood the database keeps a record of all changes—the transaction log. In event sourcing, the transaction log of events is the primary source of truth, and everything else is simply a derived cache designed to solve specific problems. You can blow away the cache and recreate it on demand, or create new representations of the data as needed.
 
-It is this ability to change your mind about how business data is processed and stored that makes event sourcing so powerful. Long popular within the Microsoft ecosystem, on data teams, and in niche startup architectures like ours, I think it's worth taking seriously as a mainstream engineering technique for solving real problems.
+It is this ability to change your mind about how business data is processed and stored that makes event sourcing so powerful. While it places some long-term constraints on some architecture decisions, like the nature and shape of events, it provides an enormous amount of flexibility and optionality for others. On balance, this is a tradeoff often worth making.
 
 ## Some technical background
 
