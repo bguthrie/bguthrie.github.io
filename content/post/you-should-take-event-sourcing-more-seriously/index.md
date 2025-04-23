@@ -59,6 +59,7 @@ I'll use a simple and concrete example to demonstrate how you'd use this techniq
 ```ts
 type ID = string
 
+// First, define some basic events related to the employee lifecycle.
 type EventType =
   | 'EMPLOYEE_HIRED'
   | 'EMPLOYEE_LEFT'
@@ -82,12 +83,14 @@ type EventEmployeeChangedJobs = Event<
   { employeeId: ID; titleId: ID }
 >
 
+// An EmployeeEvent is the union of all event types related to employees.
 type EmployeeEvent =
   | EventEmployeeHired
   | EventEmployeeLeft
   | EventEmployeeChangedManagers
   | EventEmployeeChangedJobs
 
+// Next, define a simple Employee datatype. This will be our aggregate.
 interface Employee {
   id: ID
   titleId: ID
@@ -97,6 +100,8 @@ interface Employee {
   endDate?: Date
 }
 
+// The EmployeeReducer is a function that accepts an employee aggregate and corresponding event,
+// and defines a concrete transformation for each different kind of event.
 const EmployeeReducer: Reducer<Employee, EmployeeEvent> = (employee, event) => {
   switch (event.type) {
     case EMPLOYEE_HIRED:
@@ -112,6 +117,7 @@ const EmployeeReducer: Reducer<Employee, EmployeeEvent> = (employee, event) => {
   }
 }
 
+// Define a base empty state (sometimes called S_0, the zero state).
 const EMPTY_EMPLOYEE: Employee = {
   id: '',
   titleId: '',
@@ -120,6 +126,7 @@ const EMPTY_EMPLOYEE: Employee = {
   startDate: new Date(),
 }
 
+// With these elements in place, we can retrieve events, reduce them, and store an aggregate.
 const events = await db.events.selectAll({
   type: [
     'EMPLOYEE_HIRED',
