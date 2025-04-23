@@ -100,17 +100,18 @@ interface Employee {
   endDate?: Date
 }
 
-// The EmployeeReducer is a function that accepts an employee aggregate and corresponding event,
-// and defines a concrete transformation for each different kind of event.
-const EmployeeReducer: Reducer<Employee, EmployeeEvent> = (employee, event) => {
-  switch (event.type) {
+// The EmployeeReducer is a function that accepts an employee aggregate and
+// corresponding event, and defines a concrete transformation for each
+// different kind of event.
+const EmployeeReducer: Reducer<Employee, EmployeeEvent> = (emp, evt) => {
+  switch (evt.type) {
     case EMPLOYEE_HIRED:
       return {
-        ...employee,
-        id: event.payload.employeeId,
-        managerId: event.payload.managerId,
-        titleId: event.payload.titleId,
-        startDate: event.timestamp,
+        ...emp,
+        id: evt.payload.employeeId,
+        managerId: evt.payload.managerId,
+        titleId: evt.payload.titleId,
+        startDate: evt.timestamp,
         state: 'ACTIVE',
       }
     // ... etc
@@ -126,7 +127,8 @@ const EMPTY_EMPLOYEE: Employee = {
   startDate: new Date(),
 }
 
-// With these elements in place, we can retrieve events, reduce them, and store an aggregate.
+// With these elements in place, we can retrieve events, reduce them,
+// and store an aggregate.
 const events = await db.events.selectAll({
   type: [
     'EMPLOYEE_HIRED',
