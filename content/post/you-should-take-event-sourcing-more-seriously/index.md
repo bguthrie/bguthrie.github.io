@@ -1,6 +1,6 @@
 ---
 title: 'You Should Take Event Sourcing More Seriously'
-subtitle: 'Lessons from building on facts instead of state'
+description: 'Lessons from building on facts instead of state'
 image: 'daniele-levis-pelusi-csS4-kxU1_E-unsplash.jpg'
 draft: false
 date: 2025-04-22T10:11:25-04:00

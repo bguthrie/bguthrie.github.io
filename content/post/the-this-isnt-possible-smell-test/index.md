@@ -1,6 +1,6 @@
 ---
 title: "The This-Isn't-Possible Smell Test"
-description:
+description: "Inferring what's possible from what's probable"
 date: 2025-03-03T09:23:00-05:00
 image: dane-deaner-wnkE42AFNZg-unsplash.jpg
 hidden: false

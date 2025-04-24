@@ -1,8 +1,8 @@
 ---
-title: "The Move Faster Manifesto"
-description:
+title: 'The Move Faster Manifesto'
+description: 'Lessons for shipping software quickly by skipping the grind'
 date: 2025-02-19T09:00:00-05:00
-image: "cara-fuller-34OTzkN-nuc-unsplash.jpg"
+image: 'cara-fuller-34OTzkN-nuc-unsplash.jpg'
 categories:
   - sdlc
 ---
