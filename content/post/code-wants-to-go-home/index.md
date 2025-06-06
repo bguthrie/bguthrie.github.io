@@ -20,4 +20,4 @@ A good way to speed up development without compromising on safety is to suppleme
 
 If you want to [move fast](/p/the-move-faster-manifesto), make change safer, not slower.
 
-Photo by <a href="https://unsplash.com/@thomascpark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thomas Park</a> on <a href="https://unsplash.com/photos/golf-course-with-green-trees-in-the-distance-sWqaGzQF1N4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+> Photo by <a href="https://unsplash.com/@thomascpark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thomas Park</a> on <a href="https://unsplash.com/photos/golf-course-with-green-trees-in-the-distance-sWqaGzQF1N4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
