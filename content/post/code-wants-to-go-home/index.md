@@ -12,7 +12,7 @@ Happy Gilmore is a 1996 Adam Sandler movie about a guy who’s weirdly good at d
 
 I have a pretty simple theory of code: code wants to be committed and deployed. It wants to go home.
 
-The goal is to ship. Trapping workable code in a branch to debate variable names doesn’t help anyone (variable names are usually trivial to change later), but it's common on teams that make code review so onerous that each small decision feels irreversible. Merge it already, and fix it next. [Continuous integration is a process, not a tool.](/p/feature-branching-considered-harmful-2017)
+The goal is to ship. Trapping workable code in a branch to debate things that are trivial to change later doesn’t help anyone, but it's common on teams that make code review so onerous that each small decision feels irreversible. Merge it already, and fix it next. [Continuous integration is a process, not a tool.](/p/feature-branching-considered-harmful-2017)
 
 In general, if you raise the price of a thing, you get less of it. Having a clean build is important, as is aligning on good practice, but making code harder to _ship_ also makes it harder to _fix_. One of the things I liked about [how we wrote code on XP teams](https://en.wikipedia.org/wiki/Extreme_programming) many years ago was that codebases weren't _kept_ clean by rigorous gated review; they were _made_ clean through continual small-scale refactoring. Those teams built safety and trust by leaning into change, not avoiding it.
 
