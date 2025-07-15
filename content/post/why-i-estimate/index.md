@@ -1,14 +1,16 @@
 ---
 title: 'Why I estimate'
-description: Keep the process, discard the number.
+description: Keep the process, kill the number.
 date: 2025-07-15T10:00:34-04:00
-image:
+image: 'image.png'
 math:
 license:
 hidden: false
 comments: true
 draft: false
 ---
+
+## The quest to kill meetings
 
 About a decade ago I was leading the consumer product engineering division at a startup, and one of the teams I was leading was repeatedly flagging the same issue: too many meetings. Clawing back time to focus on day-to-day work is a recurring pain point for engineers, because for many of us it’s [difficult to regain our focus and concentration after an interruption](https://www.paulgraham.com/makersschedule.html). I started looking for opportunities to cut back on team rituals, and my gaze fell on estimation.
 
@@ -44,7 +46,7 @@ So we started doing occasional architecture reviews. They felt a little heavywei
 
 Finally, we had an instance where a particular task—some refactoring work—got completely blown out of scope. What one engineer had pledged would take a week became two, then four, then the better part of a quarter. Everyone was busy, and I didn’t provide enough pushback, and by the time I stopped it I’d lost trust with both my stakeholders and my engineers. Everyone was upset.
 
-## What estimation buys you
+## Estimation was providing value we didn't immediately understand
 
 Here’s what I discovered I had been missing by removing that ritual.
 
@@ -56,9 +58,9 @@ And finally, though this one is more fuzzy, I’ve come to believe that **the ac
 
 Can you gain these things without estimation? Absolutely you can, and if you’re mindful about it and know what you’re missing, you can design a process around it—which I think is the point the #NoEstimates folks were trying to make all along.
 
-But I just estimate instead.
+## So I just estimate instead
 
-## What I tell teams about estimation
+These days, this is what I ask my teams to try to sharpen up their approach.
 
 **You should probably estimate.** This is one painful ritual that’s I've come to believe is probably worth the effort, until and unless you have a way to account for those other processes.
 
