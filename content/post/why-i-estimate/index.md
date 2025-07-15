@@ -16,7 +16,7 @@ About a decade ago I was leading the consumer product engineering division at a 
 
 (By “estimation,” I mean the practice of assigning a numeric value—typically a relative measure like story points—to a unit of work, based on its expected effort, complexity, and risk.)
 
-Estimation is a longstanding practice on agile teams as a ritual is specifically about quantifying work in a way that enables projection, alignment, and shared understanding, and like most engineers, I've often found it to be tedious and occasionally painful. It’s tough to pick a number that feels right, it’s a big timesink, and it’s sometimes unclear whether any of the effort was worth it.
+Estimation is a longstanding practice on agile teams meant to help them quantify work in a way that enables projection, alignment, and shared understanding with stakeholders. Like most engineers, I've often found it to be tedious and occasionally painful. It’s tough to pick a number that feels right, it’s a big timesink, and it’s sometimes unclear whether any of the effort was worth it.
 
 Around that same time a school of thought had gained ground in agile project management called #NoEstimates. You can read some writeups [here](https://www.neilkillick.com/blog/noestimates-part-1-doing-scrum-without-estimates) (Neil Killick) and [here](https://ronjeffries.com/xprog/articles/the-noestimates-movement/) (Ron Jeffries), but the argument for it goes something like this:
 
