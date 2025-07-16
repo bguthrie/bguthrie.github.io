@@ -20,9 +20,9 @@ Estimation is a longstanding practice on agile teams meant to help them quantify
 
 Around that same time a school of thought had gained ground in agile project management called `#NoEstimates`. You can read some writeups by [Neil Killick](https://www.neilkillick.com/blog/noestimates-part-1-doing-scrum-without-estimates) and [Ron Jeffries](https://ronjeffries.com/xprog/articles/the-noestimates-movement/), but the argument for it goes something like this:
 
-- Estimating is, as we know, a big time commitment and also kind of a bummer.
-- Most task estimates fall within a predictable range, so if what you want is simply forward projection, counting stories is as good as counting estimates. Therefore, estimation is waste.
-- You should be focusing on business outcomes in preference to deliverables _anyway_, so forward projection is itself problematic as a practice.
+1. Estimating is, as we know, a big time commitment and also kind of a bummer.
+2. Most task estimates fall within a predictable range, so if what you want is simply forward projection, counting stories is as good as counting estimates. Therefore, estimation is waste.
+3. You should be focusing on business outcomes in preference to deliverables _anyway_, so forward projection is itself problematic as a practice.
 
 And I was sold! So I killed estimates on the team I was running.
 
@@ -44,9 +44,9 @@ So we started doing occasional architecture reviews. They felt a little heavywei
 
 It came to a head, though, when a particular initiative—some deep refactoring work—got completely blown out of scope. What one engineer had promised would take a week became two, then four, then the better part of a quarter. I was busy and didn’t provide enough guidance and scrutiny, and by the time I stopped it I’d lost trust with both my stakeholders and my engineers. Everyone was upset.
 
-## Estimation was providing value we didn't immediately understand
+## The revenge of ritual
 
-Here’s what I discovered I had been missing by removing that ritual.
+It turns out that estimation was helping my team in ways I didn't immediately understand, and couldn't fully see until I'd removed it.
 
 First, estimation provides a **natural review point** for upcoming work. This is both an opportunity to clarify or push back on requirements and to size the work appropriately. Without this review point, you lose benefit that `#NoEstimates` was buying you—the premise that if all stories fall within a certain delta you can just stack them up—because there’s no engineering-led pushback on size.
 
@@ -62,23 +62,23 @@ These days, this is what I ask my teams to try to sharpen up their approach.
 
 **You should probably estimate.** This is one painful ritual that’s I've come to believe is probably worth the effort, until and unless you have a way to account for those other processes.
 
-**I won’t hold you accountable for the number.** We all know that estimating software work is hard; I’m not going to wander around with a rubber mallet whacking individual engineers if their estimate doesn’t pan out. It’s the job of team management to use that data in a way that sets expectations appropriately with stakeholders, and doing so should include a margin of error.
+**I won’t hold you accountable for your estimate of a _specific_ task.** We all know that estimating software work is hard; I’m not going to wander around with a rubber mallet whacking individual engineers if their estimate doesn’t pan out. It’s the job of team management to use that data in a way that sets expectations appropriately with stakeholders, and doing so should include a margin of error.
 
-In fact, **I don’t even care about the number.** If the act of estimating forces the team to ensure that all the stories fall within a certain size range anyway, then simply counting stories is probably enough for me to satisfy my stakeholders. Pick a number and then discard it for all I care.
+In fact, **I don’t even care about the number.** If the act of estimating forces the team to ensure that all the stories fall within a certain size range anyway, then simply counting stories is probably enough for me to satisfy my stakeholders. Pick a number and discard it for all I care.
 
-Therefore, when running the meeting, **keep it breezy.** Move quickly. Try not to get too hung up on details or argue over fine points. Take things offline if needed. Make it fun if you can. At the very least, don’t make it more painful than it has to be. Healthy discussions that get at the heart of the difficulty of a story are great, but when in doubt, keep up momentum. You’re not going to get them all right, but it usually comes out in the wash.
+Therefore, when running the meeting, **keep it breezy.** Move quickly. Try not to get too hung up on details or argue over fine points. Take things offline if needed. Make it fun if you can. At the very least, don’t make it more painful than it has to be. Healthy discussions that get at the heart of the difficulty of a task are great, but when in doubt, keep up momentum. You’re not going to get them all right, but it usually comes out in the wash.
 
 ## How to run a good estimation session
 
-**The people doing the work provide the estimates.** If you’re a manager that’s not driving stories day-to-day, you probably shouldn’t estimate. Conversely, someone with a backend specialty may be expected to provide an estimate for frontend work as a way of surfacing team gaps or delivery risks.
+**The people doing the work provide the estimates.** If you’re a manager that’s not driving production work day-to-day, you probably shouldn’t estimate. Conversely, someone with a backend specialty may be expected to provide an estimate for frontend work as a way of surfacing team gaps or delivery risks.
 
-**Everyone on the team estimates at once** to ensure that people don’t bias each other. Usually I’ll use rock-paper-scissors for this; even distributed teams can do this over Zoom with some effort, and there are tools that can help.
+**Everyone on the team estimates at once** to ensure that people don’t bias each other. Usually I’ll use a rock-paper-scissors-style ["fist to five"](https://meetingnotes.com/blog/fist-to-five-voting) process for this; distributed teams can do this over Zoom with some effort, and there are tools that can help.
 
 **Stories and (tech debt) tasks get estimates; bugs don’t.** You can make an argument for estimating bugs, and I won’t mind if you do, but it makes the meeting shorter if you skip them.
 
 **The higher estimate wins.** Err on the side of caution and bias towards the estimate of the team member with the least context. It’s important to move fast, but no one’s getting a prize for coming in under target on an individual story.
 
-**Smaller stories are better; if a story is too big, _split it_.** I find it useful to use the INVEST principles to evaluate story quality; I will say for my part that I think “small” is the most underrated principle.
+**Smaller stories are better; if a story is too big, _split it_.** I find it useful to use the [INVEST principles](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) to evaluate story quality; for my part, I think “small” is the most underrated principle.
 
 **Spike to reduce uncertainty.** Spikes are _short, time-boxed_ efforts to help understand and de-risk project delivery; if you can’t reach a conclusion on a approach in the context of an estimation session, it may be worth taking the discussion offline and writing some code to validate.
 
@@ -88,4 +88,4 @@ Pick a cadence that’s **less frequent than sprint planning**. Aim for every mo
 
 The chief issue with story points is that they explicitly decouple effort and time—but your stakeholders mostly care about time, not complexity. Sometimes things that aren't complex take lots of time, and things that are can move surprisingly quickly. Running estimation sessions doesn't solve the problem of communicating expectations back to stakeholders.
 
-But if you've built a process to review stories and align on approach with your engineers, you're back where you started with `#NoEstimates`—you can forward-project delivery based on past performance. And once _that_ feels safe, come back and reevaluate your meeting schedule—although for my part I start with other meetings first these days.
+But if you've built a process to review stories and align on approach with your engineers, you're back where you started with `#NoEstimates`—you can forward-project delivery based on past performance. And once _that_ feels safe, come back and reevaluate your meeting schedule, although for my part I start with other meetings first these days.
