@@ -12,7 +12,7 @@ draft: false
 
 ## The quest to kill meetings
 
-About a decade ago I was leading the consumer product engineering division at a startup, and one of the teams I was leading was repeatedly flagging the same issue: too many meetings. Clawing back time to focus on day-to-day work is a recurring pain point for engineers, because for many of us it’s [difficult to regain our focus and concentration after an interruption](https://www.paulgraham.com/makersschedule.html). I started looking for opportunities to cut back on team rituals, and my gaze fell on estimation.
+A few years ago I was leading the consumer product engineering division at a startup, and one of the teams I was leading was repeatedly flagging the same issue: too many meetings. Clawing back time to focus on day-to-day work is a recurring pain point for engineers, because for many of us it’s [difficult to regain our focus and concentration after an interruption](https://www.paulgraham.com/makersschedule.html). I started looking for opportunities to cut back on team rituals, and my gaze fell on estimation.
 
 (By “estimation,” I mean the practice of assigning a numeric value—typically a relative measure like story points—to a unit of work, based on its expected effort, complexity, and risk.)
 
