@@ -2,7 +2,7 @@
 title: 'Code style is a mirror, not a metric'
 description: 'The myth of objectively good code'
 date: 2025-07-31T08:54:11-04:00
-image:
+image: 'image.png'
 math:
 license:
 hidden: false
