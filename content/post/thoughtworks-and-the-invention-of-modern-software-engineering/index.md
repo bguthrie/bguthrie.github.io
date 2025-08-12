@@ -53,7 +53,7 @@ Here is a short list of now-standard software delivery techniques that ThoughtWo
 - Graph databases ([Robinson, Webber](https://www.amazon.com/Graph-Databases-Ian-Robinson/dp/1449356265), 2013)
 - DevOps Research & Assessment metrics ([Jez Humble](https://medium.com/@jezhumble/doras-journey-an-exploration-4c6bfc41e667), 2014)
 - Microservices ([Sam Newman](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358), [James Lewis](https://martinfowler.com/articles/microservices.html), 2015)
-- Infrastructure as code ([Kief Morris](https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/), 2016, though the term and the tooling date back to as early as 2009 per Kief.)
+- Infrastructure as code ([Kief Morris](https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/), 2016, though the book collates approaches and the term and the tooling date back to as early as 2009.)
 - Evolutionary architecture ([Ford, Kua, Parsons, Sadalage](https://www.amazon.com/Building-Evolutionary-Architectures-Support-Constant/dp/1491986360), 2017)
 - Data meshes ([Zhamak Dehghani](https://martinfowler.com/articles/data-mesh-principles.html), 2020)
 
