@@ -1,22 +1,26 @@
 ---
 date: "2024-11-26T18:43:15-05:00"
 draft: true
-title: "What Made Thoughtworks Work, Part 2: The Squabble for Talent"
+title: "What Made Thoughtworks Work, Part 2: Talent"
 image: "muzammil-soorma-ayV1mD3HGyg-unsplash.jpg"
 categories:
   - history
   - industry
 ---
 
-### The appeal
+In my last post, I made a systems argument that Thoughtworks had an outsize impact on the software industry by way of its focus on process, as a result its particular culture, its way of thinking about software, and the customers that it served. This time I'd like to take a look at what made Thoughtworks tick on a human level: its talent acquisition, cultivation, and retention processes.
 
-We should start by asking the question: why did people want to work at Thoughtworks to begin with? What was the appeal? They didn’t have a reputation for paying the best, or doing the most interesting work. Yet they nonetheless attracted a number of major industry names, and punched above their weight for influence and access.
+## The appeal
 
-The short answer is that Thoughtworks’ reputation in the Agile world meant that they successfully became a destination employer for people who were interested in software process, particularly applied at scale. You can work at a large tech firm and solve interesting technical problems—Google is justifiably famous for the scale of those problems—but they typically don’t claim much innovation in approach. Thoughtworks was able to elevate their talent pool through their focus on improving the fundamental craft of software; more than any other firm, this gave their alumni a certain cachet within the industry.
+If the presumption was that they were able to recruit particular talent, we should then start by asking the question: why did people want to work there to begin with? They didn’t have a stellar technical reputation, or the highest total compensation, or even the most interesting work. Yet they nonetheless attracted a number of major industry names, and punched above their weight for influence and access.
 
-The second major component is that they successfully navigated a middle path between white-glove consulting firms and traditional worker-for-hire IT shops; they eschewed both the “up-or-out” model of traditional partnerships and the just-barely-a-company feel of more conventional contracting firms. They had a distinct culture, perspective and way of working; their rates were fairly high, which meant that your advice was likely to carry some weight; you could work there and receive some reasonable shot at a decent career in software. They would show up, in force, at technology conferences that covered topics they were interested in; they made their presence felt in ways that didn’t involve a lot of traditional marketing by using their human capital wisely.
+The short answer is that they successfully became a destination employer for people who were interested in _software process and craft_, particularly applied at scale, on problems notable not for their _algorithmic_ complexity but for their _domain_ complexity, and for whom the travel burden was not a dealbreaker (or was even a draw). At a large tech firm you can work at scale on interesting algorithms—Google is justifiably famous these—but they typically don’t claim much innovation in approach. Thoughtworks was able to elevate their talent pool through their focus on improving the fundamental craft of software; more than any other firm, this gave their alumni a certain cachet within the industry in roles involving digital transformation, devops, or platform engineering. This is perhaps their most notable difference from Pivotal Labs, which worked in similar ways but focused more on smaller, more nimble firms.
 
-They did all that while also offering some of the trappings of a premium consultancy. They had a nice expense policy and a global perspective; you could, if you wanted, work and travel internationally, or become a nomad without a permanent base of operations, a promise that I and many others took up time and time again. (Think Up In The Air, only in hoodies.) These are the kinds of perks that are difficult to find outside of the Big 4.
+The second major component is that they successfully navigated a middle path between white-glove consulting firms and traditional worker-for-hire IT shops; they eschewed both the “up-or-out” model of traditional partnerships and the just-barely-a-company feel of more conventional body-shop contractors. They had a distinct culture, perspective and way of working; their rates were fairly high by IT standards[^1], which meant that your advice was likely to carry some weight; you could work there and receive some reasonable shot at a decent career in software. They would show up, in force, at technology conferences that covered topics they were interested in; they made their presence felt in ways that didn’t involve a lot of traditional marketing by using their human capital well.
+
+[^1]: In 2007, my hourly rate at McKinsey, the first client I was staffed at, was $170/hour (~$260 in 2024), against a starting salary of about $70k/year.
+
+They did all that while also offering some of the _trappings_ of a premium consultancy. They had a generous expense policy and gave their employees an extraordinary amount of latitude in its use; they had a global perspective and you could, if you applied for it, work and travel internationally; many US employees became nomads without a permanent base of operations, a promise that I and many others took up time and time again. (Think [Up In The Air](<https://en.wikipedia.org/wiki/Up_in_the_Air_(2009_film)>), only in hoodies.) These kinds of non-monetary perks are difficult to find outside of larger white-glove consulting or legal firms, particularly for junior employees.
 
 The reason it was important that they find a middle ground was because their talent strategy involved attracting nerds. Nerds are (or were) proud but egalitarian; they want to feel rewarded for their knowledge and chops, but status can be as good or better than money. Nerds also love to learn. In the days before programmers swapped hot tips on maximizing their total comp, Thoughtworks got an awfully long way by leading with the appeal of status and high-velocity upskilling.
 
