@@ -2,12 +2,12 @@
 title: "A Probabilistic Measurement of Programmer Productivity"
 description: Why batting average matters more than perfect swings
 date: 2025-05-05T18:21:55-04:00
-image: 
-math: 
-license: 
-hidden: false
+image:
+math:
+license:
+hidden: true
 comments: true
-draft: true
+draft: false
 ---
 Every feature is a bet. Every line of code represents a wager on some future payoff. Some bets pay off spectacularly, others fail quietly, but the math is simple: if you want to maximize your returns, you need to think like a baseball player, not a perfectionist.
 

@@ -7,7 +7,7 @@ math:
 license:
 hidden: true
 comments: true
-draft: true
+draft: false
 ---
 
 I want to love software because I want to love what I make. I love what people experience. I love the way I feel when I use a thing I really like, and the way I'm sure they want to use their things too. They want to love them.

@@ -1,6 +1,7 @@
 ---
 date: "2024-11-26T18:43:15-05:00"
-draft: true
+draft: false
+hidden: true
 title: "What Made Thoughtworks Work, Part 2: Talent"
 image: "muzammil-soorma-ayV1mD3HGyg-unsplash.jpg"
 categories:

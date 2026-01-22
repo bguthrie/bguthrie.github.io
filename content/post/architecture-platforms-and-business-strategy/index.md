@@ -7,7 +7,7 @@ math:
 license:
 hidden: true
 comments: true
-draft: true
+draft: false
 ---
 
 One of my favorite pieces of writing on the intersection of software architecture and business strategy is [Steve Yegge's Google Platforms Rant](https://courses.cs.washington.edu/courses/cse452/23wi/papers/yegge-platform-rant.html). Published in 2011 for an internal audience at Google but accidentally leaked to the rest of the internet, it remains essential reading almost fifteen years later. It isn't perfect, and some pieces (like its core thesis!) haven't aged well, but its insights into how and why software architecture intersects with business strategy and organization structure are timeless.

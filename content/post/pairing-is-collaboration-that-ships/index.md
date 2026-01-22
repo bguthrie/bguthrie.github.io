@@ -7,7 +7,7 @@ math:
 license:
 hidden: true
 comments: true
-draft: true
+draft: false
 ---
 # Pairing Is Collaboration That Ships
 

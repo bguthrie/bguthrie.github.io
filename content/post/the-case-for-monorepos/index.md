@@ -5,9 +5,9 @@ date: 2025-05-06T12:03:13-04:00
 image:
 math:
 license:
-hidden: false
+hidden: true
 comments: true
-draft: true
+draft: false
 ---
 Yes, it should be a single repo, with proper tooling. You can solve all of the deploy problems Pau mentioned deterministically, without hoping a human being will deploy things in the right order, with the right tools; if you couldn't, then no credible software orgs would do it almost by definition, but many do. (You can also decouple merges from deploys and retain manual control, and again, many orgs do. They are unrelated problems.)
 I have a Justworks deck on this for people who like decks. Here's a somewhat old private article by Simon "Webdriver" Stewart with comments from Chris "Strangler Fig" Stevenson for people who like articles.

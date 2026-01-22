@@ -7,7 +7,7 @@ math:
 license:
 hidden: true
 comments: true
-draft: true
+draft: false
 ---
 
 In the winter of 2022-23 I was running a startup, Orgspace, when OpenAI released ChatGPT 2.5 and properly kicked off a new technical goldrush focused on the use and development of LLMs. About six months prior, the first truly interesting AI tools, ones for generating images, had hit the market and it was already being clear that the next generation of AI tools was going to be a big deal. ChatGPT 3 cemented that.
