@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="max-w-7xl mx-auto px-4 py-8">
+  <div class="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-8">
+
+    {{/* Left sidebar - identity */}}
+    {{ partial "sidebar.html" . }}
+
+    {{/* Post list */}}
+    <main class="min-w-0">
+      {{ if not .IsHome }}
+        <h1 class="text-2xl font-bold mb-8">{{ .Title }}</h1>
+      {{ end }}
+
+      <div class="space-y-8">
+        {{ $pages := where .Pages "Params.hidden" "!=" true }}
+        {{ range $pages }}
+          {{ partial "summary.html" . }}
+        {{ end }}
+      </div>
+
+      {{/* Pagination */}}
+      {{ if .Paginator }}
+        {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+          <nav class="mt-12 flex justify-between text-sm">
+            {{ if .Paginator.HasPrev }}
+              <a href="{{ .Paginator.Prev.URL }}" class="text-gray-600 hover:text-gray-900">&larr; Newer posts</a>
+            {{ else }}
+              <span></span>
+            {{ end }}
+            {{ if .Paginator.HasNext }}
+              <a href="{{ .Paginator.Next.URL }}" class="text-gray-600 hover:text-gray-900">Older posts &rarr;</a>
+            {{ end }}
+          </nav>
+        {{ end }}
+      {{ end }}
+    </main>
+
+  </div>
+</div>
+{{ end }}

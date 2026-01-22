@@ -1,0 +1,17 @@
+<article class="group">
+  <h2 class="text-xl font-serif font-bold mb-1">
+    <a href="{{ .RelPermalink }}" class="group-hover:text-gray-600">
+      {{ .Title }}
+    </a>
+  </h2>
+  <div class="text-sm text-gray-500 mb-2">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    {{ with .ReadingTime }}
+      <span class="mx-2">&middot;</span>
+      <span>{{ . }} min read</span>
+    {{ end }}
+  </div>
+  {{ with .Description }}
+    <p class="text-gray-600">{{ . }}</p>
+  {{ end }}
+</article>
