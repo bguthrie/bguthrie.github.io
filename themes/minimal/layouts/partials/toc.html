@@ -1,0 +1,12 @@
+{{ if .TableOfContents }}
+<aside class="hidden xl:block">
+  <div class="sticky top-8">
+    <h2 class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-4">
+      On this page
+    </h2>
+    <nav class="text-sm">
+      {{ .TableOfContents }}
+    </nav>
+  </div>
+</aside>
+{{ end }}

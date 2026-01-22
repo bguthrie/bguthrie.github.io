@@ -47,3 +47,22 @@
     @apply antialiased;
   }
 }
+
+/* Table of Contents styling */
+@layer components {
+  nav#TableOfContents ul {
+    @apply list-none pl-0 space-y-2;
+  }
+
+  nav#TableOfContents ul ul {
+    @apply pl-4 mt-2;
+  }
+
+  nav#TableOfContents a {
+    @apply text-gray-500 hover:text-gray-900 transition-colors;
+  }
+
+  nav#TableOfContents li {
+    @apply leading-snug;
+  }
+}
