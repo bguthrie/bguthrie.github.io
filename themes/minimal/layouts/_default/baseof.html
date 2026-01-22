@@ -3,7 +3,8 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body class="bg-white text-gray-900 font-sans min-h-screen">
+  {{ partial "header.html" . }}
   {{ block "main" . }}{{ end }}
   {{ partial "footer.html" . }}
 </body>
