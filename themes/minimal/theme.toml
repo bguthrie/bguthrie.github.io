@@ -1,0 +1,12 @@
+name = "Minimal"
+license = "MIT"
+licenselink = "https://github.com/bguthrie/bguthrie.github.io/blob/main/LICENSE"
+description = "A minimal, magazine-style Hugo theme"
+homepage = "https://brianguthrie.com"
+tags = ["minimal", "blog", "tailwind"]
+features = ["three-column", "toc", "unlisted-posts"]
+min_version = "0.128.0"
+
+[author]
+  name = "Brian Guthrie"
+  homepage = "https://brianguthrie.com"
