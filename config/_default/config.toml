@@ -2,6 +2,7 @@
 baseurl = "https://brianguthrie.com"
 languageCode = "en-us"
 title = "Gears Within Gears"
+theme = "minimal"
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
