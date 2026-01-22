@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="max-w-7xl mx-auto px-4 py-8">
+  <div class="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-8">
+
+    {{/* Left sidebar - identity */}}
+    {{ partial "sidebar.html" . }}
+
+    {{/* Post list */}}
+    <main class="min-w-0">
+      <div class="space-y-8">
+        {{ $posts := where site.RegularPages "Section" "post" }}
+        {{ $posts = where $posts "Params.hidden" "!=" true }}
+        {{ range $posts.ByDate.Reverse }}
+          {{ partial "summary.html" . }}
+        {{ end }}
+      </div>
+    </main>
+
+  </div>
+</div>
+{{ end }}
