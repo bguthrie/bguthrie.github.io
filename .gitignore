@@ -1,5 +1,6 @@
 public/
 resources/_gen/
+static/css/main.css
 .DS_Store
 .hugo_build.lock
 .worktrees/

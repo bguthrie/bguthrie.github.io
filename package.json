@@ -1,10 +1,6 @@
 {
   "name": "bguthrie-blog",
   "private": true,
-  "scripts": {
-    "dev": "hugo server -D",
-    "build": "hugo --minify"
-  },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
