@@ -18,12 +18,15 @@
 {{/* Favicon */}}
 <link rel="icon" href="/favicon.png" type="image/png">
 
-{{/* Tailwind CSS via Hugo Pipes */}}
-{{ $css := resources.Get "css/main.css" | postCSS }}
+{{/* Tailwind CSS */}}
 {{ if hugo.IsProduction }}
-  {{ $css = $css | minify | fingerprint }}
+  {{/* Production: use Hugo Pipes with minification and fingerprinting */}}
+  {{ $css := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ else }}
+  {{/* Development: use pre-compiled static CSS from Tailwind watch */}}
+  <link rel="stylesheet" href="/css/main.css">
 {{ end }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
 {{/* RSS */}}
 {{ range .AlternativeOutputFormats }}

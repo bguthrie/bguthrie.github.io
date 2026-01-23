@@ -22,21 +22,23 @@
         <h1 class="text-3xl md:text-4xl font-bold font-sans mb-4">
           {{ .Title }}
           {{ if .Params.hidden }}
-            <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Unlisted</span>
+              <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Unlisted</span>
           {{ end }}
         </h1>
-        <div class="text-sm text-gray-500 dark:text-gray-400 font-sans">
+        <div class="text-sm text-gray-600 dark:text-gray-400 font-sans">
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
           {{ with .ReadingTime }}
-            <span class="mx-2">&middot;</span>
-            <span>{{ . }} min read</span>
+              <span class="mx-2">&middot;</span>
+              <span>{{ . }} min read</span>
           {{ end }}
         </div>
       </header>
 
+
       {{/* Article body */}}
-      <div class="prose prose-lg dark:prose-invert max-w-none font-serif
-                  prose-headings:font-sans prose-headings:font-bold
+      <div class="prose prose-xl dark:prose-invert max-w-none font-serif
+                  prose-p:text-gray-800 prose-p:leading-relaxed
+                  prose-headings:font-sans prose-headings:font-bold prose-headings:text-2xl
                   prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
                   prose-blockquote:border-gray-300 dark:prose-blockquote:border-gray-600 prose-blockquote:text-gray-600 dark:prose-blockquote:text-gray-400
                   prose-code:before:content-none prose-code:after:content-none">
