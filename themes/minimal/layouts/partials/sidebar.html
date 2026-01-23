@@ -1,29 +1,42 @@
 <aside class="hidden lg:block">
   <div class="sticky top-8">
-    {{/* Avatar */}}
-    {{ with .Site.Params.sidebar.avatar }}
-      {{ if .enabled }}
-        <img
-          src="{{ if .local }}/{{ .src }}{{ else }}{{ .src }}{{ end }}"
-          alt="{{ $.Site.Title }}"
-          class="w-24 h-24 rounded-full mb-4"
-        >
-      {{ end }}
-    {{ end }}
-
-    {{/* Site title */}}
+    {{/* Avatar */}} {{ with .Site.Params.sidebar.avatar }} {{ if (default true
+    .enabled) }}
+    <a href="{{ .Site.BaseURL | relLangURL }}">
+      {{ if not .local }}
+      <img
+        src="{{ .src }}"
+        width="300"
+        height="300"
+        class="w-24 h-24 rounded-full mb-4"
+        loading="lazy"
+        alt="Avatar"
+      />
+      {{ else }} {{ $avatar := resources.Get (.src) }} {{ if $avatar }} {{
+      $avatarResized := $avatar.Resize "300x" }}
+      <img
+        src="{{ $avatarResized.RelPermalink }}"
+        width="{{ $avatarResized.Width }}"
+        height="{{ $avatarResized.Height }}"
+        class="w-24 h-24 rounded-full mb-4"
+        loading="lazy"
+        alt="Avatar"
+      />
+      {{ else }} {{ errorf "Failed loading avatar from %q" . }} {{ end }} {{ end
+      }}
+    </a>
+    {{ end }} {{ end }} {{/* Site title */}}
     <h1 class="text-xl font-bold mb-2">
-      <a href="/" class="hover:text-gray-600 dark:hover:text-gray-300">{{ .Site.Title }}</a>
+      <a href="/" class="hover:text-gray-600 dark:hover:text-gray-300"
+        >{{ .Site.Title }}</a
+      >
     </h1>
 
-    {{/* Subtitle/bio */}}
-    {{ with .Site.Params.sidebar.subtitle }}
-      <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{{ . }}</p>
-    {{ end }}
-
-    {{/* Dark mode toggle */}}
-    <div class="mt-6">
-      {{ partial "dark-toggle.html" . }}
-    </div>
+    {{/* Subtitle/bio */}} {{ with .Site.Params.sidebar.subtitle }}
+    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+      {{ . }}
+    </p>
+    {{ end }} {{/* Dark mode toggle */}}
+    <div class="mt-6">{{ partial "dark-toggle.html" . }}</div>
   </div>
 </aside>
