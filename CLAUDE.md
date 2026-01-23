@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a personal blog built with Hugo using the [hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack) theme. The site is deployed to GitHub Pages via GitHub Actions and published at https://brianguthrie.com.
+This is a personal blog built with Hugo using a custom theme called "gears-minimal" (located in `themes/gears-minimal/`). The site is deployed to GitHub Pages via GitHub Actions and published at https://brianguthrie.com.
 
 ## Common Commands
 
@@ -47,7 +47,7 @@ hugo new drafts/my-draft/index.md
 - Draft posts use the same directory structure as published posts
 
 **Pages**: `content/page/<page-name>/index.md`
-- Static pages like bio, archives, search, and links
+- Static pages like bio, archives, and links
 - Use similar structure to posts but different layout
 
 ### Configuration
@@ -61,9 +61,11 @@ Configuration is split across multiple files in `config/_default/`:
 
 ### Theme
 
-The site uses hugo-theme-stack v3.29.0 as a Hugo module (defined in `go.mod`). Theme customizations:
-- Custom head partial at `layouts/partials/head/custom.html` adds PostHog analytics
-- Minimal custom layouts; most styling comes from the theme
+The site uses a custom theme called "gears-minimal" located in `themes/gears-minimal/`. This is a minimal, custom-built theme with:
+- Simple layouts in `layouts/` (baseof, single, list, index)
+- Partials for head, header, footer, sidebar, summary, and table of contents
+- Custom head partial at `layouts/partials/head/custom.html` for PostHog analytics
+- Dark mode toggle support
 
 ### Deployment
 

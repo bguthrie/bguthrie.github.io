@@ -5,10 +5,9 @@ date: 2026-01-21T11:46:49-05:00
 image:
 math:
 license:
-hidden: true
+hidden: false
 comments: true
-draft: false
-robots: "noindex, nofollow"
+draft: true
 categories:
   - platform
   - sdlc
@@ -98,7 +97,7 @@ However, this advantage only holds if:
 
 ### Does this hold at scale?
 
-The most important caveat is about scale. The one data point we have—Cursor losing track after 250K tokens on a 1.2M-line monorepo—suggests the advantage might evaporate or even reverse as codebases grow. We have no evidence about whether AI helps or hurts when reasoning about Google-scale monorepos. And critically, we don't know whether today's AI-first startups will face the same organizational pressures that have driven a generation of startups born as Rails and J2EE monoliths to transition to polyrepo architectures.
+The most important caveat is about scale. What we know about token exhaustion—illustrated by the anecdote about Cursor losing track after 250K tokens on a 1.2M-line monorepo, but widely discussed elsewhere—suggests that the advantage might evaporate or even reverse as codebases grow. We have no evidence about whether AI helps or hurts when reasoning about Google-scale monorepos. And critically, we don't know whether today's AI-first startups will face the same organizational pressures that have driven a generation of startups born as Rails and J2EE monoliths to transition to polyrepo architectures.
 
 Those transitions weren't just technical decisions. They were responses to team growth, organizational complexity, and the difficulty of coordinating changes across an increasingly large surface area. Will AI change that calculus? Can better AI tooling solve the coordination problems that microservices were meant to address? Or will we see the same pattern repeat—startups building unified codebases, then breaking them apart as they scale?
 
