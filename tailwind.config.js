@@ -5,6 +5,7 @@ module.exports = {
     "./layouts/**/*.html",
     "./content/**/*.md",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {

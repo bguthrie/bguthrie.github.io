@@ -1,11 +1,14 @@
-<header class="lg:hidden border-b border-gray-100 py-4 mb-8">
+<header class="lg:hidden border-b border-gray-100 dark:border-gray-800 py-4 mb-8">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
-    <a href="/" class="text-xl font-bold hover:text-gray-600">{{ .Site.Title }}</a>
-    <nav class="flex gap-4 text-sm text-gray-600">
-      <a href="/post/" class="hover:text-gray-900">Archive</a>
-      {{ with .Site.GetPage "/page/bio" }}
-        <a href="{{ .RelPermalink }}" class="hover:text-gray-900">About</a>
-      {{ end }}
-    </nav>
+    <a href="/" class="text-xl font-bold hover:text-gray-600 dark:hover:text-gray-300">{{ .Site.Title }}</a>
+    <div class="flex items-center gap-4">
+      <nav class="flex gap-4 text-sm text-gray-600 dark:text-gray-400">
+        <a href="/post/" class="hover:text-gray-900 dark:hover:text-gray-100">Archive</a>
+        {{ with .Site.GetPage "/page/bio" }}
+          <a href="{{ .RelPermalink }}" class="hover:text-gray-900 dark:hover:text-gray-100">About</a>
+        {{ end }}
+      </nav>
+      {{ partial "dark-toggle.html" . }}
+    </div>
   </div>
 </header>

@@ -23,12 +23,12 @@
         {{ if or .Paginator.HasPrev .Paginator.HasNext }}
           <nav class="mt-12 flex justify-between text-sm">
             {{ if .Paginator.HasPrev }}
-              <a href="{{ .Paginator.Prev.URL }}" class="text-gray-600 hover:text-gray-900">&larr; Newer posts</a>
+              <a href="{{ .Paginator.Prev.URL }}" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">&larr; Newer posts</a>
             {{ else }}
               <span></span>
             {{ end }}
             {{ if .Paginator.HasNext }}
-              <a href="{{ .Paginator.Next.URL }}" class="text-gray-600 hover:text-gray-900">Older posts &rarr;</a>
+              <a href="{{ .Paginator.Next.URL }}" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">Older posts &rarr;</a>
             {{ end }}
           </nav>
         {{ end }}

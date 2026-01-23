@@ -13,12 +13,17 @@
 
     {{/* Site title */}}
     <h1 class="text-xl font-bold mb-2">
-      <a href="/" class="hover:text-gray-600">{{ .Site.Title }}</a>
+      <a href="/" class="hover:text-gray-600 dark:hover:text-gray-300">{{ .Site.Title }}</a>
     </h1>
 
     {{/* Subtitle/bio */}}
     {{ with .Site.Params.sidebar.subtitle }}
-      <p class="text-sm text-gray-600 leading-relaxed">{{ . }}</p>
+      <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{{ . }}</p>
     {{ end }}
+
+    {{/* Dark mode toggle */}}
+    <div class="mt-6">
+      {{ partial "dark-toggle.html" . }}
+    </div>
   </div>
 </aside>

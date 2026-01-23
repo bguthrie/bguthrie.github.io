@@ -1,11 +1,13 @@
-{{ if .TableOfContents }}
+{{/* Only render TOC if there are actual headings (check for <li> elements) */}}
+{{ $toc := .TableOfContents }}
+{{ if and $toc (findRE "<li>" $toc) }}
 <aside class="hidden xl:block">
   <div class="sticky top-8">
-    <h2 class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-4">
+    <h2 class="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
       On this page
     </h2>
-    <nav class="text-sm">
-      {{ .TableOfContents }}
+    <nav class="toc text-sm" id="TableOfContents">
+      {{ $toc }}
     </nav>
   </div>
 </aside>
