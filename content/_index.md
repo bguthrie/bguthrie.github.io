@@ -1,4 +1,5 @@
 ---
+image: /images/gears.webp
 menu:
     main:
         name: Home

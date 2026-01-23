@@ -2,7 +2,9 @@
 title: "Does AI do better with monorepos or small services?"
 description: "Exploring the paradox of unified context vs. focused boundaries in the LLM era"
 date: 2026-01-21T11:46:49-05:00
-image:
+image: zach-reiner-H7LxvEmVZnE-unsplash.jpg
+image_credit: "Photo by Zach Reiner on Unsplash"
+image_credit_url: "https://unsplash.com/@_zachreiner_"
 math:
 license:
 hidden: false
