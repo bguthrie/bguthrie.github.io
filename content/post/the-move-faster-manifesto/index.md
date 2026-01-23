@@ -3,6 +3,8 @@ title: 'The Move Faster Manifesto'
 description: 'Lessons for shipping software quickly by skipping the grind'
 date: 2025-02-19T09:00:00-05:00
 image: 'cara-fuller-34OTzkN-nuc-unsplash.jpg'
+image_credit: 'Photo by Cara Fuller on Unsplash'
+image_credit_url: 'https://unsplash.com/@caraventurera'
 categories:
   - sdlc
 ---
@@ -82,5 +84,3 @@ Learning (in business) is not an intrinsic good. Learning only matters if you ca
 Work is only done when you learn whether or not it was worth doing. Learning whether it was worth doing only matters if you adjust based on what you learned. It matters how fast you learn, and it matters how fast you adjust. Adjusting fast is important even if it can seem jarring. Learn how to react quickly.
 
 Your real competition, in tech, usually isn't a giant slow-moving corporation—it's a smaller, scrappier team that's changing twice as fast as you are. Change can hurt, but change hurts less than failure. Change fast.
-
-> Photo by <a href="https://unsplash.com/@caraventurera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cara Fuller</a> on <a href="https://unsplash.com/photos/cheetah-running-on-brown-field-34OTzkN-nuc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.

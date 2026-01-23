@@ -3,6 +3,8 @@ title: "The This-Isn't-Possible Smell Test"
 description: "Inferring what's possible from what's probable"
 date: 2025-03-03T09:23:00-05:00
 image: dane-deaner-wnkE42AFNZg-unsplash.jpg
+image_credit: "Photo by Dane Deaner on Unsplash"
+image_credit_url: "https://unsplash.com/@danedeaner"
 hidden: false
 ---
 
@@ -16,5 +18,3 @@ As a result, if a team experiences a problem, investigates solutions, and _comes
 4. Maybe, genuinely, no one else has thought of doing this.
 
 Many of these fall into the category of "fair enough, I buy it," but my next question is going to be what you learned about your problem by doing the research. The lower in the list you go, though, the higher the bar is to prove that you're right. If you go digging and tell me that you think the right answer is #4, I'm going to be pretty skeptical, and the bar for proof will be high; much of the time, if it seems like a fairly common and obvious problem, the next step should be to go back and dig harder.
-
-> Photo by <a href="https://unsplash.com/@danedeaner?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dane Deaner</a> on <a href="https://unsplash.com/photos/photo-of-people-in-cave-wnkE42AFNZg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

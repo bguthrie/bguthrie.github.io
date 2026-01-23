@@ -2,6 +2,8 @@
 title: 'You Should Take Event Sourcing More Seriously'
 description: 'Lessons from building on facts instead of state'
 image: 'daniele-levis-pelusi-csS4-kxU1_E-unsplash.jpg'
+image_credit: 'Photo by Daniele Levis Pelusi on Unsplash'
+image_credit_url: 'https://unsplash.com/@yogidan2012'
 draft: false
 date: 2025-04-22T10:11:25-04:00
 ---
@@ -217,5 +219,3 @@ I've seen teams take months or years to structure their data in a way that lets 
 It’s a model that invites you to think long-term about your data—and gives you the tools to change your mind without paying a high cost. That’s rare, and worth taking seriously. You can revise your domain model without starting over. You can revisit decisions with better insight. And you can start solving problems that used to seem way too hard, like planning and version control.
 
 It's not for every team, but it works. Consider trying it for your next build.
-
-> Photo by <a href="https://unsplash.com/@yogidan2012?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniele Levis Pelusi</a> on <a href="https://unsplash.com/photos/brown-book-lot-csS4-kxU1_E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

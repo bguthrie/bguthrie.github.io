@@ -3,6 +3,8 @@ title: 'AI like a bicycle'
 description: 'Generative AI should amplify intent, not dictate it'
 date: 2025-09-17T9:31:10-04:00
 image: boy-with-bicycle-robert-frank.png
+image_credit: 'Boy with bicycle, Basel by Robert Frank, 1945'
+image_credit_url: 'https://www.nga.gov/artworks/79071-boy-bicycle-basel'
 hidden: false
 comments: true
 draft: false
@@ -18,5 +20,3 @@ That’s where the metaphor matters. A bicycle demands constant attention and co
 Part of the economic promise of generative AI is that it will increase the productivity of knowledge workers in a way other technologies have struggled to do. We may eventually reach a point where we can accept its code outputs less critically. But to realize that promise in this moment without placing users at risk, its use must center on the impulse, creativity, craft, and agency of the human. Like riding a bicycle, it only works if you stay in control.
 
 And, speaking as a dad, please wear a helmet.
-
-> [Boy with bicycle, Basel](https://www.nga.gov/artworks/79071-boy-bicycle-basel), Robert Frank, 1945.

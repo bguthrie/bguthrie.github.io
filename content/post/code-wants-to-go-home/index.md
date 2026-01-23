@@ -3,6 +3,8 @@ title: 'Code Wants To Go Home'
 description: 'The Happy Gilmore theory of SDLC'
 date: 2025-05-31T05:31:20-05:00
 image: putt.jpg
+image_credit: 'Photo by Thomas Park on Unsplash'
+image_credit_url: 'https://unsplash.com/@thomascpark'
 hidden: false
 ---
 
@@ -19,5 +21,3 @@ In general, if you raise the price of a thing, you get less of it. Having a clea
 A good way to speed up development without compromising on safety is to supplement human review with automated review. Replace debates over style with formatters and linters. Use automated vulnerability checkers. Write tests that enable rapid feedback loops.
 
 If you want to [move fast](/p/the-move-faster-manifesto), make change safer, not slower.
-
-> Photo by <a href="https://unsplash.com/@thomascpark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thomas Park</a> on <a href="https://unsplash.com/photos/golf-course-with-green-trees-in-the-distance-sWqaGzQF1N4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

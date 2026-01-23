@@ -3,6 +3,8 @@ title: "Devops Is Not a Job Title (2017)"
 description:
 date: 2024-11-30T15:41:04-05:00
 image: "ian-taylor-jOqJbvo1P9g-unsplash.jpg"
+image_credit: "Photo by Ian Taylor on Unsplash"
+image_credit_url: "https://unsplash.com/@carrier_lost"
 draft: false
 categories:
   - platform
@@ -42,5 +44,3 @@ If you find yourself in a product engineer team then ask yourself: Am I taking r
 The secret sauce of software development—the philosophical origin of most advancements in thinking over the last 20 years—is incremental change, tight feedback loops, shared knowledge, and mutual respect.
 
 Understand that and you understand DevOps.
-
-> Photo by <a href="https://unsplash.com/@carrier_lost?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ian Taylor</a> on <a href="https://unsplash.com/photos/blue-and-red-cargo-ship-on-sea-during-daytime-jOqJbvo1P9g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

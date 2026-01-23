@@ -3,6 +3,8 @@ title: "Feature Branching Considered Harmful (2017)"
 description:
 date: 2024-11-30T15:43:39-05:00
 image: "steven-lewis-dmHnXJ-5ilQ-unsplash.jpg"
+image_credit: "Photo by Steven Lewis on Unsplash"
+image_credit_url: "https://unsplash.com/@airguitarbandit"
 categories:
   - sdlc
 ---
@@ -42,5 +44,3 @@ Git may ship with a ton of features, but no one's forcing you to use them. Here'
 The secret sauce of software development—the philosophical origin of most advancements in thinking over the last 20 years—is incremental change, tight feedback loops, shared knowledge, and mutual respect.
 
 Reconsider your feature branches. And git-flow is bonkers.
-
-> Photo by <a href="https://unsplash.com/@airguitarbandit?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Steven Lewis</a> on <a href="https://unsplash.com/photos/aerial-photography-of-highway-dmHnXJ-5ilQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

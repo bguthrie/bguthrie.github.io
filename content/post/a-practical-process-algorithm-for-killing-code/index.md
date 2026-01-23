@@ -2,6 +2,8 @@
 title: 'A Practical Process Algorithm For Killing Code'
 description: 'How to deprecate all your systems without burning all your bridges'
 image: 'spencer-watson-p0Yupww_SNM-unsplash.jpg'
+image_credit: 'Photo by Spencer Watson on Unsplash'
+image_credit_url: 'https://unsplash.com/@thebrownspy'
 date: 2025-04-23T19:08:00-04:00
 ---
 
@@ -22,5 +24,3 @@ Amateurs may call this "change management," but I am a professional and so prefe
 You'd be surprised how much trust, to say nothing of awe and perhaps a touch of fear, you build by simply following through on that last bit.
 
 If this works out for you, reach out and let me know. I'd be delighted to hear about it.
-
-> Photo by <a href="https://unsplash.com/@thebrownspy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Spencer Watson</a> on <a href="https://unsplash.com/photos/black-high-trees-under-white-and-black-sky-at-golden-hour-p0Yupww_SNM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

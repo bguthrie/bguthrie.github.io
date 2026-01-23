@@ -3,6 +3,8 @@ title: "The Optimal Size of a Platform Team Is Zero"
 description:
 date: 2024-11-30T15:28:22-05:00
 image: "patrick-robert-doyle-8mswK-LU5Vs-unsplash.jpg"
+image_credit: "Photo by Patrick Robert Doyle on Unsplash"
+image_credit_url: "https://unsplash.com/@teapowered"
 hidden: true
 draft: true
 categories:
@@ -68,6 +70,4 @@ There are several important implications of this model:
    \
    I once worked at an organization that consolidated their ops engineers into a shared team, with a goal of platformizing the path to production. The product teams, bereft of the help and saddled with a set of technical choices premised on ready access to expertise, started moving their software onto third-party platforms with lower operating costs. This counteracted the anticipated positive impact of an internal shared platform.
 
-3. If you cannot point clearly to your model for multiplicative impact _before_ creating the platform team, then you _probably shouldn’t create the platform team_. Otherwise you’re pulling revenue-generating engineers off the coal face just to throw darts at the wall.
-
-> Photo by <a href="https://unsplash.com/@teapowered?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Robert Doyle</a> on <a href="https://unsplash.com/photos/inside-train-with-no-people-8mswK-LU5Vs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+3. If you cannot point clearly to your model for multiplicative impact _before_ creating the platform team, then you _probably shouldn't create the platform team_. Otherwise you're pulling revenue-generating engineers off the coal face just to throw darts at the wall.

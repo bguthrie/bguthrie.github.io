@@ -3,6 +3,9 @@ date: "2024-11-26T17:47:44-05:00"
 draft: false
 title: "Thoughtworks and the invention of modern software engineering"
 image: "muzammil-soorma-ayV1mD3HGyg-unsplash.jpg"
+image_alt: "Chicago's Aon Center, where Thoughtworks was (is?) headquartered"
+image_credit: "Photo by muzammilo on Unsplash"
+image_credit_url: "https://unsplash.com/@muzammilo"
 categories:
   - history
   - industry
@@ -128,5 +131,3 @@ Next time I’ll discuss Thoughtworks’ hiring bar and culture, and how these e
 ## Acknowledgments
 
 I'm indebted to Jenny Wong, Eric Schoenfeld, Zoe Gagnon, Saager Mhatre, Simon Brunning, Jason Yip, Steven Deobald, Ian Cartwright, Mike McCormack, Mike Roberts, and Ross Pettit for their feedback on this article.
-
-> Photo of Chicago's Aon Center, where Thoughtworks was (is?) headquartered, courtesy of [muzammilo](https://unsplash.com/@muzammilo) on [Unsplash](https://unsplash.com/).
