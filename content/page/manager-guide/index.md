@@ -1,20 +1,15 @@
 ---
 title: Manager guide
-menu:
-  main:
-    weight: 4
-    params:
-      icon: user
-
+date: 2026-01-24T15:40:00-05:00
 comments: false
 ---
 Hi there! I'm excited to be working with you. This is meant to give you a rough introduction to me—how I think, what I value, what works for me and what doesn't.
 
 ## What success looks like
 
-I want us to ship valuable software, quickly, sustainably, and at high quality. I want the teams I work with to be known for getting things done, not through heroics or long hours, but by consistently delivering work that matters. I want the people on those teams to grow in their craft and take pride in what they build. I want the companies we work for to succeed, and for the work to matter.
+I want us to ship valuable software, quickly, sustainably, and at high quality. I want the teams I work with to be known for getting things done, not through heroics or long hours, but by consistently delivering work that matters. I want the people on those teams to grow in their craft and take pride in what they build. I want us to succeed, for the companies we work for to succeed, and for the work to matter.
 
-That's the goal. Everything else in this document is in service of it.
+That's the idea. Everything else in this document is in service of it.
 
 ## About me
 
@@ -32,11 +27,11 @@ I keep my calendar open and block out work time if I have to. Please treat any o
 
 ### Speed matters
 
-I believe it is possible to [move fast](https://brianguthrie.com/p/the-move-faster-manifesto/), and that fast matters. Speed isn't about effort or hours worked—it's about lead time, the wall-clock time between when someone asks for something and when they get it. Every feature is a bet; more swings means more hits.
+I believe it is possible to [move fast](https://brianguthrie.com/p/the-move-faster-manifesto/), and that fast matters. Speed isn't about effort or hours worked; it's about lead time, the wall-clock time between when someone asks for something and when they get it. Every feature is a bet; more swings means more hits.
 
-Moving slowly is often a choice. Everyone involved has decided that speed is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes that's necessary. Usually it isn't.
+Moving slowly is often a choice. Everyone involved has decided that speed is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes that's necessary; sometimes it isn't.
 
-I expect intensity and urgency when it matters. Not performative busyness—actual shipping. I expect you to push to clear blockers, to tap someone on the shoulder instead of waiting on a code review, to bias toward action when the path is clear. Grinding is neither necessary nor sufficient for moving fast; the fastest teams I've worked with were not the ones pulling all-nighters.
+I expect intentionality and a bias to action when it matters. I need you to work out how clear blockers by escalating, to tap someone on the shoulder instead of waiting on a code review, to choose a direction when the path is clear. For me personally, grinding is neither necessary nor sufficient for moving fast; the fastest teams I've worked with were not the ones pulling all-nighters.
 
 ### Teams compound talent
 
@@ -101,17 +96,9 @@ We're all on a learning journey, all the time, and we won't always agree on indi
 * **I (generally) won't review your code or estimate on your behalf** unless I'm acting as a member of the delivery team or you ask me explicitly for my take. I have some strongly-held technical opinions, but as a manager, I won't always have a deep grasp of the particulars of the problem you're working on. I would be happy to give you feedback on your code or **pair with you** if you ask me to do so. (My [Ward Number](https://wiki.c2.com/?WardNumber) is 2.)
 * **I won't let you off the hook for the simple stuff.** Show up on time. Be present and committed, prepared and honest. Communicate with others. Honor your users. Be kind to your teammates. Take this work seriously.
 
-## Tradeoffs
-
-This approach isn't for everyone.
-
-If you thrive in environments with high autonomy, shared ownership, and a bias toward shipping—where teams matter more than heroes and quality is a prerequisite for speed, not a tradeoff against it—we'll probably work well together. If you want to be the lone genius who owns a critical system that only you understand, or if you prefer environments where individual contribution is measured and rewarded in isolation, this isn't the right fit.
-
-I also know that emphasizing teams and process can sound soft to people who've seen those words used as cover for bureaucracy and diffused accountability. That's not what I mean. I know what it feels like to get spiritually invested in something that fails—it's awful. I care about this stuff because failure hurts, and I've found that the fastest, most effective way to avoid it—sustainably—is with strong individuals working together toward shared goals, not despite that approach.
-
 ## Books, Talks & Articles
 
-I recommend each of these for the way they may alter how you approach software work. Depending on role and seniority, I may ask you to familiarize yourself with some or all of them. I'd appreciate feedback and recommendations.
+I recommend each of these for the way they may alter how you approach software work. Depending on role and seniority, I may ask you to familiarize yourself with some of them depending on context. I'd appreciate feedback and recommendations.
 
 ### For Current or Aspiring Managers
 
