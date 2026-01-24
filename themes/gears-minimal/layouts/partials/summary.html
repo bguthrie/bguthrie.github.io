@@ -3,6 +3,12 @@
     <a href="{{ .RelPermalink }}" class="group-hover:text-gray-600 dark:group-hover:text-gray-300">
       {{ .Title }}
     </a>
+    {{ if .Draft }}
+      <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Draft</span>
+    {{ end }}
+    {{ if .Params.hidden }}
+      <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Unpublished</span>
+    {{ end }}
   </h2>
   <div class="text-sm text-gray-500 dark:text-gray-400 mb-2">
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>

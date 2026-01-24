@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="max-w-7xl mx-auto px-4 py-8">
+  <div class="grid grid-cols-1 lg:grid-cols-[240px_1fr] xl:grid-cols-[240px_1fr_240px] gap-8">
+
+    {{/* Left sidebar - identity */}}
+    {{ partial "sidebar.html" . }}
+
+    {{/* Post list */}}
+    <main class="min-w-0">
+      <header class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold font-sans mb-2">{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="text-gray-600 dark:text-gray-400">{{ . }}</p>
+        {{ end }}
+      </header>
+
+      <div class="space-y-8">
+        {{ $posts := where site.RegularPages "Section" "post" }}
+        {{ $posts = where $posts "Params.hidden" true }}
+        {{ if $posts }}
+          {{ range $posts.ByDate.Reverse }}
+            {{ partial "summary.html" . }}
+          {{ end }}
+        {{ else }}
+          <p class="text-gray-500 dark:text-gray-400">No unpublished articles.</p>
+        {{ end }}
+      </div>
+    </main>
+
+  </div>
+</div>
+{{ end }}

@@ -30,8 +30,11 @@
       <header class="mb-8">
         <h1 class="text-3xl md:text-4xl font-bold font-sans mb-4">
           {{ .Title }}
+          {{ if .Draft }}
+              <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Draft</span>
+          {{ end }}
           {{ if .Params.hidden }}
-              <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Unlisted</span>
+              <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Unpublished</span>
           {{ end }}
         </h1>
         <div class="text-sm text-gray-600 dark:text-gray-400 font-sans">
@@ -45,9 +48,9 @@
 
 
       {{/* Article body */}}
-      <div class="prose prose-xl prose-gray dark:prose-invert max-w-none font-serif
+      <div class="prose prose-lg prose-p:text-xl prose-gray dark:prose-invert max-w-none font-serif
                   prose-p:leading-relaxed
-                  prose-headings:font-sans prose-headings:font-bold
+                  prose-headings:font-sans prose-headings:font-bold prose-headings:text-md
                   prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
                   prose-code:before:content-none prose-code:after:content-none">
         {{ .Content }}

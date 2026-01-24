@@ -5,7 +5,7 @@ date: 2024-11-30T15:28:22-05:00
 image: "patrick-robert-doyle-8mswK-LU5Vs-unsplash.jpg"
 image_credit: "Photo by Patrick Robert Doyle on Unsplash"
 image_credit_url: "https://unsplash.com/@teapowered"
-hidden: true
+hidden: false
 draft: true
 categories:
   - sdlc

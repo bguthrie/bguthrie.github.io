@@ -7,9 +7,9 @@ image_credit: "Photo by Zach Reiner on Unsplash"
 image_credit_url: "https://unsplash.com/@_zachreiner_"
 math:
 license:
-hidden: false
+hidden: true
 comments: true
-draft: true
+draft: false
 categories:
   - platform
   - sdlc
@@ -65,13 +65,15 @@ I looked at AI company documentation, engineering blogs, tool announcements, and
 
 The [2025 Stack Overflow survey](https://survey.stackoverflow.co/2025) shows continued acceleration: 84% of developers now use or plan to use AI tools, up from 76% in 2024 and 44% in 2023. Nearly half (47%) use them daily. Yet trust is declining—46% of developers actively distrust AI tool accuracy versus 33% who trust it, with the primary frustration being "AI solutions that are almost right, but not quite" (66% of users).
 
-GitHub's [2025 Octoverse report](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/) documents the transformation: nearly 80% of new developers use Copilot within their first week, commits jumped 25% to roughly 1 billion annually, and TypeScript became the most-used language—"the most significant language shift in more than a decade." That shift matters: developers are choosing typed languages that work better with AI code generation. Yet neither report addresses how codebase architecture affects AI effectiveness.
+GitHub's [2025 Octoverse report](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/) documents the transformation: nearly 80% of new developers use Copilot within their first week, commits jumped 25% to roughly 1 billion annually, and TypeScript became the most-used language—"the most significant language shift in more than a decade." The obvious implication is that tools with strong deterministic guardrails, like robust types, work better with AI code generation. Yet neither report addresses how codebase structure affects AI effectiveness.
 
-### Practitioners report good results at small-medium scale
+### Practitioners report good results at moderate scale
 
 But there's more direct evidence if you dig into developer discussions. On Hacker News, developers working with single-language monorepos report notably better AI outcomes. [One developer explained their success](https://news.ycombinator.com/item?id=46481814): "Consistent patterns throughout...once I learn how you do things in one area, it applies everywhere." [A startup shared their workflow](https://news.ycombinator.com/item?id=46292682) of assigning GitHub issues to Copilot within their monorepo, estimating "LLMs are worth about 1.5 excellent junior/mid-level engineers per engineer."
 
 The pattern is consistent: developers with well-structured, single-language monorepos where conventions repeat throughout report significantly better results than those working across polyrepo setups. However, scale still matters—[one developer reported](https://news.ycombinator.com/item?id=44912035) Cursor "lost track after 250K tokens, broke unrelated modules" on a 1.2M-line monorepo, suggesting current tools have real limits.
+
+Anecdotally, within my network, practitioners in the enterprise report success either way. Some folks are optimistic for the return of "proper" REST built on [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS), one prominent monorepo architect reports plenty of success using tools like `bazel query` and building maps of the territory into `CLAUDE.md`, some folks have success using a "synthetic"/poor man's monorepo with multiple codebases checked out into a common folder (something we've seen some success with at [Justworks](https://justworks.com) as well), and at least one CTO has pushed their org intentionally into one (and functionally banished IDEs to boot.)
 
 ### The implication is that monorepos win
 
@@ -83,27 +85,27 @@ The cognitive load problem that Fowler & Lewis identified—[complexity shifting
 
 ## The qualified judgment
 
-Based on the available evidence, **I think monorepos are better positioned for AI-assisted development**, but with important caveats. I'll be transparent that I have a bias here—I prefer monorepos, and have in general built accordingly—but it's important to be honest about the tradeoffs.
+Based on the available evidence, **monorepos are better positioned for AI-assisted development**, but with important caveats. I'll be transparent that I have a bias here (I prefer monorepos, and have in general built accordingly), but it's important to be honest about the tradeoffs.
 
-The core advantage is straightforward: AI coding assistants work by understanding context and suggesting changes based on patterns. Monorepos make context available and patterns visible in ways that polyrepo architectures don't. The promise of AI tools is that they can hold more of your system in their "head" than you can—but only if that system is actually available to them.
+The core advantage is straightforward: LLMs do better when they world they can see is coherent, and since they're fully capable of working end-to-end as generalist coders, systems that allow them to make integrated changes have significant time-to-release advantages. Both monorepo and polyrepo architectures can provide information about how systems communicate with each other, the latter especially with good tooling, but only one of these allows you to build that coherence into a single shippable change.
 
 However, this advantage only holds if:
 
-1. **You have good monorepo tooling**. A giant repo with slow builds and unclear dependencies doesn't help anyone, AI or otherwise. You need a tool like Bazel to make the codebase navigable and maintainable. This is true either way; I'd argue that it's not a monorepo without the right kind of tooling.
+1. **You have reasonably good monorepo tooling**, especially at scale. A giant repo with slow builds and unclear dependencies doesn't help anyone, AI or otherwise. You need tools like Bazel to make the codebase navigable and maintainable. This is true either way; I'd argue that it's not properly a monorepo without the right kind of build tooling.
 
 2. **Your code is well-structured**. More context isn't inherently valuable if it's noisy or inconsistent. The same architectural discipline that makes monorepos work for humans—clear module boundaries, explicit dependencies, consistent conventions—makes them work for AI too.
 
 3. **Your AI tools can handle the scale**. Current generation tools are improving fast, but context window limits and retrieval quality still matter. A 10-million-line monorepo might exceed what today's tools can effectively index and reason about. Build tools can help limit context by walking the dependency graph and providing a focused view of the codebase, and you can deploy subagents to handle specific parts of the codebase. But it's a real issue at scale.
 
-4. **You're not using "monorepo" as an excuse to avoid architectural boundaries**. The best monorepos have clear module boundaries and explicit interfaces; they're just managed together. If your monorepo is actually an undifferentiated ball of mud, neither humans nor AI will understand it well.
+4. **You're not using "monorepo" as an excuse to avoid architectural boundaries**. The best monorepos have clear module boundaries and explicit interfaces; they're just managed together. If your monorepo is just a regular old undifferentiated ball of mud, neither humans nor coding agents will understand it well.
 
 ### Does this hold at scale?
 
-The most important caveat is about scale. What we know about token exhaustion—illustrated by the anecdote about Cursor losing track after 250K tokens on a 1.2M-line monorepo, but widely discussed elsewhere—suggests that the advantage might evaporate or even reverse as codebases grow. We have no evidence about whether AI helps or hurts when reasoning about Google-scale monorepos. And critically, we don't know whether today's AI-first startups will face the same organizational pressures that have driven a generation of startups born as Rails and J2EE monoliths to transition to polyrepo architectures.
+The most important caveat is about scale. What we know about token exhaustion—illustrated by the anecdote about Cursor losing track after 250K tokens on a 1.2M-line monorepo, but widely discussed elsewhere—suggests that the advantage might evaporate or even reverse as codebases grow absent good tooling. We have no evidence about whether AI helps or hurts when reasoning about Google-scale monorepos. And critically, we don't know whether today's AI-first startups will face the same organizational pressures that have driven a generation of startups born as Rails and J2EE monoliths to transition to polyrepo architectures.
 
 Those transitions weren't just technical decisions. They were responses to team growth, organizational complexity, and the difficulty of coordinating changes across an increasingly large surface area. Will AI change that calculus? Can better AI tooling solve the coordination problems that microservices were meant to address? Or will we see the same pattern repeat—startups building unified codebases, then breaking them apart as they scale?
 
-The case for polyrepo architectures in the AI era is weaker than I expected. The primary argument—focused, bounded context—sounds appealing but runs counter to how these tools actually work. They get better with more context, not less, as long as that context is structured well. The challenge of understanding distributed systems doesn't disappear because you've split them across repositories; it just becomes invisible to your AI assistant.
+The case for polyrepo architectures in the AI era is weaker than I expected. The primary argument—focused, bounded context—is appealing and meaningfully, but doesn't leverage their power fully. They get better with more context, not less, as long as that context is structured well. The challenge of understanding distributed systems doesn't disappear because you've split them across repositories; it just becomes less visible to your agents.
 
 ## What we need to learn
 
@@ -111,7 +113,7 @@ This feels like an important question that the industry hasn't seriously engaged
 
 **Better metrics on AI tool effectiveness across architectures**. Which setups actually make developers more productive? Where do AI assistants struggle or excel? Hard data would be a good next step, but is famously difficult to obtain at scale.
 
-**Explicit guidance from AI tool makers**. Anthropic, OpenAI, and others should study and publish recommendations about codebase structures that optimize for their tools. Right now we're guessing.
+**Explicit guidance from AI tool makers**. Anthropic, OpenAI, and others should study and publish recommendations about codebase structures that optimize for their tools. Right now everyone's just guessing.
 
 **Case studies from companies using AI at scale**. Google, Vercel, and other large monorepo shops: how is AI working for you? Companies that have transitioned from monoliths to microservices: did it get harder or easier to use AI tools?
 
