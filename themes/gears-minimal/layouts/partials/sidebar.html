@@ -33,16 +33,16 @@
     </h1>
 
     {{/* Subtitle/bio */}} {{ with .Site }}
-    <p class="text-sm text-gray-600 leading-relaxed">
+    <p class="text-sm text-gray-600 dark:text-white leading-relaxed">
       {{ .Params.sidebar.subtitle }}
     </p>
     {{ with .GetPage "/page/bio" }}
     <a
       href="{{ .RelPermalink }}"
-      class="text-sm text-blue-600 hover:text-underline"
-      >About me
+      class="inline-block text-sm text-blue-600 hover:text-underline pt-2"
+      >Bio
     </a>
     {{ end }} {{ end }} {{/* Dark mode toggle */}}
-    <div class="mt-6">{{ partial "dark-toggle.html" . }}</div>
+    <div class="mt-10">{{ partial "dark-toggle.html" . }}</div>
   </div>
 </aside>

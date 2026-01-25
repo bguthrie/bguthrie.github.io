@@ -514,7 +514,7 @@ Create `themes/minimal/layouts/_default/single.html`:
         <h1 class="text-3xl md:text-4xl font-bold font-serif mb-4">
           {{ .Title }}
           {{ if .Params.hidden }}
-            <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Unlisted</span>
+            <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-sm ml-2 font-sans font-normal align-middle">Unlisted</span>
           {{ end }}
         </h1>
         <div class="text-sm text-gray-500 font-sans">
@@ -529,7 +529,7 @@ Create `themes/minimal/layouts/_default/single.html`:
       {{/* Article body */}}
       <div class="prose prose-lg max-w-none font-serif
                   prose-headings:font-sans prose-headings:font-bold
-                  prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+                  prose-a:text-blue-600 prose-a:no-underline prose-a:hover:underline
                   prose-blockquote:border-gray-300 prose-blockquote:text-gray-600
                   prose-code:before:content-none prose-code:after:content-none">
         {{ .Content }}

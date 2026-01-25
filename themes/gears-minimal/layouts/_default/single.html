@@ -16,7 +16,7 @@
             class="w-full rounded-lg object-cover max-h-96"
           >
           {{ with $.Params.image_credit }}
-            <figcaption class="absolute bottom-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
+            <figcaption class="absolute -bottom-6 right-2 text-xs text-gray-400 dark:text-gray-400">
               {{- if $.Params.image_credit_url -}}
                 <a href="{{ $.Params.image_credit_url }}" class="hover:underline" target="_blank" rel="noopener">{{ . }}</a>
               {{- else -}}
@@ -31,10 +31,10 @@
         <h1 class="text-3xl md:text-4xl font-bold font-sans mb-4">
           {{ .Title }}
           {{ if .Draft }}
-              <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Draft</span>
+              <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 px-2 py-1 rounded-sm ml-2 font-sans font-normal align-middle">Draft</span>
           {{ end }}
           {{ if .Params.hidden }}
-              <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-1 rounded ml-2 font-sans font-normal align-middle">Unpublished</span>
+              <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 px-2 py-1 rounded-sm ml-2 font-sans font-normal align-middle">Unpublished</span>
           {{ end }}
         </h1>
         <div class="text-sm text-gray-600 dark:text-gray-400 font-sans">
@@ -51,7 +51,7 @@
       <div class="prose prose-lg prose-p:text-xl prose-gray dark:prose-invert max-w-none font-serif
                   prose-p:leading-relaxed
                   prose-headings:font-sans prose-headings:font-bold prose-headings:text-md
-                  prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
+                  prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline prose-a:hover:underline
                   prose-code:before:content-none prose-code:after:content-none">
         {{ .Content }}
       </div>

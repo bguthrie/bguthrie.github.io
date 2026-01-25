@@ -2,26 +2,11 @@ version: '3'
 
 tasks:
   dev:
-    desc: Run Tailwind and Hugo in parallel for development
-    deps: [css:build, css:watch, hugo:serve]
-
-  css:build:
-    desc: Build Tailwind CSS
-    cmds:
-      - npx tailwindcss -i ./themes/gears-minimal/assets/css/main.css -o ./static/css/main.css --config ./tailwind.config.js
-
-  css:watch:
-    desc: Watch Tailwind CSS for changes
-    cmds:
-      - npx tailwindcss -i ./themes/gears-minimal/assets/css/main.css -o ./static/css/main.css --config ./tailwind.config.js --watch
-
-  hugo:serve:
-    desc: Run Hugo development server
+    desc: Run Hugo development server (CSS processed via PostCSS)
     cmds:
       - hugo server -D
 
   build:
     desc: Build for production
     cmds:
-      - npx tailwindcss -i ./themes/gears-minimal/assets/css/main.css -o ./static/css/main.css --config ./tailwind.config.js --minify
       - hugo --minify

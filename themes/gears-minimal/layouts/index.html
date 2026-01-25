@@ -16,7 +16,7 @@
             class="w-full rounded-lg object-cover max-h-96"
           >
           {{ with $.Params.image_credit }}
-            <figcaption class="absolute bottom-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded">
+            <figcaption class="absolute bottom-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded-sm">
               {{- if $.Params.image_credit_url -}}
                 <a href="{{ $.Params.image_credit_url }}" class="hover:underline" target="_blank" rel="noopener">{{ . }}</a>
               {{- else -}}

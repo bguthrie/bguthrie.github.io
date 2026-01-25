@@ -154,7 +154,7 @@ Inline badge next to article title:
 <h1>
   {{ .Title }}
   {{ if .Params.hidden }}
-    <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded ml-2">Unlisted</span>
+    <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-sm ml-2">Unlisted</span>
   {{ end }}
 </h1>
 ```

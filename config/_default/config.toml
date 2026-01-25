@@ -17,3 +17,12 @@ hasCJKLanguage = false
 
 [pagination]
 pagerSize = 5
+
+[build]
+# Write hugo_stats.json for better Tailwind CSS integration
+writeStats = true
+
+# Bust CSS cache when hugo_stats.json changes (i.e., when templates add new classes)
+[[build.cachebusters]]
+source = "hugo_stats\\.json"
+target = "css"

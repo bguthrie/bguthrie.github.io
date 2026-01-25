@@ -154,4 +154,4 @@ These talks and articles are interesting for the way they've affected how the in
 * [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/), Joel Spolsky (essay) — The idea that all non-trivial abstractions leak is now conventional wisdom, but this is where it was articulated.
 * [Folklore](https://folklore.org/), Andy Hertzfeld et al — A collection of wonderful stories about the development of the original Macintosh, including firsthand accounts of Steve Jobs as a leader. My favorite, still entertaining and  relevant today, is [Round Rects are Everywhere!](https://www.folklore.org/Round_Rects_Are_Everywhere.html).
 
-If I've missed anything or you have any suggestions, I'd love to hear them.
+If you've made it to the bottom of this essay and you work for me, point out a round rect the next time we chat. I'll buy you lunch.
