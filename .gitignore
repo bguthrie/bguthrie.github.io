@@ -3,5 +3,6 @@ resources/_gen/
 static/css/main.css
 .DS_Store
 .hugo_build.lock
+hugo_stats.json
 .worktrees/
 node_modules/
