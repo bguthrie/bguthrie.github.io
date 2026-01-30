@@ -7,6 +7,8 @@ image_credit: 'Photo by Cara Fuller on Unsplash'
 image_credit_url: 'https://unsplash.com/@caraventurera'
 categories:
   - sdlc
+aliases:
+  - /faster
 ---
 
 I've worked in the software industry for over twenty years. I have been a consultant, a line engineer, a director, a founder, and a CTO. I have worked at firms as small as two engineers and as large as fifty thousand. I frequently get asked how to move faster in software. This is what I say.

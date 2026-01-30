@@ -1,7 +1,7 @@
 ---
 title: "What the next year of software development looks like"
 slug: "sdlc-predictions-2026"
-description: "Predictions for 2026: agentic development becomes the new normal, architecture gets re-litigated, and software craft shifts up a conceptual level."
+description: "In 2026, agentic development becomes the new normal."
 date: 2026-01-28
 image: tin-lay-zin-nrDeTztwnBg-unsplash.jpg
 image_credit: "Photo by Tin Lay Zin on Unsplash"

@@ -1,40 +1,42 @@
 {{ define "main" }}
 <div class="max-w-7xl mx-auto px-4 py-8">
-  <div class="grid grid-cols-1 lg:grid-cols-[240px_1fr] xl:grid-cols-[240px_1fr_240px] gap-8">
-
-    {{/* Left sidebar - identity */}}
-    {{ partial "sidebar.html" . }}
-
-    {{/* Post list */}}
+  <div
+    class="grid grid-cols-1 lg:grid-cols-[240px_1fr] xl:grid-cols-[240px_1fr_240px] gap-8"
+  >
+    {{/* Left sidebar - identity */}} {{ partial "sidebar.html" . }} {{/* Post
+    list */}}
     <main class="min-w-0">
-      {{/* Hero image */}}
-      {{ with .Params.image }}
-        <figure class="mb-8 relative">
-          <img
-            src="{{ . }}"
-            alt="{{ with $.Params.image_alt }}{{ . }}{{ else }}{{ $.Site.Title }}{{ end }}"
-            class="w-full rounded-lg object-cover max-h-96"
+      {{/* Hero image */}} {{ with .Params.image }}
+      <figure class="mb-8 relative">
+        <img
+          src="{{ . }}"
+          alt="{{ with $.Params.image_alt }}{{ . }}{{ else }}{{ $.Site.Title }}{{ end }}"
+          class="w-full rounded-lg object-cover max-h-96"
+        />
+        {{ with $.Params.image_credit }}
+        <figcaption
+          class="absolute -bottom-6 right-2 text-xs text-gray-400 dark:text-gray-400"
+        >
+          {{- if $.Params.image_credit_url -}}
+          <a
+            href="{{ $.Params.image_credit_url }}"
+            class="hover:underline"
+            target="_blank"
+            rel="noopener"
+            >{{ . }}</a
           >
-          {{ with $.Params.image_credit }}
-            <figcaption class="absolute bottom-2 right-2 text-xs text-white/90 bg-black/50 px-2 py-1 rounded-sm">
-              {{- if $.Params.image_credit_url -}}
-                <a href="{{ $.Params.image_credit_url }}" class="hover:underline" target="_blank" rel="noopener">{{ . }}</a>
-              {{- else -}}
-                {{ . }}
-              {{- end -}}
-            </figcaption>
-          {{ end }}
-        </figure>
-      {{ end }}
-      <div class="space-y-8">
-        {{ $posts := where site.RegularPages "Section" "post" }}
-        {{ $posts = where $posts "Params.hidden" "!=" true }}
-        {{ range $posts.ByDate.Reverse }}
-          {{ partial "summary.html" . }}
+          {{- else -}} {{ . }} {{- end -}}
+        </figcaption>
         {{ end }}
+      </figure>
+      {{ end }}
+      <h1 class="text-4xl font-bold mb-8 inline-block">Writing</h1>
+      <div class="space-y-8">
+        {{ $posts := where site.RegularPages "Section" "post" }} {{ $posts =
+        where $posts "Params.hidden" "!=" true }} {{ range $posts.ByDate.Reverse
+        }} {{ partial "summary.html" . }} {{ end }}
       </div>
     </main>
-
   </div>
 </div>
 {{ end }}
