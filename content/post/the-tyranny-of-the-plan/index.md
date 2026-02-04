@@ -58,7 +58,7 @@ So what _has_ turned out to be better—and what this conference is all about—
 
 There's another kind of plan, construction plans, which again are computerized. And how well do they work? About as well as all those other computerized plans. The minute it rains, or somebody doesn't show up, or takes a little bit of extra time or something like that, it falls apart.
 
-There's an organization called the Lean Construction Institute that's got a huge amount of stuff work done in this area. And they've devised something called the Last Planner System, which is a weekly planning mechanism whereby you look at what's supposed to more or less happen based on the plan and what actually happens and you commit to the next week of work. In that way, you actually get huge amounts done—more than if you try to follow a plan like this. 
+There's an organization called the Lean Construction Institute that's got a huge amount of work done in this area. And they've devised something called the Last Planner System, which is a weekly planning mechanism whereby you look at what's supposed to more or less happen based on the plan and what _actually_ happens, and you commit to the next week of work [on that basis]. In that way, you actually get huge amounts done—more than if you try to follow a plan like this. 
 
 Back when computers started generating all of this detail was when we started getting nightmares about how are we supposed to follow it. I don't know that this kind of detailed planning works for any area where it's been tried. When there's any kind of variation, there's no track record of it working.
 
@@ -66,7 +66,9 @@ People have been building buildings for a long time. Now, we didn't try to do ma
 
 ### "Did you know that they built the Empire State Building in _eight months?_"
 
-It wasn't _exactly_ eight months. They started in September 1929—they signed a contract September 21st and started demolition on September 22nd—and what happened the next month? The stock market crashed. Virtually all of the other buildings that were planned and on the drawing board were canceled in New York City at the time, but this one got built on January 22nd 1930.
+So, I was in Denmark a couple of years ago, and I ran into somebody who said so. He was in the construction industry, and he said there's something that's very strange that I have to investigate: did you know that they built the Empire State Building in _eight months?_ I said, no kidding. He says, Yeah, well, I have to figure out how that happened. That was _long_ before there were computers. How could they have done that?
+
+Well, it wasn't _exactly_ eight months. They started in September 1929—they signed a contract September 21st and started demolition on September 22nd—and what happened the next month? The stock market crashed. Virtually all of the other buildings that were planned and on the drawing board were canceled in New York City at the time, but this one got built on January 22nd 1930.
 
 The site had already been cleared; it had quite a few 20-story buildings on it. On March 17th—this is Saint Patrick's Day, and it's not an accident—they started the steel construction. 
 
