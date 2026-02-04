@@ -223,6 +223,8 @@ So, let's go back to my first question. Where do plans come from? I want to talk
 
 It ran from 1956 to 1959, and a program that was supposed to take about 9 years actually took about 3. And it was constantly and continually rapidly improved upon for the next 8 years, so they took the full 9 or 12 years, but they did it in small stages. And this was the beginning of PERT charts. I kid you not, this is where they were invented. They were invented by William Rayborn, and he had a reason for that.
 
+![Polaris launch](polaris-launch.jpg)
+
 This was a long term program, and it was gonna take a lot of money from Congress, and Rayborn knew that Congress was elected every 2 years and would always change, so he invented this interesting story. He says, I have this wonderful management method, it's called PERT. And it's going to keep us basically on schedule for the whole thing. (In this case, by the way, money didn't matter. Schedule was the only thing that mattered.) 
 
 He used this as sort of a facade to keep Congress funding the thing because he had this fantastic fail-proof management system. It didn't depend on people anymore; it depended upon this wonderful management system. Now basically, it was designed to track an extremely aggressive schedule. They didn't take into account any costs. But it really and truly was a facade. If you read this book, which summarized from a lot of detailed interviews exactly what happened, he said that it wasn't really used by the project in the early years. They didn't use this PERT chart. They just did it in order to keep Congress happy. The requirements and scope were changing all the time anyway, so the chart charts never meant anything. It was a nervous thing.
