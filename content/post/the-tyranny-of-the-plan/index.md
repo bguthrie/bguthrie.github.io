@@ -4,6 +4,10 @@ description: "A transcription of Mary Poppendieck's famous talk on the fragility
 date: 2026-02-02T20:07:01-05:00
 draft: false
 hidden: true
+image: kit-suman-WQwtk_t4oJI-unsplash.jpg
+image_url: gray-high-rise-building-WQwtk_t4oJI
+image_credit: Photo by Kit Suman on Unsplash
+      
 tags:
   - manufacturing
   - planning
@@ -50,7 +54,7 @@ And how well does that work? It gets about as nervous as an MRP plan whenever yo
 
 So what _has_ turned out to be better—and what this conference is all about—is something a little bit more like this: it's basically a Kanban board to _pull_ your software through the system while limiting work in process at the same time.
 
-## The Empire State Building
+## How did we plan before computers?
 
 There's another kind of plan, construction plans, which again are computerized. And how well do they work? About as well as all those other computerized plans. The minute it rains, or somebody doesn't show up, or takes a little bit of extra time or something like that, it falls apart.
 
@@ -209,7 +213,7 @@ The other thing you need in order to make this all work is what I'm going to cal
 
 If your customers get stuff that they don't really want that isn't working for them, that has even small defects, problems in it, they should give you feedback and you and you should ask for it, OK? This is a reliable workflow, um, and a reliable workflow has output here where you get your final output that is wonderful stuff for your customers. But it also has all these intermediate steps to get there, so it has a pathway. How does stuff move? If you think back to the steel schedule for the Empire State Building, there was overall design. Order to manufacturing, detailed design, delivery on site, and put up. OK, so they have a sequence of activities with a clear workflow. And connections. OK, so you have handovers from one spot to the next, for example, from the design group to the mill or somebody like that, and what you need to do at each handover is make sure that it's done correctly. You have feedback and if things are not happening correctly at that hand handover, you fix it. And then you have to have some understanding about what constitutes good. Good development, good programming, good, um, TDD, good, uh, continuous integration, those sorts of things. And clear standards for that and then you constantly improve that. And the last thing for improvement is never add value to defective input. Figure out what caused the defect and fix it. Verify that your output meets the needs of your customers. And when a problem is exposed, forget workarounds, don't ignore the noise and relegate it to the background. Find and fix the root cause of it.
 
-## PERT and Polaris
+## What actually works?
 
 So, let's go back to my first question. Where do plans come from? I want to talk about another thing that happened just as computers were beginning to dawn. This is one of the most successful weapons projects—you might not be interested in a weapons projects, but this one's kind of interesting. This was the Polaris submarine project. 
 
