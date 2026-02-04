@@ -24,8 +24,6 @@ That's where they come from, OK? They get generated on some computer or other. A
 
 I was in manufacturing plants in the 1980s and I was the IT manager, and the thing I managed was a material requirements planning (MRP) system.
 
-### "One of the things I learned about was a 'nervous MRP'"
-
 An MRP plan looks sort of like this.
 
 ![An example of an MRP plan](poppendieck-mrp-plans.png)
@@ -55,8 +53,6 @@ So what _has_ turned out to be better—and what this conference is all about—
 ## The Empire State Building
 
 There's another kind of plan, construction plans, which again are computerized. And how well do they work? About as well as all those other computerized plans. The minute it rains, or somebody doesn't show up, or takes a little bit of extra time or something like that, it falls apart.
-
-### "People have been building buildings for a long time"
 
 There's an organization called the Lean Construction Institute that's got a huge amount of stuff work done in this area. And they've devised something called the Last Planner System, which is a weekly planning mechanism whereby you look at what's supposed to more or less happen based on the plan and what actually happens and you commit to the next week of work. In that way, you actually get huge amounts done—more than if you try to follow a plan like this. 
 
@@ -128,7 +124,7 @@ So by working together as a team, these folks in October, November, December tim
 
 So they went to Otis Elevator and they said, what do we got to do to meet our design criteria? And they started out with figuring out how the elevators were going to be laid out. They didn't have design loopbacks because they had extremely experienced builders. The builders knew what they were doing. They've been building skyscrapers for between 30 and 40 years, and they understood what they had to pay attention to and what was possible and what had to be designed in what order to eliminate loopbacks. Now all the computers in the world are not going to substitute for deep experience. And I propose that if they didn't know what they were doing, there's no way they would not have stood a chance to hit that kind of number.
 
-### Five hundred trucks a day
+### "Five hundred trucks a day"
 
 Another thing that they did was they thought about the constraint and the builders understood very well that the key constraint was not stone, steel, or anything like that, not labor, but _getting that much junk onto two small square blocks in the middle of a great big busy city_ in that amount of time. I mean, _think_ about all the stone and all the pipes and all the wires and the windows and the steel, all of that had to be delivered within a very short window of time, and they knew that if they figured out how the stuff was going to move, they were going to be able to get the rest done if they could get the right stuff in the right spot at the right time at the right floor. Every single day for a year, the building would happen, and that was basically all they did and all that they scheduled and all that they focused on.
 
@@ -146,7 +142,7 @@ The other thing they had was what I would call cash flow thinking, and I think c
 
 Cash flow thinking they said, guess what? Every single day is costing us $10,000, which is $120,000 a day today. So every day that we can save, we can save, you know, $10,000 or the equivalent of $120,000, so it pays to invest money to save time. So they invested money, for example, in a little railroad track that went on all of the floors to move materials around. They invested money in having bigger electrical boxes. That for all the switches and all of the plugs so that they could take the conduit and run it straight in between rather than having to bend it into the smaller box. So now 85 years later, they still have the big electrical boxes, but guess what? They got the building up faster because of it.
 
-### "They created the schedule and then created the design to fit in the schedule"
+### "They created the design to fit in the schedule"
 
 And here I think is the critical thing, the schedule was not laid out based on the details of the building design. They didn't design the building and then create the schedule. _They created the schedule and then created the design to fit in the schedule._ The building was designed based on the constraints of the situation, and here were the constraints that they had on September 21st when they signed the contract:
 
@@ -213,13 +209,9 @@ The other thing you need in order to make this all work is what I'm going to cal
 
 If your customers get stuff that they don't really want that isn't working for them, that has even small defects, problems in it, they should give you feedback and you and you should ask for it, OK? This is a reliable workflow, um, and a reliable workflow has output here where you get your final output that is wonderful stuff for your customers. But it also has all these intermediate steps to get there, so it has a pathway. How does stuff move? If you think back to the steel schedule for the Empire State Building, there was overall design. Order to manufacturing, detailed design, delivery on site, and put up. OK, so they have a sequence of activities with a clear workflow. And connections. OK, so you have handovers from one spot to the next, for example, from the design group to the mill or somebody like that, and what you need to do at each handover is make sure that it's done correctly. You have feedback and if things are not happening correctly at that hand handover, you fix it. And then you have to have some understanding about what constitutes good. Good development, good programming, good, um, TDD, good, uh, continuous integration, those sorts of things. And clear standards for that and then you constantly improve that. And the last thing for improvement is never add value to defective input. Figure out what caused the defect and fix it. Verify that your output meets the needs of your customers. And when a problem is exposed, forget workarounds, don't ignore the noise and relegate it to the background. Find and fix the root cause of it.
 
----
-
 ## PERT and Polaris
 
 So, let's go back to my first question. Where do plans come from? I want to talk about another thing that happened just as computers were beginning to dawn. This is one of the most successful weapons projects—you might not be interested in a weapons projects, but this one's kind of interesting. This was the Polaris submarine project. 
-
-### "He used this as a sort of facade to keep Congress funding the thing"
 
 It ran from 1956 to 1959, and a program that was supposed to take about 9 years actually took about 3. And it was constantly and continually rapidly improved upon for the next 8 years, so they took the full 9 or 12 years, but they did it in small stages. And this was the beginning of PERT charts. I kid you not, this is where they were invented. They were invented by William Rayborn, and he had a reason for that.
 
@@ -237,9 +229,7 @@ So if that wasn't what made the Polaris program successful, what was? What do we
 
 One of the things was they had a technical director. His name was Levering Smith, who had a fierce understanding of what he wanted to do, and he had complete control over the requirements. Now if you want to be successful, that's what you wanna do. You want to have control over the requirements. He got to change them if he didn't think he could meet them. So basically he designed the requirements to meet the schedule rather than designing the schedule to meet the requirements, and he made or directed all key decisions. His personal signature was on all the key interface engineering drawings for the first 8 years. He focused everything on deploying, getting these submarines in the water as fast as possible, so he managed to do something in 3 years that was considered to be a 9-year project.
 
-He did 3 stages simple stage, more complicated stage, and the final stage, 3 time box incremental deliveries. What a good idea. Um, his primary goal was an operational system just to learn from as early as possible and so when he got the job, he said, let's see, we're building a submarine right now, right? Yes, OK, how much room do we think we need for these missiles? I think it was, what was it, 40 ft. So he said, let's just take that submarine, stretch it out 40 ft, build it, and we'll figure out what to put in. Very much like um the Empire State Building. They started going before they had a design. 
-
-### A decentralized competitive organization
+He did three stages: simple stage, more complicated stage, and the final stage, three timeboxed incremental deliveries. What a good idea. His primary goal was an operational system just to learn from as early as possible and so when he got the job, he said, let's see, we're building a submarine right now, right? Yes, OK, how much room do we think we need for these missiles? I think it was, what was it, 40 ft? So he said, let's just take that submarine, stretch it out 40 ft, build it, and we'll figure out what to put in. Very much like the Empire State Building. They started going before they had a design. 
 
 He also had what I wanna call a decentralized competitive organization, and this is interesting and important. 
 
