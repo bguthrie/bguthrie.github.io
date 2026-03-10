@@ -18,7 +18,9 @@ I'm sympathetic to the goal, but it no longer seems tenable over the medium term
 
 Consequently, while the cost of _creating_ software seems to have dropped by something like an order of magnitude, the cost of _maintaining_ it probably hasn't dropped nearly as much, because maintenance requires knowing something is wrong, and invisible debt is invisible. Issues accumulate because the model can only plan for and absorb what fits within its context, and many codebases contain more features (and flaws) than can fit.
 
-Holding back the tide isn't the answer. But neither is pretending the tide doesn't carry risk. What I want to argue is that the right response is to change what we think of as business-forward engineering practice: to reclassify work that leaders have traditionally treated as overhead or debt paydown—tests, observability, monitoring, guardrails—as core product work, because it's the thing that makes AI-assisted velocity sustainable. And in exchange, to be less precious about the kind of code-level scrutiny that used to justify itself when humans wrote every line.
+Enterprises therefore face a choice: neglect certain kinds of human review, or dial back velocity and risk being disrupted?
+
+Holding back the tide isn't the answer, but neither is pretending the tide doesn't carry risk. What I want to argue is that the right response is to change what we think of as business-forward engineering practice: to reclassify work that leaders have traditionally treated as overhead or debt paydown—tests, observability, monitoring, guardrails—as core product work, because it's the thing that makes AI-assisted velocity sustainable. And in exchange, to be less precious about the kind of code-level scrutiny that used to justify itself when humans wrote every line.
 
 ## What kind of debt are we actually accumulating?
 
