@@ -1,0 +1,43 @@
+{{/* OG Image Generator
+     Produces a 1200x630 JPG with the post title overlaid on a background image.
+     Uses the post's header image if available, otherwise falls back to a site-wide default. */}}
+
+{{- $font := resources.Get "fonts/Inter-Bold.ttf" -}}
+
+{{/* Get background image: page bundle image or global fallback */}}
+{{- $bg := false -}}
+{{- with .Params.image -}}
+  {{- $bg = $.Resources.Get . -}}
+{{- end -}}
+{{- if not $bg -}}
+  {{- $bg = resources.Get "images/og-fallback.webp" -}}
+{{- end -}}
+
+{{/* Word-wrap the title to ~30 chars per line */}}
+{{- $title := .Title -}}
+{{- $words := split $title " " -}}
+{{- $lines := slice -}}
+{{- $currentLine := "" -}}
+{{- range $words -}}
+  {{- $candidate := . -}}
+  {{- if $currentLine -}}
+    {{- $candidate = printf "%s %s" $currentLine . -}}
+  {{- end -}}
+  {{- if and (gt (len $candidate) 30) $currentLine -}}
+    {{- $lines = $lines | append $currentLine -}}
+    {{- $currentLine = . -}}
+  {{- else -}}
+    {{- $currentLine = $candidate -}}
+  {{- end -}}
+{{- end -}}
+{{- if $currentLine -}}
+  {{- $lines = $lines | append $currentLine -}}
+{{- end -}}
+{{- $wrappedTitle := delimit $lines "\n" -}}
+
+{{/* Process the image: resize, darken, overlay text */}}
+{{- $img := $bg.Process "fill 1200x630 Center jpg" -}}
+{{- $img = $img | images.Filter (images.Brightness -40) -}}
+{{- $img = $img | images.Filter (images.Text $wrappedTitle (dict "size" 52 "color" "#ffffff" "font" $font "alignx" "center" "aligny" "center" "x" 600 "y" 315 "linespacing" 10)) -}}
+
+{{- return $img -}}
