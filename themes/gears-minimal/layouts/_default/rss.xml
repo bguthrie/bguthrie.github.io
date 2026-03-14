@@ -17,9 +17,7 @@
     <link>{{ .Permalink }}</link>
     <description>{{ .Site.Params.description | default .Site.Title }}</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>{{ .Site.LanguageCode }}</language>{{ with .Site.Author.email }}
-    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
-    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
+    <language>{{ .Site.LanguageCode }}</language>{{ with .Site.Copyright }}
     <copyright>{{.}}</copyright>{{end}}
     <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
     {{ printf "<atom:link href=%q rel=\"self\" type=\"application/rss+xml\"/>" .Permalink | safeHTML }}
