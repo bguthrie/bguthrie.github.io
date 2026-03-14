@@ -1,6 +1,9 @@
 {{/* OG Image Generator
-     Produces a 1200x630 JPG with the post title overlaid on a background image.
-     Uses the post's header image if available, otherwise falls back to a site-wide default. */}}
+     Produces a 1200x630 JPG with:
+     - The post's header image (or fallback) as background
+     - A gradient overlay darkening the bottom half
+     - The blog avatar in the upper-left corner
+     - The post title left-aligned at the bottom */}}
 
 {{- $font := resources.Get "fonts/Inter-Bold.ttf" -}}
 
@@ -12,6 +15,10 @@
 {{- if not $bg -}}
   {{- $bg = resources.Get "images/og-fallback.webp" -}}
 {{- end -}}
+
+{{/* Load gradient overlay and avatar */}}
+{{- $gradient := resources.Get "images/og-gradient.png" -}}
+{{- $avatar := resources.Get "img/profile.png" -}}
 
 {{/* Word-wrap the title to ~30 chars per line */}}
 {{- $title := .Title -}}
@@ -35,9 +42,17 @@
 {{- end -}}
 {{- $wrappedTitle := delimit $lines "\n" -}}
 
-{{/* Process the image: resize, darken, overlay text */}}
+{{/* Process the image: resize, gradient overlay, avatar, title text */}}
 {{- $img := $bg.Process "fill 1200x630 Center jpg" -}}
-{{- $img = $img | images.Filter (images.Brightness -40) -}}
-{{- $img = $img | images.Filter (images.Text $wrappedTitle (dict "size" 52 "color" "#ffffff" "font" $font "alignx" "center" "aligny" "center" "x" 600 "y" 315 "linespacing" 10)) -}}
+
+{{/* Apply gradient overlay (dark at bottom, transparent at top) */}}
+{{- $img = $img | images.Filter (images.Overlay $gradient 0 0) -}}
+
+{{/* Add avatar in upper-left corner (scaled to 96x96) */}}
+{{- $avatarSmall := $avatar.Process "fit 96x96 png" -}}
+{{- $img = $img | images.Filter (images.Overlay $avatarSmall 40 40) -}}
+
+{{/* Add title text: left-aligned, near the bottom */}}
+{{- $img = $img | images.Filter (images.Text $wrappedTitle (dict "size" 52 "color" "#ffffff" "font" $font "alignx" "left" "aligny" "bottom" "x" 40 "y" 590 "linespacing" 10)) -}}
 
 {{- return $img -}}
