@@ -1,6 +1,6 @@
 ---
 title: "Pairing Is Collaboration That Ships"
-description:
+description: Close collaboration focused on producing working software is an evergreen technique
 date: 2025-11-11T23:10:14-05:00
 image:
 math:

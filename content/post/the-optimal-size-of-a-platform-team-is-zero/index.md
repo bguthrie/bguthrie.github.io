@@ -1,30 +1,24 @@
 ---
-title: "The Optimal Size of a Platform Team Is Zero"
+title: "The optimal size of a platform team is zero. Is it the right size?"
 description:
 date: 2024-11-30T15:28:22-05:00
 image: "patrick-robert-doyle-8mswK-LU5Vs-unsplash.jpg"
 image_credit: "Photo by Patrick Robert Doyle on Unsplash"
 image_credit_url: "https://unsplash.com/@teapowered"
-hidden: false
-draft: true
+hidden: true
+draft: false
 categories:
   - sdlc
   - platform
 ---
 
-I’ve been a customer of platform engineering teams as a product engineer, and I’ve also run them as a leader. Consequently, I’ve done a lot of observation and thinking about good and bad patterns of management.
-
-This is the written version of a talk I give from time to time. It is an attempt at first-principles reasoning: I don’t believe that the correct _practical_ size is zero, but starting from nothing provides fresh insight about how platform teams should be structured and assessed—what they should care about.
-
-## What Even Is A Platform Engineering Team
-
 Platform Engineering is built around the idea that software engineers doing product work can do so more effectively when someone else is taking care of cross-cutting concerns: tooling, libraries, deployment. Some folks believe that infrastructure, ops, and security teams fall under the platform umbrella and some don’t; for the purposes of this argument, I’m going to lump them together.
 
 Instead of asking the engineers who do the product work to take care of those concerns themselves, and to leverage economies of scale, companies above a certain size will often carve off a subset of their engineering headcount—20% gets thrown around a lot—and focus them on these cross-cutting concerns.
 
-What’s relatively novel is the idea of pulling them all together into a coherent, internally-facing org, with its own guiding mandate and sets of relationships with product teams. These teams are often structured around the idea that “the platform is a product,” and that the relationship between platform teams and product teams should resemble the relationship between those product teams and external customers.
+Modern platform teams are often coherent, mission-oriented, and structured around the idea that “the platform is a product,” and that the relationship between platform teams and product teams should resemble the relationship between those product teams and external customers.
 
-## Software Companies Are In The Business Of Making Sellable Software
+## However, software companies are in the business of making sellable software
 
 If your company provides a service that involves software, either directly by selling it or indirectly by powering it, then one of the myriad ways your company will want to grow and sell _even more_ software is by expanding the feature set of the software—coupled, hopefully, to a strategy that makes prospective customers aware that _even more features_ are now available. This is true regardless of the kind of service your company provides: whether you provide internet services for booking airline tickets, listening to music, delivering food, or managing restaurants, you’re likely continually enhancing the software to grow the business.
 

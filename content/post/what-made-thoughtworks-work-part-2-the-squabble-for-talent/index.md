@@ -4,6 +4,7 @@ draft: false
 hidden: true
 title: "What Made Thoughtworks Work, Part 2: Talent"
 image: "muzammil-soorma-ayV1mD3HGyg-unsplash.jpg"
+description: Unfinished thoughts on early ThoughtWorks talent strategy
 categories:
   - history
   - industry

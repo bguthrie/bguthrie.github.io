@@ -1,6 +1,6 @@
 ---
 title: 'Why I estimate'
-description: Keep the process, kill the number.
+description: Keep the process, kill the number
 date: 2025-07-15T10:00:34-04:00
 image: 'image.png'
 math:

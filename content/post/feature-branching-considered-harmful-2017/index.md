@@ -1,6 +1,6 @@
 ---
 title: "Feature Branching Considered Harmful (2017)"
-description:
+description: You can ship software fast and safely without pull requests by working on main
 date: 2024-11-30T15:43:39-05:00
 image: "steven-lewis-dmHnXJ-5ilQ-unsplash.jpg"
 image_credit: "Photo by Steven Lewis on Unsplash"

@@ -1,6 +1,6 @@
 ---
 title: "Devops Is Not a Job Title (2017)"
-description:
+description: Devops is about bridging cultural gaps to ship faster, not putting people in new boxes
 date: 2024-11-30T15:41:04-05:00
 image: "ian-taylor-jOqJbvo1P9g-unsplash.jpg"
 image_credit: "Photo by Ian Taylor on Unsplash"
