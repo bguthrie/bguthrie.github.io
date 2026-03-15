@@ -71,6 +71,8 @@ When sourcing an image:
 
 ## Voice & Style Guide
 
+When reviewing past articles for examples of voice, do not include articles with `draft: true` or `hidden: true`.
+
 Brian's writing voice has these characteristics:
 
 ### Opening with Authority
