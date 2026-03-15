@@ -5,7 +5,7 @@ date: 2026-03-14T10:00:00-04:00
 image: katie-currier-J4TbPWYBc5s-unsplash.jpg
 image_url: https://unsplash.com/photos/a-close-up-of-a-street-light-with-a-sunset-in-the-background-J4TbPWYBc5s
 image_credit: Photo by Katie Currieron Unsplash
-draft: true
+draft: false
 hidden: true
 categories:
   - industry
@@ -14,7 +14,9 @@ categories:
 
 When a company hits a ceiling on its core business, it often tries to grow demand. The Michelin Guide wasn't about restaurants; it was about miles driven. Facebook's [internet.org](https://about.fb.com/news/2013/08/technology-leaders-launch-partnership-to-make-internet-access-available-to-all/) wasn't about connecting the developing world; it was that Facebook's remaining growth was locked behind internet penetration itself. The ceiling on the business was the medium, so they set out to expand the medium.
 
-AI companies face the same structural problem. The constraint on inference revenue is the volume of tasks that flow through models. Every piece of software that still runs without model calls is unrealized market. And the way you expand that market is by building software, acquiring software, or making AI-native alternatives so compelling that the old versions wither. In the process, you commoditize the existing software layer, which is now a complement to inference; Joel Spolsky [wrote the definitive essay](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/) on why smart companies do this, but the commoditization isn't the goal, it's the byproduct. The goal is to make the market for tokens bigger, and software is the mechanism.
+AI companies face the same structural problem: their constraint on inference revenue is the volume of tasks that flow through models. From where they sit, _every piece of software that still runs without model calls is unrealized market_. They are going to to expand that market is by building software, acquiring software, or making AI-native alternatives so compelling that the old versions wither. In the process, they commoditize the existing software layer, which is now a complement to inference.
+
+Joel Spolsky [wrote the definitive essay](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/) on why tech companies do this, but the commoditization isn't the goal, it's the byproduct. The goal is to make the market for tokens bigger, and software is the mechanism.
 
 ## AI companies are building software to sell tokens
 
@@ -22,21 +24,17 @@ The present narrative, especially in SaaS, goes like this: AI is a feature. You 
 
 [^maker]: Which is delightful, by the way. And also, same.
 
-This story gets the causality backwards. From the model vendor’s perspective, software is not the product; it is the surface that drives inference demand. Claude Code is free; it is also, by a wide margin, the most aggressive token-consuming product Anthropic has shipped. OpenAI [hired the creator of OpenClaw](https://www.cnbc.com/2026/02/15/openclaw-creator-peter-steinberger-joining-openai-altman-says.html) not because they needed a coding tool and a task-automation agent but because those products burn tokens. Every feature they ship, tool they acquire, or agent that's built is a mechanism for converting engagement into inference calls. The product serves the meter.
-
-This isn't nefarious; it's rational. If you're an AI company, your core asset is the model and the infrastructure to run it. Everything else is distribution. You will build whatever you need to build, for free if necessary, to route more of the world's activity through your inference layer. Software that doesn't consume tokens is, from your perspective, a market you haven't captured yet.
-
-The entrepreneurs flooding the market have figured this out from the other direction. The gold rush is not just about chat replacing the interface, it is about the chance to rebuild existing products with a radically different cost structure: cheaper development, cheaper operations, cheaper support, and more automation throughout. Even where the interface barely changes, the economics already do. This accelerates the conversion.
+This story gets the causality backwards. From the model vendor’s perspective, software is not the product; it is the surface that drives inference demand. Claude Code is free; it is also, by a wide margin, the most aggressive token-consuming product Anthropic has shipped. OpenAI [hired the creator of OpenClaw](https://www.cnbc.com/2026/02/15/openclaw-creator-peter-steinberger-joining-openai-altman-says.html) not because they needed a coding tool and a task-automation agent but because those products burn tokens. Every feature they ship, tool they acquire, or agent that’s built is a mechanism for converting engagement into inference calls. The product serves the meter.
 
 ## The market is being rewritten around inference
 
-Thin wrappers are the simplest example. They're a fast way to prove that users will route intent through a model, and they often generate a lot hype for doing so. That makes them useful both to model vendors and to founders chasing demand (and an exit). But wrappers are not moats: they proof-points for AI and therefore demand-generation channels for inference.
+The entrepreneurs flooding the market have figured this out from the other direction. The gold rush is not just about chat replacing the interface; it is about the chance to rebuild existing products with a radically different cost structure: cheaper development, cheaper operations, cheaper support, and more automation throughout. Even where the interface barely changes, the economics already do.
 
-The broader pattern is that AI-native products are being built to route work through models by default. Sometimes that means a chat interface; sometimes it's the same old dashboard with a different cost structure underneath. In both cases, the result is the same: software becomes a vehicle for inference demand.
+Thin wrappers are the simplest version of this. They’re a fast way to prove that users will route intent through a model, and they often generate a lot of hype for doing so. But wrappers are not moats; they’re proof-points for inference demand. The broader pattern is that AI-native products are being built to route work through models by default. Sometimes that means a chat interface; sometimes it’s the same old dashboard with a different cost structure underneath. In both cases, software becomes a vehicle for inference demand.
 
-A vertical SaaS company with proprietary workflow, embedded compliance, operational lock-in, and a decade of domain-specific data may _look_ like it's in a fundamentally different position, but AI doesn't just eat feature work: it eats coordination work, exception handling, systems integration, documentation, training, support, compliance evidence generation, and increasingly procurement itself. A lot of what software companies call "deep domain complexity" is organizational friction reified in code, and organizational friction is exactly the kind of thing these models are getting good at.
+A vertical SaaS company with proprietary workflow, embedded compliance, operational lock-in, and a decade of domain-specific data may _look_ like it’s in a fundamentally different position. But AI doesn’t just eat feature work; it eats the operational work that surrounds it. Consider what a compliance-heavy SaaS product actually does day to day: it generates audit evidence, routes exceptions to the right human, maps data between systems that don’t talk to each other, and trains new users on workflows that exist because the old ones were too brittle to change. None of that is proprietary logic. It’s organizational friction reified in code, and it’s exactly the kind of work these models are getting good at. The moat was never the feature set; it was the operational complexity that made switching expensive. That complexity is becoming cheaper to replicate every quarter.
 
-Software that doesn't generate token consumption is, from the model vendor's perspective, a market inefficiency. As AI expands from code generation into organizational execution, more of what software companies call defensibility gets downgraded from moat to delay. The question isn't whether your software is complex; the question is whether it's *yours* in some way the model can't readily replicate and operationalize. For most feature-centric software, the answer is no.
+The question isn’t whether your software is complex; the question is whether it’s *yours* in some way the model can’t readily replicate and operationalize.
 
 ## Jevons paradox is their growth strategy, not your safety net
 
@@ -54,10 +52,8 @@ The company expanding the total addressable market also has the means, and the i
 
 ## The conversion is already underway
 
+I manage lots of software engineers at a company that writes a lot of software. I don’t think the situation is hopeless, but I do think it calls for honest self-assessment and a willingness to cannibalize what’s working before someone else does it for you.
+
 AI companies make money when more work flows through models. That gives them a clear incentive to turn software into a better vehicle for inference demand: to build it, subsidize it, and make it easier for everyone else to build too. As the cost of creating AI-first products falls, more software gets rebuilt around token consumption, and more of the value flows upstream to the model layer.
 
-The deeper issue isn’t intermediation risk: it’s that software businesses built on older economics eventually get replaced by those built on better ones. Software that doesn’t participate in that transition is software that’s waiting to be rewritten by something that does. You don’t need a new category. Same product, better economics, lower price.
-
-If you buy the premise, then conclusion is hard to avoid: you either do the conversion yourself or watch it happen to you. That's not a threat from the model vendors; it's the market.
-
-Are you building, or being built over?
+Software businesses built on older economics eventually get replaced by those built on better ones. You don’t need a new category to lose your market. Same product, better economics, lower price. The defensible position is the one you’re actively rebuilding, not the one you’re sitting on.
