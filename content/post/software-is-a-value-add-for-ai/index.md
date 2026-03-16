@@ -1,6 +1,6 @@
 ---
 title: "AI isn't a value-add for software; software is a value-add for AI"
-description: "AI companies aren't building software because they love software. They're building it because software sells tokens."
+description: "AI has become a complement to software, which is becoming commoditized to the AI model vendors' benefit."
 date: 2026-03-14T10:00:00-04:00
 image: katie-currier-J4TbPWYBc5s-unsplash.jpg
 image_url: https://unsplash.com/photos/a-close-up-of-a-street-light-with-a-sunset-in-the-background-J4TbPWYBc5s
