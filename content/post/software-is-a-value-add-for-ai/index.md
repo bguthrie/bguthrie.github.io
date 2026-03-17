@@ -18,7 +18,7 @@ AI companies face the same structural problem: their constraint on inference rev
 
 ## Software and inference are in a demand loop
 
-One way companies stimulate demand for their own products is by making complementary products cheaper and more abundant: cheaper cars mean more demand for gas. Joel Spolsky famously put his finger on the tech playbook for this back in 2002: you [commoditize your complements](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/).
+One way companies stimulate demand for their own products is by making complementary products cheaper and more abundant: highlighting better places to eat makes them more accessible, leading to more miles driven (and more tire wear). Joel Spolsky famously put his finger on the tech playbook for this back in 2002: you [commoditize your complements](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/).
 
 The relationship between software and inference now reflects that dynamic. More software means more inference calls, and better inference means more software worth building. The two are locked in a demand loop, but the model vendors are on the side with pricing power. The rational move is to make the software layer as cheap and abundant as possible, because it shifts value toward the inference layer.
 
