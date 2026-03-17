@@ -14,11 +14,17 @@ categories:
 
 When a company hits a ceiling on its core business, it often tries to grow demand. The Michelin Guide wasn't about restaurants; it was about miles driven. Facebook's [internet.org](https://about.fb.com/news/2013/08/technology-leaders-launch-partnership-to-make-internet-access-available-to-all/) wasn't about altruism; it unlocked expansion by growing the size of the entire internet. The ceiling on the business was the medium, so they expanded it.
 
-AI companies face the same structural problem: their constraint on inference revenue is the volume of tasks that flow through models. From where they sit, _every piece of software that still runs without model calls is unrealized market_. They are going to expand that market by building software, acquiring software, or making AI-native alternatives so compelling that the old versions wither. In the process, they [commoditize the existing software layer, which is now a complement to inference](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/).
+AI companies face the same structural problem: their constraint on inference revenue is the volume of tasks that flow through models. From where they sit, _every piece of software that still runs without model calls is unrealized market_.
 
-But the commoditization isn't the goal; it's the byproduct. Their goal is to make the market for tokens bigger, and software is the means.
+## Software and inference are in a demand loop
 
-## The software serves the meter
+One way companies stimulate demand for their own products is by making complementary products cheaper and more abundant: cheaper cars mean more demand for gas. Joel Spolsky famously put his finger on the tech playbook for this back in 2002: you [commoditize your complements](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/).
+
+The relationship between software and inference now reflects that dynamic. More software means more inference calls, and better inference means more software worth building. The two are locked in a demand loop, but the model vendors are on the side with pricing power. The rational move is to make the software layer as cheap and abundant as possible, because it shifts value toward the inference layer.
+
+AI companies are doing exactly this. They are building software, acquiring software, and making AI-native alternatives so compelling that the old versions wither. The commoditization of the software layer isn't the goal; it's the byproduct. Their goal is to make the market for tokens bigger, and software is the means.
+
+## The product serves the meter
 
 The present narrative, especially in SaaS, goes like this: AI is a _feature_. You sprinkle it hither and yon to make the product better, maybe stickier, maybe richer, and maybe to please the board. Every SaaS company on earth is scrambling to add an AI layer, under the premise that AI capabilities will drive retention and upsells and margins. Likewise, a hundred thousand software engineers have rediscovered their inner maker[^maker] and are shipping their side projects. In this story, AI is the lever.
 
@@ -26,7 +32,7 @@ The present narrative, especially in SaaS, goes like this: AI is a _feature_. Yo
 
 This story gets the causality backwards. From the model vendor's perspective, software is not the product; it is the surface that drives inference demand. Claude Code is free; it is almost certainly the most aggressive token-consuming product Anthropic has shipped so far. OpenAI [hired the creator of OpenClaw](https://www.cnbc.com/2026/02/15/openclaw-creator-peter-steinberger-joining-openai-altman-says.html) not because they needed a task-automation agent but because those products burn tokens. The entrepreneurs flooding the market have figured this out from the other direction: the gold rush is not just about chat replacing the interface; it is about the chance to rebuild existing products with a radically different cost structure, one where AI-native products route work through models by default.
 
-Every feature the model vendors ship, every tool they acquire, every agent built by them or someone else is a mechanism for converting engagement into inference calls. The software serves the meter.
+Every feature the model vendors ship, every tool they acquire, every agent built by them or someone else is a mechanism for converting engagement into inference calls. The product serves the meter.
 
 ## The oil builds the cars
 
