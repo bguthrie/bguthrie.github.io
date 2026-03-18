@@ -6,10 +6,11 @@ image: katie-currier-J4TbPWYBc5s-unsplash.jpg
 image_url: https://unsplash.com/photos/a-close-up-of-a-street-light-with-a-sunset-in-the-background-J4TbPWYBc5s
 image_credit: Photo by Katie Currieron Unsplash
 draft: false
-hidden: true
+hidden: false
 categories:
   - industry
   - strategy
+  - ai
 ---
 
 When a company hits a ceiling on its core business, it often tries to grow demand. The Michelin Guide wasn't about restaurants; it was about miles driven. Facebook's [internet.org](https://about.fb.com/news/2013/08/technology-leaders-launch-partnership-to-make-internet-access-available-to-all/) wasn't about altruism; it unlocked expansion by growing the size of the entire internet. The ceiling on the business was the medium, so they expanded it.
