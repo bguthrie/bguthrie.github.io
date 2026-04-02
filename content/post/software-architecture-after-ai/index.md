@@ -19,11 +19,9 @@ One of the more useful definitions of software architecture comes from [Building
 
 [^1]: They were building on Ralph Johnson's earlier observation, relayed by Martin Fowler, that "architecture is about the important stuff. Whatever that is."
 
-The implication is that software architecture has always been a labor problem dressed up as a design problem. But AI has now collapsed the wall-clock time required to make substantial code-level changes.[^0] Things that used to take months now take days.
+The implication is that software architecture has always been a labor problem dressed up as a design problem. But AI has now collapsed the wall-clock time required to make substantial code-level changes. Things that used to take months now take days.
 
-What happens to architecture when the cost to reverse most code-level decisions drops by an order of magnitude?
-
-[^0]: This is no longer a controversial observation. Mark Headd's "[The Collapsing Cost of Software Development](https://civic.io/2026/01/29/the-collapsing-cost-of-software-development/)," Remo Jansen's "[Source Code Is Now a Common Good](https://dev.to/remojansen/source-code-is-now-a-common-good-and-saas-is-mostly-dead-gke)," and a dozen similar pieces have made the case from different angles. The interesting question is no longer *whether* code has gotten cheap to change, but what follows from it.
+What happens to architecture when the cost to reverse most code-level decisions drops by something like an order of magnitude?
 
 ## When every line of code was clean, and real engineers refactored
 
@@ -69,6 +67,6 @@ Some decisions still deserve serious architectural review; other decisions do no
 
 This is not permission to be reckless; if anything, it's a call to be *more* disciplined about the hard stuff. Recklessness with data, with security, with user trust is still catastrophic. But moving fast on code structure is not recklessness; it's iterating.
 
-The engineering leader's job is no longer "ensure we build it right," measured by some amorphous definition of line-level craft. It's "ensure we're investing careful thought where change is still expensive, and adding value quickly everywhere else." Redirect that energy to the problems that are still hard. 
+The engineering leader's job is no longer "ensure we build it right," measured by some amorphous definition of line-level craft. It's "ensure we're investing careful thought where change is still expensive, and adding value quickly everywhere else." Redirect that energy to the problems that are still hard.
 
 Be thoughtful about your boundaries and coupling points, and apply that rigor there. If everyone is now to be an architect, upskill line engineers on that aspect of the craft, and treat them accordingly. Those are the things where getting it wrong still costs you months and where discipline genuinely pays for itself. Code that can be rewritten on a Tuesday afternoon does not warrant the same investment.
