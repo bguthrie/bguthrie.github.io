@@ -33,7 +33,7 @@ The entire patterns movement was a rational response to this. The Gang of Four, 
 
 [^nocode]: Much later, Kelsey Hightower's visionary [no-code](https://github.com/kelseyhightower/nocode) movement, and his more recent work around [zero-token architecture](https://bsky.app/profile/kelseyhightower.com/post/3mhirl4fvnc2y), took the notion to its logical and correct extreme.
 
-## Moving the pain forward
+## Automation has always changed the balance of specialists and generalists
 
 But software practitioners have been collapsing architectural decisions into routine ones for decades. The effect of [leaning into pain, rather than avoiding it](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html) is to incentivize teams to build tooling that addresses it, turning what used to be architecture into something a general-purpose engineer handles as a matter of course.
 
@@ -43,9 +43,9 @@ Continuous delivery did the same thing for deployment. "Release engineer" used t
 
 AI is the latest instance of this, and the most dramatic, because it collapses most remaining code-level decisions at once rather than one category at a time. A recent personal example: I wrote my (now-dead) startup against a NoSQL database whose vendor was also a startup, which (surprise, surprise) *also* died. I pointed Claude Code at it, gave it some guidance, and it ported the entire data layer to a conventional RDBMS, essentially flawlessly, in _hours_.[^superpowers] I know this has become commonplace, but it still surprised me: between the tedium of the work and my day job, I might never have accomplished it before the heat-death of the universe.
 
-[^superpowers]: I used [superpowers](https://github.com/obra/superpowers), Jesse Vincent's agentic tooling harness.
+[^superpowers]: I used [superpowers](https://github.com/obra/superpowers), which I recommend.
 
-This is not an isolated anecdote. Cloudflare's team [reimplemented 94% of the Next.js API surface](https://blog.cloudflare.com/vinext/) in under a week for roughly $1,100 in API costs; one engineer with AI doing what would traditionally be a multi-month, multi-engineer project. Christopher Chedeau [ported 100,000 lines of TypeScript to Rust](https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html) in a month with Claude Code, writing zero lines himself.
+This is not an isolated example. Cloudflare's team [reimplemented 94% of the Next.js API surface](https://blog.cloudflare.com/vinext/) in under a week for roughly $1,100 in API costs; one engineer with AI doing what would traditionally be a multi-month, multi-engineer project. Christopher Chedeau [ported 100,000 lines of TypeScript to Rust](https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html) in a month with Claude Code, writing zero lines himself. Many of you have experienced similar shifts.
 
 In some ways, these examples prove the rule that good structure matters: I built my data layer against a clean interface boundary, because I didn't start writing code yesterday, so in some sense, _of course_ swapping the implementation was straightforward. But even without a clean boundary, the change is fundamentally mechanical: find all the call sites, change all the implementations, verify correctness. More tokens, more time, and yeah, more human intervention, but we're not talking about a vast difference; maybe days instead of hours. And the second-order effect of agentic development is that you can automate verification on top of it; you can build correctness-checking into the process itself. That places this kind of change squarely in the category of "not architecture anymore."
 
@@ -67,7 +67,7 @@ Designing a good abstraction is not mechanical, and while AI can do it, the long
 
 The contrast between these decisions and more mechanical changes has sharpened considerably. When code-level decisions were also hard to change, they competed for the same pool of architectural attention. Now that code is cheap to change, the hard stuff stands in sharper relief. It deserves the serious, disciplined thinking that we used to spread across everything.
 
-## The amplification trap
+## Pattern amplification is not destiny
 
 You will hear the counterargument that AI makes code quality _more_ important, not less, because it amplifies both good and bad decisions at volume. Addy Osmani [reports](https://addyosmani.com/blog/code-review-ai/) that AI-generated code has 75% more logic errors and 2.74x more XSS vulnerabilities than human-written code; PRs are 18% larger; change failure rates are up roughly 30%. Rachel Thomas at fast.ai [argues](https://www.fast.ai/posts/2026-01-28-dark-flow/) that we've "automated coding, but not software engineering." Osmani's [framing of comprehension debt](https://addyosmani.com/blog/comprehension-debt/) is sharp: developers using AI scored 17% lower on comprehension quizzes, and "making code cheap to generate doesn't make understanding cheap to skip." But I think it locates the risk at the wrong layer.
 
@@ -77,7 +77,7 @@ But the answer to accumulated ignorance isn't better code structure; it's better
 
 There's an argument that good code structure remains important because it makes AI agents more effective; well-structured code is easier for agents to navigate, reason about, and modify. This is true, and it's a perfectly good reason to care about structure. But this value is *instrumental*, not architectural. Structure that exists to make agents faster is an optimization, and optimizations are cheap to revisit. You can restructure the code to make agents more effective, *using agents*, and the cost is tokens and a little time. Instrumental value is real, but it doesn't make a decision hard to reverse, and "hard to reverse" is the only definition of architecture that's ever been crisp.
 
-## The process trap of the moment
+## Don't apply old-world rules to new-world economics
 
 Okay, so maybe you _can_ fold on some code decisionmaking. _Should_ you? Fowler's [Design Stamina Hypothesis](https://martinfowler.com/bliki/DesignStaminaHypothesis.html) argued that internal quality *drives* speed, rather than existing in tension with it, and [DORA](https://dora.dev/) later backed this up with empirical data. Elite teams aren't fast _despite_ being disciplined, they're fast _because_ they're disciplined. If that's true, and I think it is, then making refactoring cheap doesn't make quality optional, because quality was never a trade-off to begin with.
 
@@ -89,7 +89,7 @@ I instead try to internalize Kent Beck's ordering: make it work, make it right, 
 
 The discipline that quality demands still matters, but I'd argue that its object has shifted rather dramatically.
 
-## Putting the business back in business domain
+## Architects should put the business back in business domain
 
 The pattern this essay has been tracing is one of progressive elevation. Database migrations pushed schema work into the general engineering role; CI/CD did the same for deployment; AI is doing it for most remaining code-level decisions. Each time, everyone moved up a level. ICs absorbed what used to be specialist work, and the specialists had to find something more entertaining to do with their time.
 
@@ -99,7 +99,7 @@ Domain-driven design has always loved the word "business domain," but in practic
 
 As you explore your domain, ask: does this service reduce operational overhead? Does it open new markets? Does it improve retention within a specific segment? Put the "business" back in "business domain." What problem are we solving, and (quite literally) who cares?
 
-## What the engineering leader's job looks like now
+## Elevate your ICs, and focus even harder on the business
 
 Some decisions still deserve serious architectural review; other decisions do not. Internal code structure, framework choice, module organization, and most implementation patterns are worth punting on, since the cost of being wrong is measured in days, maybe hours, of AI-assisted restructuring. Stop arbitrating these and running them through review boards, and allow teams a little leeway. You are spending your most expensive resources—your own attention, to say nothing of your team's patience—on the cheapest category of problem.
 
