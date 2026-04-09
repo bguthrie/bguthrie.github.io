@@ -1,0 +1,28 @@
+{{ $csv := .Page.Resources.GetMatch "decisions.csv" }}
+{{ $rows := split ($csv.Content | strings.TrimSpace) "\n" }}
+{{ $categoryLabels := dict "demoted" "↓ Demoted" "easier" "↓ Easier" "unchanged" "→ Unchanged" "elevated" "↑ Elevated" }}
+{{ $categoryOrder := slice "elevated" "unchanged" "easier" "demoted" }}
+
+<table>
+  <thead>
+    <tr>
+      <th>Decision</th>
+      <th>Status</th>
+      <th>Why</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $_, $cat := $categoryOrder }} {{- range $i, $row := $rows }} {{-
+    if gt $i 0 }} {{- $cols := split $row "," }} {{- $decision := index $cols 0
+    }} {{- $category := index $cols 5 }} {{- $why := index $cols 6 }} {{- if eq
+    $category $cat }}
+    <tr>
+      <td>{{ $decision }}</td>
+      <td>
+        <span class="inline-block bg-red-500 rounded-md text-white uppercase text-xs p-1 no-wrap">{{ index $categoryLabels $category }}</span>
+      </td>
+      <td>{{ $why }}</td>
+    </tr>
+    {{- end }} {{- end }} {{- end }} {{- end }}
+  </tbody>
+</table>

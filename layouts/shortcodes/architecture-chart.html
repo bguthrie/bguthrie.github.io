@@ -1,0 +1,74 @@
+{{ $csv := .Page.Resources.GetMatch "decisions.csv" }}
+<div id="arch-chart" style="width: 100%; max-width: 750px; margin: 2em auto;"></div>
+<script id="arch-chart-csv" type="text/csv">
+{{ $csv.Content }}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
+<script>
+(function() {
+  const data = d3.csvParse(
+    document.getElementById('arch-chart-csv').textContent.trim(),
+    d => ({
+      decision: d.decision,
+      x1: +d.remediation_cost_before, y1: +d.business_impact_before,
+      x2: +d.remediation_cost_after, y2: +d.business_impact_after,
+      category: d.category
+    })
+  );
+
+  const dark = document.documentElement.classList.contains('dark');
+  const fg = dark ? '#e0e0e0' : '#333';
+  const fgMuted = dark ? '#888' : '#aaa';
+  const divider = dark ? '#555' : '#ccc';
+  const bg = dark ? '#1a1a2e' : '#ffffff';
+
+  const colors = { demoted: '#4CAF50', easier: '#8BC34A', unchanged: '#E53935', elevated: '#FF9800' };
+  const moved = d => Math.abs(d.x2 - d.x1) > 0.2 || Math.abs(d.y2 - d.y1) > 0.2;
+
+  const chart = Plot.plot({
+    width: 700,
+    height: 520,
+    style: { background: 'transparent' },
+    x: { domain: [0, 11], label: 'Remediation Cost →', ticks: [] },
+    y: { domain: [0, 11], label: '↑ Business Impact', ticks: [] },
+    color: { domain: Object.keys(colors), range: Object.values(colors) },
+    marks: [
+      Plot.ruleX([5.5], { stroke: divider, strokeDasharray: '4,4' }),
+      Plot.ruleY([5.5], { stroke: divider, strokeDasharray: '4,4' }),
+      Plot.dot(data.filter(moved), { x: 'x1', y: 'y1', fill: 'category', r: 5, opacity: 0.2 }),
+      Plot.arrow(data.filter(moved), {
+        x1: 'x1', y1: 'y1', x2: 'x2', y2: 'y2',
+        stroke: 'category', strokeWidth: 2.5, opacity: 0.7, bend: false
+      }),
+      Plot.dot(data, {
+        x: d => moved(d) ? d.x2 : d.x1,
+        y: d => moved(d) ? d.y2 : d.y1,
+        fill: 'category', r: 6
+      }),
+      Plot.text(data, {
+        x: d => (moved(d) ? d.x2 : d.x1) + 0.3,
+        y: d => moved(d) ? d.y2 : d.y1,
+        text: 'decision', fontSize: 9, fill: fg, fontWeight: '500',
+        textAnchor: 'start', dy: 0
+      }),
+      Plot.text([
+        { x: 2.75, y: 10.5, t: 'High impact, cheap to fix' },
+        { x: 8.25, y: 10.5, t: 'High impact, expensive to fix' },
+        { x: 2.75, y: 0.5, t: 'Low impact, cheap to fix' },
+        { x: 8.25, y: 0.5, t: 'Low impact, expensive to fix' }
+      ], { x: 'x', y: 'y', text: 't', fontSize: 9, fill: fgMuted, fontStyle: 'italic', textAnchor: 'middle' })
+    ]
+  });
+
+  // Style axis labels
+  chart.querySelectorAll('[aria-label="x-axis label"], [aria-label="y-axis label"]').forEach(el => {
+    el.setAttribute('fill', fg);
+    el.setAttribute('font-size', '15px');
+    el.setAttribute('font-weight', 'bold');
+  });
+
+  document.getElementById('arch-chart').appendChild(chart);
+
+})();
+</script>

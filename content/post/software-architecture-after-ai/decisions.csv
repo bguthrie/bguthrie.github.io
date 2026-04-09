@@ -1,0 +1,11 @@
+decision,business_impact_before,business_impact_after,remediation_cost_before,remediation_cost_after,category,why
+Code structure,5,1,7,2,demoted,Mechanical translation and restructuring at scale now demonstrated
+Persistence strategy,6,2,7,3,demoted,Full data layer port feasible in hours to days
+Integrations,7,3,5,2,demoted,Find call sites and rewire; mechanical with clear interfaces
+Infrastructure,5,4,8,5,unchanged,IaC and AI accelerate migration; data gravity and proprietary dependencies remain
+Data architecture,7,7,9,8,unchanged,AI rewrites access code but the data itself remains costly to reshape
+Service contracts,8,6,9,7,unchanged,Human coordination is the bottleneck; downstream consumers bear the cost
+Security and trust,9,9,10,10,unchanged,Cannot refactor out of an exploited vulnerability or regulatory breach
+Build and deploy,5,7,6,3,elevated,Throughput is up; incidents from bad cache/retry/concurrency policy erode trust faster
+Observability and verification,4,8,3,3,elevated,If trust is architectural then detecting trust violations is too
+Business strategy,4,9,4,4,elevated,With code-level work automated the strategic gap is the whole job
