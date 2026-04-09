@@ -1,6 +1,7 @@
 {{ $csv := .Page.Resources.GetMatch "decisions.csv" }}
-{{ $rows := split ($csv.Content | strings.TrimSpace) "\n" }}
-{{ $categoryLabels := dict "demoted" "↓ Demoted" "easier" "↓ Easier" "unchanged" "→ Unchanged" "elevated" "↑ Elevated" }}
+{{ $rows := $csv.Content | transform.Unmarshal (dict "delimiter" ",") }}
+{{ $categoryLabels := dict "demoted" "↓&nbsp;Demoted" "easier" "↓&nbsp;Easier" "unchanged" "→&nbsp;Unchanged" "elevated" "↑&nbsp;Elevated" }}
+{{ $categoryColors := dict "demoted" "#4CAF50" "easier" "#8BC34A" "unchanged" "#E53935" "elevated" "#FF9800" }}
 {{ $categoryOrder := slice "elevated" "unchanged" "easier" "demoted" }}
 
 <table>
@@ -12,17 +13,21 @@
     </tr>
   </thead>
   <tbody>
-    {{- range $_, $cat := $categoryOrder }} {{- range $i, $row := $rows }} {{-
-    if gt $i 0 }} {{- $cols := split $row "," }} {{- $decision := index $cols 0
-    }} {{- $category := index $cols 5 }} {{- $why := index $cols 6 }} {{- if eq
-    $category $cat }}
+    {{- range $_, $cat := $categoryOrder }}
+      {{- range $i, $row := $rows }}
+        {{- if gt $i 0 }}
+          {{- $category := index $row 5 }}
+          {{- if eq $category $cat }}
     <tr>
-      <td>{{ $decision }}</td>
+      <td>{{ index $row 0 }}</td>
       <td>
-        <span class="inline-block bg-red-500 rounded-md text-white uppercase text-xs p-1 no-wrap">{{ index $categoryLabels $category }}</span>
+        <span class="inline-block rounded-md text-white uppercase text-xs font-sans font-semibold p-1 whitespace-nowrap" style="background-color: {{ index $categoryColors $category }};">{{ index $categoryLabels $category | safeHTML }}</span>
       </td>
-      <td>{{ $why }}</td>
+      <td>{{ index $row 6 }}</td>
     </tr>
-    {{- end }} {{- end }} {{- end }} {{- end }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
   </tbody>
 </table>

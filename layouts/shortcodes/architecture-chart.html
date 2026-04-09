@@ -47,10 +47,10 @@
         fill: 'category', r: 6
       }),
       Plot.text(data, {
-        x: d => (moved(d) ? d.x2 : d.x1) + 0.3,
-        y: d => moved(d) ? d.y2 : d.y1,
+        x: d => d.x1 + 0.15,
+        y: 'y1',
         text: 'decision', fontSize: 9, fill: fg, fontWeight: '500',
-        textAnchor: 'start', dy: 0
+        textAnchor: 'start', dy: 0, lineWidth: 12
       }),
       Plot.text([
         { x: 2.75, y: 10.5, t: 'High impact, cheap to fix' },

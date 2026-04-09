@@ -1,11 +1,12 @@
 decision,business_impact_before,business_impact_after,remediation_cost_before,remediation_cost_after,category,why
-Code structure,5,1,7,2,demoted,Mechanical translation and restructuring at scale now demonstrated
-Persistence strategy,6,2,7,3,demoted,Full data layer port feasible in hours to days
-Integrations,7,3,5,2,demoted,Find call sites and rewire; mechanical with clear interfaces
-Infrastructure,5,4,8,5,unchanged,IaC and AI accelerate migration; data gravity and proprietary dependencies remain
-Data architecture,7,7,9,8,unchanged,AI rewrites access code but the data itself remains costly to reshape
-Service contracts,8,6,9,7,unchanged,Human coordination is the bottleneck; downstream consumers bear the cost
-Security and trust,9,9,10,10,unchanged,Cannot refactor out of an exploited vulnerability or regulatory breach
-Build and deploy,5,7,6,3,elevated,Throughput is up; incidents from bad cache/retry/concurrency policy erode trust faster
-Observability and verification,4,8,3,3,elevated,If trust is architectural then detecting trust violations is too
-Business strategy,4,9,4,4,elevated,With code-level work automated the strategic gap is the whole job
+System boundaries and decomposition,8.8,8.0,6.5,5.0,demoted,"AI makes interface rewrites and local reshaping cheaper, but ownership seams, coordination cost, and org coupling still dominate."
+Data ownership and source of truth,8.5,7.5,9.5,8.5,unchanged,"The expensive part is not code rewrite, it is semantic authority, migration, reconciliation, and customer/business correctness."
+Integration patterns and external contracts,6.5,5.8,8.5,7.2,unchanged,"Adapters and contract migrations get easier, but partner/client coordination and compatibility windows still cost real time."
+Consistency and transaction model,8.5,7.8,7.7,6.5,unchanged,"AI helps refactor implementations, but it does not make semantic mistakes in correctness, ordering, or money movement much safer."
+Scalability and performance posture,7.5,7.0,7.3,4.5,demoted,"Optimization and redesign get easier to attempt and revisit, though production bottlenecks and load behavior still matter."
+Resilience and observability,5.5,7.5,7.1,3.0,elevated,"Faster change velocity makes detection, attribution, rollback, and containment more central to business safety, even if instrumentation is cheaper."
+Security and trust boundaries,8.9,9.8,9.2,8.0,unchanged,"The real cost is exposure, compliance, tenant isolation, and incident consequence; AI only modestly lowers implementation effort."
+Changeability and evolution mechanisms,7.0,7.5,7.5,5.8,elevated,"Progressive delivery, compatibility, migration safety, and rollback matter more when the system mutates much more often."
+Local code structure and implementation,4.0,2.5,6.0,2.0,demoted,"This becomes mostly regenerateable text unless it leaks into contracts, runtime behavior, or cross-team coupling."
+Platform guardrails and tooling,6.0,4.5,7.0,3.8,demoted,"Bad defaults may spread faster, but if they are internally visible and low-consequence, remediation is often mostly codegen plus cleanup."
+Business strategy and capability alignment,8.0,9.5,7.5,8.5,elevated,"As implementation gets cheaper, the higher-leverage question becomes which seams, capabilities, and constraints preserve business option value."
