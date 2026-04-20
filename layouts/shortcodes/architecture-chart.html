@@ -11,8 +11,8 @@
     document.getElementById('arch-chart-csv').textContent.trim(),
     d => ({
       decision: d.decision,
-      x1: +d.remediation_cost_before, y1: +d.business_impact_before,
-      x2: +d.remediation_cost_after, y2: +d.business_impact_after,
+      x1: +d.cost_before, y1: +d.consequence_before,
+      x2: +d.cost_after, y2: +d.consequence_after,
       category: d.category
     })
   );
@@ -23,15 +23,15 @@
   const divider = dark ? '#555' : '#ccc';
   const bg = dark ? '#1a1a2e' : '#ffffff';
 
-  const colors = { demoted: '#4CAF50', easier: '#8BC34A', unchanged: '#E53935', elevated: '#FF9800' };
+  const colors = { demoted: '#4CAF50', unchanged: '#475569', elevated: '#F59E0B' };
   const moved = d => Math.abs(d.x2 - d.x1) > 0.2 || Math.abs(d.y2 - d.y1) > 0.2;
 
   const chart = Plot.plot({
     width: 700,
     height: 520,
     style: { background: 'transparent' },
-    x: { domain: [0, 11], label: 'Remediation Cost →', ticks: [] },
-    y: { domain: [0, 11], label: '↑ Business Impact', ticks: [] },
+    x: { domain: [0, 11], label: 'Cost to reverse →', ticks: [] },
+    y: { domain: [0, 11], label: '↑ Consequence if wrong', ticks: [] },
     color: { domain: Object.keys(colors), range: Object.values(colors) },
     marks: [
       Plot.ruleX([5.5], { stroke: divider, strokeDasharray: '4,4' }),
@@ -47,16 +47,20 @@
         fill: 'category', r: 6
       }),
       Plot.text(data, {
-        x: d => d.x1 + 0.15,
-        y: 'y1',
-        text: 'decision', fontSize: 9, fill: fg, fontWeight: '500',
-        textAnchor: 'start', dy: 0, lineWidth: 12
+        x: d => moved(d) ? d.x2 + 0.2 : d.x1 + 0.2,
+        y: d => moved(d) ? d.y2 : d.y1,
+        text: 'decision', fontSize: 10, fill: fg, fontWeight: '500',
+        textAnchor: 'start', dy: 0, lineWidth: 14
       }),
       Plot.text([
-        { x: 2.75, y: 10.5, t: 'High impact, cheap to fix' },
-        { x: 8.25, y: 10.5, t: 'High impact, expensive to fix' },
-        { x: 2.75, y: 0.5, t: 'Low impact, cheap to fix' },
-        { x: 8.25, y: 0.5, t: 'Low impact, expensive to fix' }
+        { x: 2.75, y: 10.7, t: 'High consequence, cheap to reverse' },
+        { x: 2.75, y: 10.15, t: 'Instrument and verify' },
+        { x: 8.25, y: 10.7, t: 'High consequence, hard to reverse' },
+        { x: 8.25, y: 10.15, t: 'Design with care' },
+        { x: 2.75, y: 0.85, t: 'Low consequence, cheap to reverse' },
+        { x: 2.75, y: 0.3, t: 'Stop debating, just ship' },
+        { x: 8.25, y: 0.85, t: 'Low consequence, hard to reverse' },
+        { x: 8.25, y: 0.3, t: 'Bikeshed zone' }
       ], { x: 'x', y: 'y', text: 't', fontSize: 9, fill: fgMuted, fontStyle: 'italic', textAnchor: 'middle' })
     ]
   });

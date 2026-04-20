@@ -1,8 +1,8 @@
 {{ $csv := .Page.Resources.GetMatch "decisions.csv" }}
 {{ $rows := $csv.Content | transform.Unmarshal (dict "delimiter" ",") }}
-{{ $categoryLabels := dict "demoted" "↓&nbsp;Demoted" "easier" "↓&nbsp;Easier" "unchanged" "→&nbsp;Unchanged" "elevated" "↑&nbsp;Elevated" }}
-{{ $categoryColors := dict "demoted" "#4CAF50" "easier" "#8BC34A" "unchanged" "#E53935" "elevated" "#FF9800" }}
-{{ $categoryOrder := slice "elevated" "unchanged" "easier" "demoted" }}
+{{ $categoryLabels := dict "demoted" "↓&nbsp;Demoted" "unchanged" "→&nbsp;Still&nbsp;architectural" "elevated" "↑&nbsp;Elevated" }}
+{{ $categoryColors := dict "demoted" "#4CAF50" "unchanged" "#475569" "elevated" "#F59E0B" }}
+{{ $categoryOrder := slice "demoted" "unchanged" "elevated" }}
 
 <table>
   <thead>
