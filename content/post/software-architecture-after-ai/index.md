@@ -1,7 +1,7 @@
 ---
 title: "Software architecture after AI"
-description: "AI has moved the boundary of what counts as architecture. Code isn't in it anymore."
-date: 2026-03-31T18:00:00-05:00
+description: "AI has moved the boundary of what counts as architecture. A lot of code isn't in it anymore."
+date: 2026-04-21T12:00:00-05:00
 image: d-brz-gNCUqxJM3oU-unsplash.jpg
 image_credit_url: "https://unsplash.com/photos/an-abandoned-building-with-lots-of-windows-and-debris-gNCUqxJM3oU"
 image_credit: Photo by D Brz on Unsplash
