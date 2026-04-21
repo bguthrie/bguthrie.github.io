@@ -101,3 +101,5 @@ The DBA's calendar got freed up by migrations; the release engineer's by CI/CD; 
 But there are still things a single context window, or even aggregated context, struggles to see. Volume amplifies the quality practices a team already has, for better and for worse; the ambient discipline becomes the output, at a much higher multiple. Product debt compounds along the same curve: the gap between what the system does and what users need still depends on humans watching, thinking, and caring about the commercial problem, and that gap widens faster as ship rate increases. And the coordination cost of changing how humans work together hasn't budged. The apprenticeship model, review practices, incident response, the career ladder; these are structural-process questions, and structural-process change is the most expensive thing any organization can attempt.
 
 What remains hard this time defines the job; how long it stays that way decides what comes next.
+
+_My thanks to Erika Newland, Micaël Malta, Pete Hodgson, and Steven Deobald for reviewing drafts of this article._
