@@ -6,7 +6,7 @@ image: d-brz-gNCUqxJM3oU-unsplash.jpg
 image_credit_url: "https://unsplash.com/photos/an-abandoned-building-with-lots-of-windows-and-debris-gNCUqxJM3oU"
 image_credit: Photo by D Brz on Unsplash
 draft: false
-hidden: true
+hidden: false
 categories:
   - sdlc
   - ai
