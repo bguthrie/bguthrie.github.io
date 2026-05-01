@@ -1,0 +1,12 @@
+decision,business_impact_before,business_impact_after,remediation_cost_before,remediation_cost_after,category
+Code structure,5,1,8,1,demoted
+Persistence implementation,5,2,7,2,demoted
+Integration implementation,5,3,7,3,demoted
+Infrastructure,5,4,8,5,easier
+Abstraction design,6,5,7,5,unchanged
+Data architecture,7,7,9,8,unchanged
+Service contracts,8,6,9,7,unchanged
+Security and trust,9,9,10,10,unchanged
+Operational policy,5,7,6,3,elevated
+Observability and verification,4,8,3,3,elevated
+Business strategy,4,9,4,4,elevated
