@@ -1,33 +1,33 @@
 ---
-title: "Introducing Prospero: A writing tool that argues back"
+title: "Introducing Prospero: Superpowers for writing"
 slug: prospero
 description: "A Claude Code plugin that sharpens the spine of your argument through dialectic rather than generating prose for you."
 date: 2026-04-30T10:00:00-04:00
-image:
+image: nasa-5477L9Z5eqI-unsplash.jpg
+image_url: https://unsplash.com/photos/hurricane-as-seen-from-space-5477L9Z5eqI
+image_credit: Photo by NASA on Unsplash
 draft: false
-hidden: true
+hidden: false
 categories:
   - ai
 ---
 > No man but a blockhead ever wrote, except for money.
->
 > — Samuel Johnson
 
-I like the act of _writing_, but often find actually _publishing_ paralyzing. I'll sit with a piece for weeks, hem and haw over it and chew on it and maybe pass a draft around, but by the time I'm done I'll have lost whatever conviction I started with. A fair number of pieces never finish, and the drafts folder keeps growing. Consequently, I tend to think of myself as a better editor than an author; responding to a piece is less painful than authoring one.
+I like the act of _writing_, but often find actually _publishing_ paralyzing. I'll sit with a piece for weeks, hem and haw over it and chew on it and maybe pass a draft around, but by the time I'm done I'll have lost whatever conviction I started with. A fair number of pieces never finish, and the drafts folder keeps growing. Consequently, I tend to think of myself as a better editor than an author; responding to a piece is less taxing than authoring one.
 
-However, I've been sitting a lot with [Superpowers](https://github.com/obra/superpowers) these past few months. While it's built for engineering, I'm often struck by how effective it is at interrogating me on my intent; it shows what's possible when you treat LLMs as interlocutors.
+However, I've been sitting a lot with [Superpowers](https://github.com/obra/superpowers) these past few months. While it's built for writing code, I'm often struck by how effective it is at interrogating me on my intent; it shows what's possible when you treat LLMs as interlocutors.
 
-[Prospero](https://github.com/bguthrie/prospero) is a Claude Code plugin I built to make me a better, sharper writer, and (more importantly) to help me ship. It borrows the interrogative, artifact-driven approach from Superpowers by staging writing into four phases: `/interrogate` questions you into an outline, `/critique` runs an adversarial review in an independent context window, `/author` writes a first-pass draft in your configured voice, and `/revise` walks you through a line-level edit. Along the way, agents perform research on the topic, both to strengthen the thesis and to challenge it. The argument has to survive challenge before any prose gets written, and again before the piece ships. I get to play editor on work whose spine already holds.
+[Prospero](https://github.com/bguthrie/prospero) is a Claude Code plugin I built to make me a better (I hope!) writer, and (just as important!) to help me ship. It borrows the interrogative, artifact-driven approach from Superpowers by staging writing into four phases: 
 
-I try to treat [AI like a bicycle](/p/ai-like-a-bicycle/): it should provide mechanical advantage, but does not plan the route. Prospero is my attempt at applying this to a creative process I care quite a lot about. It's a little embarrassing to make the argument for an AI-driven writing tool, but I wouldn't be doing it if I didn't think the results represented both my voice and my perspective. It helps me produce the essay I wanted to write to begin with, and get it out.
+* `/interrogate` questions you into an outline.
+* `/critique` runs an adversarial review in an independent context window, both for outlines and drafts.
+* `/author` writes a first-pass draft in your configured voice.
+* `/revise` walks you through a line-level edit.
 
-## Throughput is not the goal
+Along the way, agents perform research on the topic, both to strengthen the thesis and to challenge it. The argument has to survive challenge before any prose gets written, and again before the piece ships. I get to play editor on work whose spine already holds.
 
-If you draft fluently, publish weekly, and the blank page does not unnerve you, Prospero will not make you faster and it is probably not for you. But if you're a neurotic perfectionist, if the draft never flows quite right, or the argument isn't tight enough yet, or you just know that someone will point out that you're being wrong on the internet, Prospero may help.
-
-The specific pain Prospero addresses is not speed; it is the anticipatory anxiety that keeps the piece unpublished. The critic has already poked at the weak joints by the time you go to ship, sometimes painfully; you already know where the argument is thin, which places you have decided to defend, and which you have decided to fix. The imagined commenter has already done their worst. For a fluent writer, that is a minor improvement; for someone whose baseline output is closer to zero, it can move throughput from nothing to something, which is a substantial gain even if no individual piece is produced faster.
-
-## Install it
+## Try it out
 
 If you are running Claude Code:
 
@@ -35,7 +35,15 @@ If you are running Claude Code:
 /plugin install bguthrie/prospero
 ```
 
-On first use, `/interrogate` will invoke `/init` to scaffold `.prospero/` with `config.toml`, `voice.md`, and `audience.md`. Fill in `voice.md` and `audience.md` before running any other phase, because these are the files Prospero cannot write for you, and trying to run without them produces a draft that improvises a voice you did not specify. The project repository is at [github.com/bguthrie/prospero](https://github.com/bguthrie/prospero); this is version 0.2. The Hugo preset is the most-tested path, plain markdown handles most other projects adequately, and the Jekyll and Ghost presets exist and would benefit from more users.
+On first use, `/interrogate` will invoke `/init` to scaffold `.prospero/` with `config.toml`, `voice.md`, and `audience.md`. Fill in `voice.md` and `audience.md` before running any other phase, because trying to run without them produces a draft that improvises a voice you didn't specify and just sounds like generic AI. The project repository is at [github.com/bguthrie/prospero](https://github.com/bguthrie/prospero). The Hugo preset is the most-tested path, plain markdown handles most other projects adequately, and the Jekyll and Ghost presets exist and would benefit from more users.
+
+## Throughput is not the goal
+
+I try to treat [AI like a bicycle](/p/ai-like-a-bicycle/): it should provide mechanical advantage, but does not plan the route. Prospero is my attempt at applying this to a creative process I care quite a lot about. It's a little embarrassing to make the argument for an AI-driven writing tool, but I wouldn't be doing it if I didn't think the results represented both my voice and my perspective. It helps me produce the essay I wanted to write to begin with, and get it out.
+
+If you draft fluently, publish weekly, and the blank page does not unnerve you, Prospero may not make you faster. But if you're a neurotic perfectionist, if the draft never flows quite right, or the argument isn't tight enough yet, or you just know that someone will point out that you're being wrong on the internet, Prospero may help.
+
+The specific pain Prospero addresses is not speed; it is the anticipatory anxiety that keeps the piece unpublished. The critic has already poked at the weak joints by the time you go to ship, sometimes painfully; you already know where the argument is thin, which places you have decided to defend, and which you have decided to fix. The imagined commenter has already done their worst. For a fluent writer, that is a minor improvement; for someone whose baseline output is closer to zero, it can move throughput from nothing to something, which is a substantial gain even if no individual piece is produced faster.
 
 ## Interrogate, critique, author, revise
 
@@ -83,7 +91,7 @@ I accepted the first finding; the citation really was doing more work than it de
 
 `/author` writes the first-pass draft. It reads the outline, the research file, your voice guide, the audience description, and three of your existing posts to calibrate rhythm and section-header style. The draft lands at the configured post path with appropriate frontmatter. The prose is a scaffold, not a finished artifact; I edit it extensively before moving on.
 
-`/revise` is the final pass: structural and line-level feedback against your voice rules and the outline's intent, with an option to re-run the critic in draft mode once the edits are stable.
+`/revise` is the final pass: structural and line-level feedback against your voice rules and the outline's intent, with an option to re-run the critic in draft mode once the edits are stable. It's not my favorite tool of the four, but it's extremely helpful for focusing in on small problems, reconciling arguments with the critic, and wordsmithing.
 
 Three files in `.prospero/` calibrate everything. `config.toml` names the active preset (Hugo, plain markdown, Jekyll, Ghost). `voice.md` is the author's voice guide, read verbatim by `/author` and `/revise`; personally, mine is a list of rules about when to use semicolons, how to handle italics, what fragments are never allowed, when profanity is warranted, and which throat-clearing phrases to avoid. It works, sort of, but I nonetheless wind up doing an enormous amount of editing to claim back my voice, and so for me, the prose-generation piece isn't really the point. `audience.md` describes the reader and lists research sources, the places where the tool should verify claims and check for prior art.
 
