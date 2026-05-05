@@ -31,23 +31,23 @@ Here are my rules for moving fast:
 
 ### It Is Possible To Move Fast, And Fast Matters
 
-History is full of things that moved fast when everyone involved decided that they had to. The [Berlin Airlift](https://history.state.gov/milestones/1945-1952/berlin-airlift). The [construction of the Empire State Building](https://chrisgagne.com/1255/mary-poppendiecks-the-tyranny-of-the-plan/). Stripe's Patrick Collison has a [whole page of this stuff](https://patrickcollison.com/fast).
+History is full of things that moved fast when everyone involved decided that they had to. The [Berlin Airlift](https://history.state.gov/milestones/1945-1952/berlin-airlift). The [construction of the Empire State Building](/p/the-tyranny-of-the-plan/). Stripe's Patrick Collison has a [whole page of this stuff](https://patrickcollison.com/fast).
 
 Some people argue that you shouldn't optimize for speed, and focus a lot on getting each individual feature right instead. I disagree. Every feature is a _bet_ on a some future payoff. Some pay off, some don't, but all else being equal, shipping more frequently means more turns at-bat. More swings means more hits.
 
-Moving slowly is often a **choice**: everyone involved has decided that speed is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes that's necessary. But the hardest part of moving fast isn't execution; it's deciding that it's necessary, and then convincing people that it's possible.
+Moving slowly is often a choice: everyone involved has decided that speed is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes that's necessary. But the hardest part of moving fast isn't execution; it's deciding that it's necessary, and then convincing people that it's possible.
 
 ### Fast Is Measured By What Other People See
 
-Speed isn't about effort; it's about **lead time**. Lead time is the **wall-clock time** between when someone asks for something and when they get it. The right measure is _not_ efficiency or typing speed or utilization or velocity or burn. **It's about what the outside world experiences.**
+Speed isn't about effort; it's about _lead time_. Lead time is the _wall-clock time_ between when someone asks for something and when they get it. The right measure is _not_ efficiency or typing speed or utilization or velocity or burn. It's about what the _outside world experiences._
 
 Lead time is a model. Like all models, it is wrong but sometimes useful. It is not hard to identify its holes; most notably, even if you ship software fast, the business can still fail. Fast is not the same thing as successful.
 
-But perception matters. One of your jobs—whether you're an engineer or a manager—is managing expectations. The perception of speed builds **trust**.
+But perception matters. One of your jobs—whether you're an engineer or a manager—is managing expectations. The perception of speed builds trust.
 
 ### You Can Be Both Fast And Good
 
-In fact, it is very difficult to be fast if you are bad. Software which is delivered quickly but is not **valuable** does not count for much, and any necessary rework counts against the lead time of the feature. You have to be both.
+In fact, it is very difficult to be fast if you are bad. Software which is delivered quickly but is not valuable does not count for much, and any necessary rework counts against the lead time of the feature. You have to be both.
 
 Most software engineers have a nightmare story of long hours and unrealistic expectations. The fastest teams I've ever worked did not suffer from these problems, because everyone involved optimized for lead time and spent a lot of time thinking about how to improve it. Grinding to move fast is neither necessary nor sufficient.
 
