@@ -48,11 +48,11 @@ It came to a head, though, when a particular initiative—some deep refactoring 
 
 It turns out that estimation was helping my team in ways I didn't immediately understand, and couldn't fully see until I'd removed it.
 
-First, estimation provides a **natural review point** for upcoming work. This is both an opportunity to clarify or push back on requirements and to size the work appropriately. Without this review point, you lose benefit that `#NoEstimates` was buying you—the premise that if all stories fall within a certain delta you can just stack them up—because there’s no engineering-led pushback on size.
+First, estimation provides a _natural review point_ for upcoming work. This is both an opportunity to clarify or push back on requirements and to size the work appropriately. Without this review point, you lose benefit that `#NoEstimates` was buying you—the premise that if all stories fall within a certain delta you can just stack them up—because there’s no engineering-led pushback on size.
 
-Second, estimation provides an **opportunity to align on approach**. Asking engineers to talk through an estimate has a secondary purpose of causing them to think through architecture and swap context on pain points in the codebase. Gaps between team members in capability and understanding become clearly visible. On many teams, there isn’t a natural secondary venue for this to occur.
+Second, estimation provides an _opportunity to align on approach_. Asking engineers to talk through an estimate has a secondary purpose of causing them to think through architecture and swap context on pain points in the codebase. Gaps between team members in capability and understanding become clearly visible. On many teams, there isn’t a natural secondary venue for this to occur.
 
-And finally, though this one is more fuzzy, I’ve come to believe that **the act of quantifying a complex thing is really valuable**. Tyler Cowen likes to talk about how [a good way to enjoy an art museum even if you don't find it intrinsically interesting is to pretend you’re an art thief](http://www.artblog.net/post/2007/09/cowen/) and, in every gallery, choose which painting you’d steal first. He suggests this not because you’ll ever have the opportunity to do so (probably), but because introducing ideas like price and risk causes you to engage with the art more critically. This is important not for what it does for the project but for what it does for the person. What ends up in your head is what matters.
+And finally, though this one is more fuzzy, I’ve come to believe that _the act of quantifying a complex thing_ is really valuable. Tyler Cowen likes to talk about how [a good way to enjoy an art museum even if you don't find it intrinsically interesting is to pretend you’re an art thief](http://www.artblog.net/post/2007/09/cowen/) and, in every gallery, choose which painting you’d steal first. He suggests this not because you’ll ever have the opportunity to do so (probably), but because introducing ideas like price and risk causes you to engage with the art more critically. This is important not for what it does for the project but for what it does for the person. What ends up in your head is what matters.
 
 Can you gain these things without estimation? Absolutely you can, and if you’re mindful about it and know what you’re missing, you can design a process around it—which I think is the point the `#NoEstimates` folks were trying to make all along.
 
@@ -70,19 +70,33 @@ Therefore, when running the meeting, **keep it breezy.** Move quickly. Try not t
 
 ## How to run a good estimation session
 
-**The people doing the work provide the estimates.** If you’re a manager that’s not driving production work day-to-day, you probably shouldn’t estimate. Conversely, someone with a backend specialty may be expected to provide an estimate for frontend work as a way of surfacing team gaps or delivery risks.
+### The people doing the work provide the estimates
 
-**Everyone on the team estimates at once** to ensure that people don’t bias each other. Usually I’ll use a rock-paper-scissors-style ["fist to five"](https://meetingnotes.com/blog/fist-to-five-voting) process for this; distributed teams can do this over Zoom with some effort, and there are tools that can help.
+If you’re a manager that’s not driving production work day-to-day, you probably shouldn’t estimate. Conversely, someone with a backend specialty may be expected to provide an estimate for frontend work as a way of surfacing team gaps or delivery risks.
 
-**Stories and (tech debt) tasks get estimates; bugs don’t.** You can make an argument for estimating bugs, and I won’t mind if you do, but it makes the meeting shorter if you skip them.
+### Everyone on the team estimates at once
 
-**The higher estimate wins.** Err on the side of caution and bias towards the estimate of the team member with the least context. It’s important to move fast, but no one’s getting a prize for coming in under target on an individual story.
+Try to ensure that people don’t bias each other. Usually I’ll use a rock-paper-scissors-style ["fist to five"](https://meetingnotes.com/blog/fist-to-five-voting) process for this; distributed teams can do this over Zoom with some effort, and there are tools that can help.
 
-**Smaller stories are better; if a story is too big, _split it_.** I find it useful to use the [INVEST principles](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) to evaluate story quality; for my part, I think “small” is the most underrated principle.
+### Stories and (tech debt) tasks get estimates; bugs don’t
 
-**Spike to reduce uncertainty.** Spikes are _short, time-boxed_ efforts to help understand and de-risk project delivery; if you can’t reach a conclusion on a approach in the context of an estimation session, it may be worth taking the discussion offline and writing some code to validate.
+You can make an argument for estimating bugs, and I won’t mind if you do, but it makes the meeting shorter if you skip them.
 
-Pick a cadence that’s **less frequent than sprint planning**. Aim for every month or at most every couple of weeks; frequent enough that you’re getting the review you need but not so frequent that it’s more of a burden than it needs to be. Project kickoffs are a good time to run these.
+### The higher estimate wins 
+
+Err on the side of caution and bias towards the estimate of the team member with the least context. It’s important to move fast, but no one’s getting a prize for coming in under target on an individual story.
+
+### Smaller stories are better; if a story is too big, split it
+
+I find it useful to use the [INVEST principles](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) to evaluate story quality; for my part, I think “small” is the most underrated principle.
+
+### Spike to reduce uncertainty
+
+Spikes are _short, time-boxed_ efforts to help understand and de-risk project delivery; if you can’t reach a conclusion on a approach in the context of an estimation session, it may be worth taking the discussion offline and writing some code to validate.
+
+### Keep a meeting budget
+
+Meetings are expensive. If you can, pick an estimation cadence that’s less frequent than sprint planning. Aim for every month or at most every couple of weeks; frequent enough that you’re getting the review you need but not so frequent that it’s more of a burden than it needs to be. Project kickoffs are a good time to run these.
 
 ## Bringing it back to what stakeholders actually want
 
