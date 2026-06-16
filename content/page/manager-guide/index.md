@@ -7,7 +7,7 @@ Hi there! I'm excited to be working with you. This is meant to give you a rough 
 
 ## What success looks like
 
-I want us to ship valuable software, quickly, sustainably, and at high quality. I want the teams I work with to be known for getting things done, not through heroics or long hours, but by consistently delivering work that matters. I want the people on those teams to grow in their craft and take pride in what they build. I want us to succeed, for the companies we work for to succeed, and for the work to matter.
+I want us to ship valuable software, quickly, sustainably, and at high quality. I want the teams I work with to be known for getting things done by consistently delivering work that matters. I want the people on those teams to grow in their craft and take pride in what they build. I want us to succeed, for the companies we work for to succeed, and for the work to matter.
 
 That's the idea. Everything else in this document is in service of it.
 
@@ -21,7 +21,7 @@ I think of myself as a software generalist: I have preferences about tech and pr
 
 My usual policy is half-hour 1:1s every week with my direct reports and every 2-4 weeks for my skip-levels. In cases where I need to build alignment I prefer short high-frequency meetings over infrequent longer ones. I iterate on meeting cadence and structure and would appreciate feedback on mine.
 
-I keep my calendar open and block out work time if I have to. Please treat any open time on it as bookable. I'm comfortable with comms in either Slack or email. If you need me to do or remember something, I prefer email; if it's a quick question or a conversation I prefer Slack.
+I keep my calendar open and block out work time if I have to. Please treat any open time on it as bookable.
 
 ## Approach
 
@@ -31,17 +31,13 @@ I believe it is possible to [move fast](https://brianguthrie.com/p/the-move-fast
 
 Moving slowly is often a choice. Everyone involved has decided that speed is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes that's necessary; sometimes it isn't.
 
-I expect intentionality and a bias to action when it matters. I need you to work out how clear blockers by escalating, to tap someone on the shoulder instead of waiting on a code review, to choose a direction when the path is clear. For me personally, grinding is neither necessary nor sufficient for moving fast; the fastest teams I've worked with were not the ones pulling all-nighters.
+I expect intentionality and a bias to action when it matters. I need you to work out how to clear blockers by escalating, to tap someone on the shoulder instead of waiting on a code review, to choose a direction when the path is clear. For me personally, grinding is neither necessary nor sufficient for moving fast; the fastest teams I've worked with were not the ones pulling all-nighters.
 
 ### Teams compound talent
 
 I like to work with people who are, or who aspire to become, extremely skilled software practitioners in their own right, but I've never worked with a professional I admired who didn't benefit greatly from the wisdom and skill of _the people around them_. Great individuals get better when they're surrounded by other great individuals working toward shared goals.
 
 The wrong kind of process and collaboration saps everyone's energy, draining morale and momentum. A great team, with the right setup, compounds everyone's impact. A team that shares context, reviews each other's work, and distributes knowledge will generally outperform a collection of brilliant individuals working in silos, and they'll be more resilient when someone gets sick, leaves, or makes a mistake.
-
-I have a very particular view of the responsibility of management: a manager's job is fundamentally to ensure that the _work matters_, and they are the lens through which the organization understands it. The work must be (1) worthwhile, thoughtfully chosen, and well-executed in itself; it must be (2) valuable, in a visible and real way, to the business and the broader organization; and it should be (3) meaningful to the individuals involved from a career and growth standpoint.
-
-Good managers do this by providing clarity on direction, setting guardrails for decision-making, focusing on execution and delivery, understanding and communicating impact, creating feedback loops and, in the absence of consensus, making decisions.
 
 I strive to ensure each team has:
 
@@ -51,15 +47,21 @@ I strive to ensure each team has:
 * a process for iteration, self-management, and blocker clearing;
 * and a low-ceremony way to communicate their challenges and wins to me and other stakeholders.
 
-### Systems and process
+### Managers sharpen the work
 
-I like (but do not mandate) [eXtreme Programming](http://www.extremeprogramming.org/), which tends to optimize for technical excellence and team performance. XP is not Scrum; it's explicitly anti-bureaucracy and focused on engineering practices like continuous integration, test-driven development, and pair programming. I mention it because its values—communication, simplicity, feedback, courage, and mutual respect—are ones I hold.
+I have a very particular view of the responsibility of management: a manager's job is fundamentally to ensure that the _work matters_, and they are the lens through which the organization understands it. The work must be (1) worthwhile, thoughtfully chosen, and well-executed in itself; it must be (2) valuable, in a visible and real way, to the business and the broader organization; and it should be (3) meaningful to the individuals involved from a career and growth standpoint.
 
-A bad system will beat a good person every time; [poor systems often overwhelm the talents of the individuals working inside them](https://blog.deming.org/2015/02/a-bad-system-will-beat-a-good-person-every-time/). I try to believe that everyone walks into work into morning wanting to do a good job, but that can't build great teams by sitting on top of individuals and whacking them until they conform. You do it by building momentum, trust, and the right feedback loops.
+Good managers do this by providing clarity on direction, setting guardrails for decision-making, focusing on execution and delivery, understanding and communicating impact, creating feedback loops and, in the absence of consensus, making decisions.
+
+### Success is built on loops
+
+A bad system will beat a good person every time; [poor systems often overwhelm the talents of the individuals working inside them](https://blog.deming.org/2015/02/a-bad-system-will-beat-a-good-person-every-time/). I try to believe that everyone walks into work into morning wanting to do a good job, but while performance management matters, it's hard to build great teams by sitting on top of individuals and whacking them until they conform. You do it by building momentum, trust, and the right feedback loops.
+
+I like [eXtreme Programming](http://www.extremeprogramming.org/), because its values—communication, simplicity, feedback, courage, and mutual respect—are ones I hold. It's somewhat outdated now, and I do not mandate it, but it defines a number of excellent, high-quality, engineering-oriented approaches that serve as inspiration for the work I do.
 
 The secret sauce of software development—the philosophical origin of most advancements in thinking over the last 20 years—is incremental change, tight feedback loops, shared knowledge, and mutual respect.
 
-### Principles
+## Principles
 
 * **Users and product over tech.** Don't build systems for their own sake; solve real problems. The people who use the software we build are the reason we get to do what we do; growing businesses make for fun and rewarding career opportunities. Most of our time and mental energy as software practitioners should be focused on adding value, not experimenting with tech.
 * **Time-to-value over efficiency.** An efficient process isn't better if it doesn't lead to better outcomes. An inefficient process focused on the right business outcomes and optimized for user value is faster and more effective most of the time.
@@ -69,20 +71,20 @@ The secret sauce of software development—the philosophical origin of most adva
 ## Expectations
 
 ### People
-* **I expect _communication, simplicity, feedback, courage, and mutual respect_**. These are the values espoused by Extreme Programming, and regardless of what you think about that particular ball of wax, I think they're pretty good ones.
+* **I expect _communication, simplicity, feedback, courage, and mutual respect_**. Sounds easy, harder than it looks.
 * **I expect you to work _as part of a team_**. Your primary delivery responsibility is to your team, and your goals should be aligned with the team's goals. You own work as a team; you introspect and adjust as a team; you succeed or fail as a team.
 * **I expect you to _adhere to, and work to change_, the policies the team sets.** Examples include the way your team approaches remote work, standups, and core hours. Some of these policies may depend on the organization, but often they're changeable, and you have the right and obligation to change them.
 * **I expect you to bias towards _incremental user-visible change_.** Giant leaps in software emerge from lots of small steps, with plenty of healthy self-correction along the way. A changeable codebase (or product, or process, or architecture) is better than a perfect one.
 * **I expect you to _act with imperfect information_.** Having autonomy to make decisions means operating in an environment with ambiguity. This is a cost we pay for speed and ownership, not a virtue in itself. Seek clarity when you can, but don't let uncertainty become an excuse for inaction.
 * **I expect you to _invest in yourself and your community_.** You own your career and I want and need you to continue to focus on your own learning and growth. I'm overjoyed to enable you in this and provide what support and coaching I can, but it's not solely your manager's job.
-* **I expect you to _hit meaningful deadlines_.** When a deadline matters—to customers, to the business, to a launch—and your team has done its honest best to plan for it, I expect you to hit it. Scope is almost always negotiable; communicate early if you need to cut. That said, I [don't think it's useful to fix both scope and timeline](https://www.atlassian.com/agile/agile-at-scale/agile-iron-triangle), and I won't penalize you for missing arbitrary dates.
+* **I expect you to _hit meaningful deadlines_.** When a deadline matters—to customers, to the business, to a launch—and your team has done its honest best to plan for it, I expect you to hit it. Scope is almost always negotiable; communicate early if you need to cut. I [don't think it's useful to fix both scope and timeline](https://www.atlassian.com/agile/agile-at-scale/agile-iron-triangle), and I won't penalize you for missing arbitrary dates.
 * **I expect you to bias towards high-quality engineering practices.** More below.
 
 ### Software
 
 We're all on a learning journey, all the time, and we won't always agree on individual practices; I've been wrong in some of my choices in the past. That said, I have certain engineering practice expectations that I hold for my teams. I'm happy to discuss any or all of these at length. I believe they are generally applicable across platforms and languages.
 
-* **I expect you to take quality seriously and approach it with rigor.** Quality here is defined expansively: the structure, readability, and testability of the code; the operations of the system; the observability of all its constituent pieces; the developer experience and feedback loops; and the design of the user experience. Ignoring any of these will hurt team safety, and severely hamper most teams’ ability to move fast and ship great software.
+* **I expect you to take quality seriously and approach it with rigor.** Quality here is defined holistically: the structure, readability, and testability of the code; the operations of the system; the observability of all its constituent pieces; the developer experience and feedback loops; and the design of the user experience. Ignoring any of these will hurt team safety, and severely hamper most teams’ ability to move fast and ship great software.
 * **I expect you to do the simplest thing that could possibly work,** starting from a concrete need and working backwards, and to iterate from there. I like [Kent Beck’s formulation of the Unix Way](http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast) (“make it work, make it right, make it fast”, in that order) and [his rules of simple design](https://martinfowler.com/bliki/BeckDesignRules.html), and [Henrik Kniberg's Testable/Usable/Lovable](https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp).
 * **I expect you to build, test, deploy, and operate the systems you create** by monitoring them and going on-call for them. This ideally creates a virtuous feedback loop: an engineer on call for their own systems will tend to build them in a way that holds up in production, and write code they can debug easily if they get woken up. I like the [Charity Majors definition of “observability”](https://charity.wtf/2020/03/03/observability-is-a-many-splendored-thing/).
 * **I expect you to merge or push to main (trunk) once or more a day.** [Trunk-based development](https://trunkbaseddevelopment.com) is a [strong predictor of good software outcomes](https://medium.com/@jezhumble/doras-journey-an-exploration-4c6bfc41e667). If that’s not possible in our environment then I’d love to work together to explore if it can become possible. I will be your advocate for prioritizing technical work to achieve this goal.
