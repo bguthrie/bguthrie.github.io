@@ -5,17 +5,11 @@ comments: false
 ---
 Hi there! I'm excited to be working with you. This is meant to give you a rough introduction to me—how I think, what I value, what works for me and what doesn't.
 
-## What success looks like
-
-I want us to ship valuable software, quickly, sustainably, and at high quality. I want the teams I work with to be known for getting things done by consistently delivering work that matters. I want the people on those teams to grow in their craft and take pride in what they build. I want us to succeed, for the companies we work for to succeed, and for the work to matter.
-
-That's the idea. Everything else in this document is in service of it.
-
 ## About me
 
 I'm @bguthrie on [Bluesky](https://bsky.app/profile/bguthrie.bsky.social), [GitHub](https://github.com/bguthrie), and [LinkedIn](https://www.linkedin.com/in/bguthrie/). I prefer to be in a physical office most days; I like being around people and find that certain things move faster when you're in close proximity to folks. I have a partner with a similarly demanding job and two small children. My pronouns are he/him.
 
-I think of myself as a software generalist: I have preferences about tech and process but my job is primarily to deliver value. I have been, at various points in my career and in no particular order, professionally employed as a founder, consultant, EM, frontend engineer, backend engineer, VPE, data engineer, mobile engineer, devops engineer, QA engineer, and, at my very first IT job, a tech support guy. Some of it has worked and some hasn't. I'm happy to share stories.
+I think of myself as a software generalist: I have preferences about tech and process but my job is primarily to _deliver value_, to human beings and to the companies I work for. I have been, at various points in my career and in no particular order, professionally employed as a founder, consultant, EM, frontend engineer, backend engineer, VPE, data engineer, mobile engineer, devops engineer, QA engineer, and, at my very first IT job, a tech support guy. Some of it has worked and some hasn't. I'm happy to share stories.
 
 ### Working with me
 
@@ -27,17 +21,15 @@ I keep my calendar open and block out work time if I have to. Please treat any o
 
 ### Speed matters
 
-I believe it is possible to [move fast](https://brianguthrie.com/p/the-move-faster-manifesto/), and that fast matters. Speed isn't about effort or hours worked; it's about lead time, the wall-clock time between when someone asks for something and when they get it. Every feature is a bet; more swings means more hits.
+I believe it is possible to [move fast](https://brianguthrie.com/p/the-move-faster-manifesto/), and that hauling ass matters. However, speed isn't (primarily) a function of hours at your desk; it's about _choices_, most especially lead time, the wall-clock time between when someone asks for something and when they get it. Processes that optimize for it _really_ matter, and processes that don't are best avoided.
 
-Moving slowly is often a choice. Everyone involved has decided that speed is a subordinate requirement to talking to all the right people, writing all the right documents, and ticking all the right boxes. Sometimes that's necessary; sometimes it isn't.
-
-I expect intentionality and a bias to action when it matters. I need you to work out how to clear blockers by escalating, to tap someone on the shoulder instead of waiting on a code review, to choose a direction when the path is clear. For me personally, grinding is neither necessary nor sufficient for moving fast; the fastest teams I've worked with were not the ones pulling all-nighters.
+I expect intentionality and a bias to action when it matters, and my goal is to empower you and set guardrails. For me personally, grinding is neither necessary nor sufficient for moving fast; the fastest teams I've worked with were not the ones pulling all-nighters.
 
 ### Teams compound talent
 
-I like to work with people who are, or who aspire to become, extremely skilled software practitioners in their own right, but I've never worked with a professional I admired who didn't benefit greatly from the wisdom and skill of _the people around them_. Great individuals get better when they're surrounded by other great individuals working toward shared goals.
+I'm a teamy person. I like to work with people who are, or who aspire to become, extremely skilled software practitioners in their own right, but I've never worked with a professional I admired who didn't benefit greatly from the wisdom and skill of the _people around them_. Great people get better when they're surrounded by other great people, working toward common goals.
 
-The wrong kind of process and collaboration saps everyone's energy, draining morale and momentum. A great team, with the right setup, compounds everyone's impact. A team that shares context, reviews each other's work, and distributes knowledge will generally outperform a collection of brilliant individuals working in silos, and they'll be more resilient when someone gets sick, leaves, or makes a mistake.
+A great team, with the right setup, compounds everyone's impact, and will often outperform a collection of brilliant individuals working in silos. It'll also be more resilient when someone gets sick, leaves, or makes a mistake. It's also more fun, frankly.
 
 I strive to ensure each team has:
 
@@ -47,17 +39,23 @@ I strive to ensure each team has:
 * a process for iteration, self-management, and blocker clearing;
 * and a low-ceremony way to communicate their challenges and wins to me and other stakeholders.
 
-### Managers sharpen the work
+### Teams own goals, not roadmaps
+
+You can achieve everything on your roadmap, on time and on budget, and not move the business an inch. While shipping is a habit and requires rigor, all the shipping in the world won't beat a bad set of goals. Understand what you're trying to achieve and you buy the flexibility to alter the roadmap to achieve it.
+
+In general I'll prefer to hold you accountable for outcomes, and I'm not going to sweat a missed deadline or incorrect estimate unless there's meaningful stakes attached. Software is hard. More below.
+
+### Managers are there to make the work matter
 
 I have a very particular view of the responsibility of management: a manager's job is fundamentally to ensure that the _work matters_, and they are the lens through which the organization understands it. The work must be (1) worthwhile, thoughtfully chosen, and well-executed in itself; it must be (2) valuable, in a visible and real way, to the business and the broader organization; and it should be (3) meaningful to the individuals involved from a career and growth standpoint.
 
-Good managers do this by providing clarity on direction, setting guardrails for decision-making, focusing on execution and delivery, understanding and communicating impact, creating feedback loops and, in the absence of consensus, making decisions.
+Good managers do this by providing clarity on direction, setting guardrails for decision-making, focusing on execution and delivery against business goals, understanding and communicating impact, creating feedback loops and, in the absence of consensus, making decisions.
 
-### Success is built on loops
+### Momentum is built on systems and feedback loops
 
 A bad system will beat a good person every time; [poor systems often overwhelm the talents of the individuals working inside them](https://blog.deming.org/2015/02/a-bad-system-will-beat-a-good-person-every-time/). I try to believe that everyone walks into work into morning wanting to do a good job, but while performance management matters, it's hard to build great teams by sitting on top of individuals and whacking them until they conform. You do it by building momentum, trust, and the right feedback loops.
 
-I like [eXtreme Programming](http://www.extremeprogramming.org/), because its values—communication, simplicity, feedback, courage, and mutual respect—are ones I hold. It's somewhat outdated now, and I do not mandate it, but it defines a number of excellent, high-quality, engineering-oriented approaches that serve as inspiration for the work I do.
+I happen to like [eXtreme Programming](http://www.extremeprogramming.org/), because its values (communication, simplicity, feedback, courage, and mutual respect) make sense to me. It's somewhat outdated now, and I do not mandate it, but it defines a number of excellent, high-quality, engineering-oriented approaches that serve as inspiration for the work I do.
 
 The secret sauce of software development—the philosophical origin of most advancements in thinking over the last 20 years—is incremental change, tight feedback loops, shared knowledge, and mutual respect.
 
@@ -156,4 +154,4 @@ These talks and articles are interesting for the way they've affected how the in
 * [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/), Joel Spolsky (essay) — The idea that all non-trivial abstractions leak is now conventional wisdom, but this is where it was articulated.
 * [Folklore](https://folklore.org/), Andy Hertzfeld et al — A collection of wonderful stories about the development of the original Macintosh, including firsthand accounts of Steve Jobs as a leader. My favorite, still entertaining and  relevant today, is [Round Rects are Everywhere!](https://www.folklore.org/Round_Rects_Are_Everywhere.html).
 
-If you've made it to the bottom of this essay and you work for me, point out a round rect the next time we chat. I'll buy you lunch.
+If you've made it to the bottom of this essay and you work for me, point out a round rect the next time we chat and I'll buy you lunch.
