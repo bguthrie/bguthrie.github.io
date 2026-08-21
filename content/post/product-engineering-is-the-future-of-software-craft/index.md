@@ -1,5 +1,6 @@
 ---
 title: "Product engineering is the future of software craft"
+slug: product-engineering-future-software-craft
 description: "The practices we called craftsmanship were scaffolding for human code production. What survives is something older and more important."
 date: 2026-08-20
 image: will-suddreth-o54RjF-C7xo-unsplash.jpg
