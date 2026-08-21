@@ -6,8 +6,8 @@ date: 2026-04-30T10:00:00-04:00
 image: nasa-5477L9Z5eqI-unsplash.jpg
 image_url: https://unsplash.com/photos/hurricane-as-seen-from-space-5477L9Z5eqI
 image_credit: Photo by NASA on Unsplash
-draft: false
-hidden: false
+draft: true
+hidden: true
 categories:
   - ai
 ---
