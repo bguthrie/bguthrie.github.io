@@ -5,7 +5,7 @@ description: "Code as craft is dead, but people still care about their work. Wha
 date: 2026-08-20
 image: will-suddreth-o54RjF-C7xo-unsplash.jpg
 image_credit: Photo by Will Suddreth on Unsplash
-image_url: https://unsplash.com/photos/man-sawing-in-room-o54RjF-C7xo
+image_credit_url: https://unsplash.com/photos/man-sawing-in-room-o54RjF-C7xo
 draft: false
 hidden: false
 categories:
@@ -23,11 +23,11 @@ I love that I can nerd out with my product friend on optimizing token costs or c
 
 ## Craft is fundamentally about caring
 
-To practice craft is to value the _making_, sometimes in irrational or inefficient ways, as an intrinsic good. While we often romanticize it, it is difficult to separate it from either the commercial imperative—we all gotta eat—or the role that automation plays in it. There are still carpenters out there who make furniture by hand, and the people who practice it at a high level are legitimately excellent at something worth being excellent at. But there are also dramatically fewer _of_ them than there used to be. Even the ones still making chairs "by hand" usually aren't pushing each and every saw-stroke back and forth across the wood with their scrawny human muscles; people like motors.
+To practice craft is to value the _making_, sometimes in irrational or inefficient ways, as an intrinsic good. There are still carpenters out there who make furniture by hand, and the people who practice it at a high level are legitimately excellent at something worth being excellent at. But there are also dramatically fewer _of_ them than there used to be. Even the ones still making chairs "by hand" usually aren't pushing each and every saw-stroke back and forth across the wood with their scrawny human muscles; people like motors.
 
 Automation has always served to redraw the line between what requires care and attention and what doesn't. Desktop publishing didn't destroy typesetting, but it thoroughly eliminated the part of it that consisted of tediously placing [sorts](https://en.wikipedia.org/wiki/Sort_(typesetting)), which was itself the product of a series of technological innovations focused on replicating data. The decline of that sort of craft led to other sorts of investment in design, information hierarchy, and visual communication, even as the mechanical skill stopped being a useful differentiator. Ironically, the death of manual typography probably dramatically expanded the number of people who care about the craft of good type design.
 
-AI Coding harnesses are, in this moment, something like power saws for code. Consequently, many traditional markers for craft are obsolete. You _could_ TDD your own code, there's nothing stopping you, but we're sort of in a John Henry situation here: why give yourself a heart attack? Let the LLM do it.
+AI Coding harnesses are, in this moment, something like power saws for code. Consequently, many traditional markers for craft are obsolete. You _could_ TDD your own code, there's nothing stopping you, but we're sort of in a John Henry situation here: why give yourself a heart attack? Let the LLM do it. While we often romanticize craft, it is difficult to separate it from either the commercial imperative—we all gotta eat—or the role that automation plays in it.
 
 And indeed, an awful lot of traditional software craftspeople have always used automation pretty happily; heavyweight IDEs have included automated refactoring tools for decades. We were never above automation if it served our purposes, and didn't think of ourselves as any less caring because we didn't hand-edit every file with a text editor with syntax highlighting turned off. Tools matter; the way you practice and think about your craft informs the choices you make.
 
@@ -35,7 +35,9 @@ This is fundamentally a big-tent argument for software craft: that it still exis
 
 ## Craft has always been a product of the technological present and its past
 
-Software is now facing the same transition as the carpenter, but it's precisely because it's happened that I now share more language in common, not less, with my friend. LLMs have brought him closer to the act of crafting software, and they in turn have brought many engineers closer to the product and the business.
+[![Photo by Kristian Strand on Unsplash](kristian-strand-p8gzCnZf39k-unsplash.jpg)](https://unsplash.com/photos/flat-lay-photography-of-stamp-lot-p8gzCnZf39k)
+
+Software is now facing the same transition as the carpenter, but it's precisely because it's happened that I now share more language in common, not less, with my friend. LLMs have brought business owners like him closer to the act of crafting software, and in turn they've brought many engineers closer to the product and the business.
 
 There is an argument that software creation is fundamentally non-automatable with loose, high-level descriptions of features, like PRDs, because code is definitionally there to express precise behavior; any human language capable of that kind precision is itself a programming language. You can't trust LLMs to make every decision correctly.
 
@@ -57,7 +59,7 @@ To see the new software craft emerging, you only have to look at Reddit, or HN, 
 
 Notably, _not everyone is tracking with this stuff._ For every engineer obsessively comparing the merits of each new model, there are four others taking their cues from folks who are closer to the frontier. The focus of earnest, engaged practitioners has shifted.
 
-In the part of the industry where I spend my time and focus, this has been a tremendous boon for the notion of [product engineers](https://posthog.com/blog/product-engineer-vs-software-engineer). Product engineering is meant to be outcome-oriented and therefore outward-facing: does this software solve the problem, does it fit the business need, is the system observable enough to know when it's failing? In the model of software my friend inhabits, these practitioners have little to lose and much to gain: they are more aligned with the business, not less, but businesses are now newly empowered by aggressive automation.
+In the part of the industry where I spend my time and focus, this points strongly to the idea that [product engineers](https://posthog.com/blog/product-engineer-vs-software-engineer) will thrive in this ecosystem, and that the notion of it will broaden. Product engineering is meant to be outcome-oriented and therefore outward-facing: does this software solve the problem, does it fit the business need, is the system observable enough to know when it's failing? LLMs enable engineers of this sort to be even more aligned with the business, not less.
 
 And so my sense is that the future of craft be defined by teams who are relentlessly focused on automation that serves high-quality _outcomes_: what is harness engineering if not a way to control quality at pace? Observability and testing _still_ matter in a way that feels increasingly urgent. Fitness to form—systems of delivery _designed_ for end to end delivery, like monorepos—become a bigger deal. Prospering means building features that meet a business need, knowing what good looks like from the outside and working backwards from there. Craft will then increasingly focus on the way humans experience our software, and less on the micro-decisions that led us there.
 
